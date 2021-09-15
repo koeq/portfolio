@@ -16,17 +16,16 @@ body,
   height: 100%;
 }
 
-/* all of the view on pagelanding */
-.landing-container {
-  width: 100vw;
-  height: 100vh;
-  background: #000;
-}
-
 /* navigation bar */
 .nav-container {
-  padding: 18px;
-  border: 0.5px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+  width: 100%;
+  height: 10vh;
+  background: transparent;
+
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.2);
 }
 
 .nav-list {
@@ -36,6 +35,56 @@ body,
   list-style: none;
 }
 
-.heading {
-  color: #ffffff;
+/* GRAIN EFFECT */
+.grain-container {
+  height: 100%;
+  width: 100%;
+  background: #111111;
+}
+
+.grain-container::after {
+  animation: grain 1s steps(10) infinite;
+  background-image: url("./ressources/images/grain.jpeg");
+  content: "";
+  height: 400%;
+  left: -50%;
+  /* change opacity to increase grain effect */
+  opacity: 0.13;
+  position: fixed;
+  top: -100%;
+  width: 400%;
+}
+
+@keyframes grain {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-5%, -10%);
+  }
+  20% {
+    transform: translate(-10%, 5%);
+  }
+  30% {
+    transform: translate(7%, -15%);
+  }
+  40% {
+    transform: translate(-5%, 15%);
+  }
+  50% {
+    transform: translate(-10%, 10%);
+  }
+  60% {
+    transform: translate(10%, 0%);
+  }
+  70% {
+    transform: translate(0%, 10%);
+  }
+  80% {
+    transform: translate(3%, 15%);
+  }
+  90% {
+    transform: translate(-10%, 10%);
+  }
 }
