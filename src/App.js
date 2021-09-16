@@ -19,7 +19,7 @@ function Card(props) {
 
 function App() {
   return (
-    <div className="App">
+    <div className="App dark-theme">
       <Grain>
         <Nav />
         <section className="section-1">
