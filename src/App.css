@@ -16,7 +16,7 @@ body,
   height: 100%;
 }
 
-/* navigation bar */
+/* NAV component */
 .nav-container {
   display: flex;
   align-items: center;
@@ -35,24 +35,59 @@ body,
   list-style: none;
 }
 
+/* SECTION 1  */
+section {
+  width: 100%;
+  height: 200vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CARD component */
+
+.card-container {
+  /* position: relative; */
+  /* margin: 5vh 0 0 5vw; */
+  background: #fff;
+  border-radius: 25px;
+  overflow: scroll;
+}
+.card-container h1 {
+  color: black;
+}
+
+.card-container img {
+  max-width: 100%;
+}
+
 /* GRAIN EFFECT */
 .grain-container {
-  height: 100%;
+  position: absolute;
+  height: 500%;
   width: 100%;
   background: #111111;
+
+  /* light mode */
+  /* background: #ffffff; */
 }
 
 .grain-container::after {
-  animation: grain 1s steps(10) infinite;
+  animation: grain 0.5s steps(10) infinite;
   background-image: url("./ressources/images/grain.jpeg");
   content: "";
   height: 400%;
   left: -50%;
   /* change opacity to increase grain effect */
-  opacity: 0.13;
+  opacity: 0.15;
   position: fixed;
   top: -100%;
   width: 400%;
+}
+
+/* position every element on top of the grain effect */
+.grain-container * {
+  z-index: 2;
 }
 
 @keyframes grain {
