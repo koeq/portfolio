@@ -1,21 +1,22 @@
+import React from "react";
 import Nav from "./components/nav";
-import studioMkPlay from "./ressources/images/studioMkPlay.png";
+// import studioMkPlay from "./ressources/images/studioMkPlay.png";
 import "./App.css";
 
 function Grain(props) {
   return <div className="grain-container grain-dark">{props.children}</div>;
 }
 
-function Card(props) {
-  return (
-    <div
-      className="card-container"
-      style={{ width: props.width, height: props.height }}
-    >
-      {props.children}
-    </div>
-  );
-}
+// function Card(props) {
+//   return (
+//     <div
+//       className="card-container"
+//       style={{ width: props.width, height: props.height }}
+//     >
+//       {props.children}
+//     </div>
+//   );
+// }
 
 function App() {
   return (

@@ -4,7 +4,7 @@ export default function Nav() {
   const navElements = ["projects", "github", "about"];
 
   return (
-    <>
+    <React.Fragment>
       <div className="nav-container">
         <ul className="nav-list">
           {navElements.map((element, index) => {
@@ -15,8 +15,8 @@ export default function Nav() {
             );
           })}
         </ul>
+        <hr className="nav-border-dark" />
       </div>
-      <div className="nav-border-dark"></div>
-    </>
+    </React.Fragment>
   );
 }
