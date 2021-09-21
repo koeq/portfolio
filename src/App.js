@@ -1,11 +1,8 @@
 import React from "react";
 import Nav from "./components/nav";
+import Grain from "./components/grain";
 // import studioMkPlay from "./ressources/images/studioMkPlay.png";
 import "./App.css";
-
-function Grain(props) {
-  return <div className="grain-container grain-dark">{props.children}</div>;
-}
 
 // function Card(props) {
 //   return (
