@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;700;800&display=swap");
+@import url("./css/grain.css");
 @import url("./css/nav.css");
 * {
   padding: 0;
@@ -16,8 +17,6 @@ body,
   height: 100%;
 }
 
-
-
 /* VARS VARS VARS */
 :root {
   font-size: 10px;
@@ -26,7 +25,6 @@ body,
   --fs-150: 15rem;
   --fs-100: 10rem;
   --nav-width: 80px;
-  --nav-width-neg: -80px;
 }
 
 /* THEME THEME THEME */
@@ -60,89 +58,61 @@ body,
 
 /* SECTION SECTION SECTION 1 */
 section {
-  width: calc(100% - 70px);
-  margin-left: 70px;
+  position: relative;
+  height: 100vh;
+  width: calc(100% - 75.4px);
+  margin-left: 75.4px;
   display: flex;
   justify-content: center;
   overflow: hidden;
 }
 
-.heading {
-  margin-top: 15vh;
-  font-weight: 800;
-}
-.heading span {
-  font-size: var(--fs-150);
-}
-
-/* GRAIN EFFECT */
-.grain-container {
-  position: absolute;
-  height: 500%;
+.grid-container {
+  /* border: 1px solid yellow; */
+  margin: 0vw 3vw;
   width: 100%;
+  display: grid;
+  grid-gap: 2vw;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas:
+    "aa ab ac ad ae"
+    "ba bb bc bd be"
+    "ca cb cc cd ce"
+    "da db text text text"
+    "ea eb ec ed ee";
 }
 
-.grain-dark {
-  color: #fff;
-  background: #0c0c0c;
+.grid-container span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+  font-weight: 600;
+}
+.grid-container .symbol {
+  color: rgba(255, 255, 255, 0.8);
+
+  font-size: 6rem;
+}
+.grid-container .grid-container-text {
+  height: 20vh;
+  margin: 0 6vw;
+  grid-area: text;
 }
 
-.grain-light {
-  color: #000;
-  background: #ffffff;
+.grid-container-text span {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
 }
-.grain-container::after {
-  animation: grain 0.5s steps(10) infinite;
-  background-image: url("./ressources/images/grain.jpeg");
-  content: "";
-  height: 400%;
-  left: -50%;
-  /* change opacity to increase grain effect */
-  opacity: 0.2;
-  position: fixed;
-  top: -100%;
-  width: 500%;
+.grid-container-text p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+  margin-top: 2rem;
 }
-
-/* position every element on top of the grain effect */
-.grain-container * {
-  position: relative;
-}
-
-@keyframes grain {
-  0%,
-  100% {
-    transform: translate(0, 0);
-  }
-  10% {
-    transform: translate(-5%, -10%);
-  }
-  20% {
-    transform: translate(-10%, 5%);
-  }
-  30% {
-    transform: translate(7%, -15%);
-  }
-  40% {
-    transform: translate(-5%, 15%);
-  }
-  50% {
-    transform: translate(-10%, 10%);
-  }
-  60% {
-    transform: translate(10%, 0%);
-  }
-  70% {
-    transform: translate(0%, 10%);
-  }
-  80% {
-    transform: translate(3%, 15%);
-  }
-  90% {
-    transform: translate(-10%, 10%);
-  }
-}
-
 @media only screen and (max-width: 480px) {
   section {
     width: 100%;
