@@ -28,16 +28,23 @@ function Landing() {
         <span>O</span>
         <span>N</span>
         <span>T</span>
+
         <span>E</span>
         <span className="symbol">·</span>
         <span>N</span>
         <span className="symbol">·</span>
         <span>D</span>
+
+        <div className="space" />
+
         <span>E</span>
         <span>N</span>
         <span>G</span>
+        <div className="symbol flex-center">
+          <div className="crossed"></div>
+        </div>
         <span className="symbol">·</span>
-        <span className="symbol">·</span>
+
         <span>I</span>
         <span>N</span>
         <div className="grid-container-text">
@@ -55,8 +62,11 @@ function Landing() {
         <span>E</span>
         <span>E</span>
         <span>R</span>
+
         <span className="symbol">·</span>
-        <span className="symbol">·</span>
+        <div className="symbol flex-center">
+          <div className="crossed"></div>
+        </div>
       </div>
     </section>
   );

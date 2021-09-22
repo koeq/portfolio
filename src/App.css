@@ -27,6 +27,12 @@ body,
   --nav-width: 80px;
 }
 
+/* GENERIC CLASSES */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* THEME THEME THEME */
 
 .dark-theme {
@@ -68,16 +74,17 @@ section {
 }
 
 .grid-container {
-  /* border: 1px solid yellow; */
-  margin: 0vw 3vw;
+  margin: 3vw 6vw;
   width: 100%;
   display: grid;
-  grid-gap: 2vw;
+  grid-gap: 2.5rem;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+
   grid-template-areas:
     "aa ab ac ad ae"
     "ba bb bc bd be"
+    "space space space space space"
     "ca cb cc cd ce"
     "da db text text text"
     "ea eb ec ed ee";
@@ -87,28 +94,37 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 80px;
+  font-size: 6rem;
   font-weight: 600;
 }
 .grid-container .symbol {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 1);
 
-  font-size: 6rem;
+  font-size: 5rem;
+}
+.grid-contaienr,
+.space {
+  grid-area: space;
+  height: 1rem;
+}
+
+.crossed {
+  border-bottom: 0.6rem solid rgba(255, 255, 255, 1);
+  width: 3rem;
 }
 .grid-container .grid-container-text {
-  height: 20vh;
   margin: 0 6vw;
   grid-area: text;
 }
 
 .grid-container-text span {
   display: block;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 600;
   letter-spacing: 0.3rem;
 }
 .grid-container-text p {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 300;
   letter-spacing: 0.2rem;
   margin-top: 2rem;
