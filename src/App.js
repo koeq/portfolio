@@ -40,13 +40,16 @@ function Landing() {
         <span>E</span>
         <span>N</span>
         <span>G</span>
+
+        <span>I</span>
+        <span>N</span>
+
+        {/* <span className="symbol">·</span> */}
+
         <div className="symbol flex-center">
           <div className="crossed"></div>
         </div>
         <span className="symbol">·</span>
-
-        <span>I</span>
-        <span>N</span>
         <div className="grid-container-text">
           <span>Benedikt König</span>
           <p>
@@ -54,8 +57,6 @@ function Landing() {
             over 20 years of experience and self-learning, my goal is to
             innovate in digital and help brands that want to do that too. I work
             at the crossroads of digital product design and digital development.
-            Having the ability to connect both visual and function seemlessly
-            has proven invaluable to all I’ve worked with.
           </p>
         </div>
 
@@ -64,6 +65,7 @@ function Landing() {
         <span>R</span>
 
         <span className="symbol">·</span>
+        {/* <span className="symbol">·</span> */}
         <div className="symbol flex-center">
           <div className="crossed"></div>
         </div>
