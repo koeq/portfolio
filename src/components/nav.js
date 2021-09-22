@@ -1,5 +1,5 @@
 import { Pivot as Hamburger } from "hamburger-react";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 export default function Nav() {
   const [isActive, setActive] = useState(false);
@@ -7,6 +7,16 @@ export default function Nav() {
   const handleToggle = () => {
     setActive(!isActive);
   };
+
+  // deactivate scrolling in nav-slide-menu
+  useEffect(() => {
+    const html = document.getElementsByTagName("html")[0];
+    {
+      isActive
+        ? (html.style.overflow = "hidden")
+        : (html.style.overflow = "scroll");
+    }
+  }, [isActive]);
 
   const navElements = [
     <Hamburger
@@ -18,9 +28,9 @@ export default function Nav() {
       duration={0.4}
       easing="ease"
     />,
-    "about",
-    "projects",
-    "contact"
+    "œ",
+    "œ",
+    "œ"
   ];
 
   return (

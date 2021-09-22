@@ -22,9 +22,7 @@ function App() {
         <Nav />
         <section className="section-1">
           <div className="heading">
-            <span>I like to </span>
-            <span>build</span>
-            <span>.</span>
+            <span>hello</span>
           </div>
           {/* <Card width="60vw" height="80vh">
             <img src={studioMkPlay} alt="studioMK website play page" />
