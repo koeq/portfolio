@@ -65,42 +65,36 @@ body,
 /* LANDING LANDING LANDING */
 
 section {
-  position: sticky !important;
-  top: 0;
   border: 1px solid yellow;
-  height: 400vh;
+  height: 300vh;
   width: calc(100% - 75.4px);
   margin-left: 75.4px;
   display: flex;
   align-items: center;
   flex-direction: column;
-  overflow: hidden;
 }
 
-/* .landingContainer {
-} */
-
 .gridContainerOne {
+  position: relative;
   border: 1px solid red;
   margin: 0vw 0vw;
-  position: sticky !important;
+  position: sticky;
   top: 0;
-  width: 100%;
+  width: calc(100vw - 75.4px);
   height: 100vh;
   display: grid;
   grid-gap: 2.5rem;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  /* transition: 0.1s ease; */
 }
+
 .gridContainerOne span {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 14rem;
+  font-size: 10rem;
   font-weight: 500;
-}
-.animation {
-  overflow: hidden;
 }
 
 @media only screen and (max-width: 480px) {

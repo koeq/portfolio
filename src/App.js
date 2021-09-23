@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useLayoutEffect, useRef } from "react";
 import "./App.css";
 import Grain from "./components/grain";
 import Nav from "./components/nav";
@@ -74,21 +74,25 @@ import Nav from "./components/nav";
 // }
 
 function Landing() {
-  const [scroll, setScroll] = useState(0);
-  console.log(scroll);
-  useEffect(() => {
-    document.addEventListener("scroll", () => {
-      const scrollCheck = window.scrollY > 1000;
-      if (scrollCheck !== scroll) {
-        setScroll(scrollCheck);
-      }
-    });
+  const [scrollY, setScrollY] = useState(0);
+  const frontedRef = useRef(null);
+
+  const onScroll = () => {
+    frontedRef.current.style.transform = `translateX(${scrollY}px)`;
+    setScrollY(window.scrollY * 3);
+  };
+
+  useLayoutEffect(() => {
+    const scrollListener = window.addEventListener("scroll", onScroll);
+    return () => {
+      window.removeEventListener("scroll", scrollListener);
+    };
   });
 
   const contentListOne = ["F", "R", "O", "N", "T", "E", "·", "N", "·", "D"];
   return (
     <section>
-      <div className="gridContainerOne">
+      <div ref={frontedRef} className="gridContainerOne">
         {contentListOne.map((content, index) => (
           <span key={index} className={content === "·" ? "symnol" : null}>
             {content}
