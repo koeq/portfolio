@@ -1,7 +1,8 @@
-import React, { useState, useLayoutEffect, useRef } from "react";
+import React from "react";
 import "./App.css";
 import Grain from "./components/grain";
 import Nav from "./components/nav";
+import { motion, useViewportScroll, useTransform } from "framer-motion";
 
 // function Card(props) {
 //   return (
@@ -74,32 +75,44 @@ import Nav from "./components/nav";
 // }
 
 function Landing() {
-  const [scrollY, setScrollY] = useState(0);
-  const frontedRef = useRef(null);
+  const contentListOne = ["F", "R", "O", "N", "T"];
+  const contentListTwo = ["E", "·", "N", "·", "D"];
 
-  const onScroll = () => {
-    frontedRef.current.style.transform = `translateX(${scrollY}px)`;
-    setScrollY(window.scrollY * 3);
-  };
+  const { scrollY } = useViewportScroll();
+  const xPosAnimOne = useTransform(
+    scrollY,
+    [0, 100, 200, 300, 400, 500, 600],
+    [0, -200, -500, -1000, -1500, -2000, -2000]
+  );
+  const xPosAnimTwo = useTransform(
+    scrollY,
+    [0, 100, 200, 300, 400, 500, 600],
+    [0, 200, 500, 1000, 1500, 2000, 2000]
+  );
 
-  useLayoutEffect(() => {
-    const scrollListener = window.addEventListener("scroll", onScroll);
-    return () => {
-      window.removeEventListener("scroll", scrollListener);
-    };
-  });
-
-  const contentListOne = ["F", "R", "O", "N", "T", "E", "·", "N", "·", "D"];
   return (
-    <section>
-      <div ref={frontedRef} className="gridContainerOne">
-        {contentListOne.map((content, index) => (
-          <span key={index} className={content === "·" ? "symnol" : null}>
-            {content}
-          </span>
-        ))}
-      </div>
-    </section>
+    <div className="landing-container">
+      <motion.div
+        className="flex-center frontend-container"
+        animate={{ opacity: 1, translateY: -30, scale: 0.95 }}
+        transition={{ duration: 2, delay: 0.5, ease: "easeInOut" }}
+      >
+        <motion.div style={{ x: xPosAnimOne }} className="frontend-row">
+          {contentListOne.map((content, index) => (
+            <span key={index} className="landing-text">
+              {content}
+            </span>
+          ))}
+        </motion.div>
+        <motion.div style={{ x: xPosAnimTwo }} className="frontend-row">
+          {contentListTwo.map((content, index) => (
+            <span key={index} className="landing-text">
+              {content}
+            </span>
+          ))}
+        </motion.div>
+      </motion.div>
+    </div>
   );
 }
 
@@ -110,9 +123,19 @@ function App() {
         <Nav />
 
         <Landing />
+        <div>HELLO</div>
       </Grain>
     </div>
   );
 }
+
+// disable horizontal scroll to make position: sticky and overflow-x: hidden work
+window.onscroll = function() {
+  window.scroll({
+    left: 0
+  });
+};
+
+
 
 export default App;
