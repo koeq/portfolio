@@ -1,8 +1,10 @@
-import React, { useState, useRef, useEffect } from "react";
+import React from "react";
 import "./App.css";
 import Grain from "./components/grain";
 import Nav from "./components/nav";
-import Landing from "./components/landing";
+import { LandingOne, LandingTwo } from "./components/landing";
+
+
 
 // function Card(props) {
 //   return (
@@ -80,8 +82,8 @@ function App() {
       <Grain>
         <Nav />
 
-        <Landing />
-        <div>HELLO</div>
+        <LandingOne />
+        <LandingTwo />
       </Grain>
     </div>
   );

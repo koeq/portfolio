@@ -10,6 +10,10 @@
   font-family: "Mulish", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* VARS VARS VARS */
 :root {
   font-size: 10px;
