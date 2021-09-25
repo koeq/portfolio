@@ -1,0 +1,142 @@
+/* LANDING LANDING LANDING */
+/* frontend */
+.landing-container {
+  width: 100vw;
+  height: 150vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: solid greenyellow;
+}
+
+.frontend-container {
+  position: relative;
+  position: sticky;
+  /* top and margin top have to be the same value */
+  top: 3rem;
+  margin-top: 3rem;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  flex-direction: column;
+}
+.text-row {
+  width: 80%;
+  max-width: 1200px;
+  height: 30rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.landing-text {
+  font-size: 12rem;
+  font-weight: 550;
+}
+.landing-text-two {
+  font-size: 12rem;
+  font-weight: 500;
+}
+
+/* engineer */
+
+.landing-container-two {
+  border: solid greenyellow;
+  width: 100vw;
+  height: 200vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+}
+
+.engineer-container {
+  position: relative;
+  position: sticky;
+  top: 0;
+  /* top and margin top have to be the same value */
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.engineer-container-text span {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+}
+.engineer-container-text p {
+  width: 40.5rem;
+  font-size: 1.4rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  margin-top: 2rem;
+}
+/* SECTION SECTION SECTION 1
+section {
+  position: relative;
+  height: 100vh;
+  width: calc(100% - 75.4px);
+  margin-left: 75.4px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.grid-container {
+  margin: 3vw 16vw;
+  width: 100%;
+  display: grid;
+  grid-gap: 2.5rem;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+
+  grid-template-areas:
+    "aa ab ac ad ae"
+    "ba bb bc bd be"
+    "space space space space space"
+    "ca cb cc cd ce"
+    "da db text text text"
+    "ea eb ec ed ee";
+}
+
+.grid-container span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 8rem;
+  font-weight: 600;
+}
+.grid-container .symbol {
+  color: rgba(255, 255, 255, 0.7);
+
+  font-size: 5rem;
+}
+
+div.space {
+  grid-area: space;
+  height: 1rem;
+}
+
+.crossed {
+  border-bottom: 0.5rem solid rgba(255, 255, 255, 0.7);
+  width: 3rem;
+}
+.grid-container .grid-container-text {
+  margin: 0 6vw;
+  grid-area: text;
+}
+
+.grid-container-text span {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+}
+.grid-container-text p {
+  font-size: 1.4rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  margin-top: 2rem;
+} */
