@@ -110,19 +110,42 @@ export function LandingTwo() {
     </div>
   );
 
-  const contentListTwo = ["·", "·", "·", "·", aboutText, "·"];
-  // const contentListTwo = ["(", ")",  "=>", aboutText, ";"];
-
-  // animation
-
+  // ANIMATION
   const [yProgress, setYProgress] = useState(0);
 
   const { scrollYProgress } = useViewportScroll();
   const opacityAnimation = useTransform(
     scrollYProgress,
-    [-1.4, -1.9, -2.5, -2.6, -3],
+    [-1.4, -1.9, -2.5, -2.6, -4],
     [0, 1, 1, 1, 0]
   );
+
+  const firstAnimation = useTransform(
+    scrollYProgress,
+    [0, -2, -2.1, -2.2, -2.3, -2.4, -2.5, -3],
+    ["·", "|", "", "|", "", "|", "(", "("]
+  );
+  const secondAnimation = useTransform(
+    scrollYProgress,
+    [0, -2.5, -2.6, -2.7, -2.8, -2.9, -3, -3],
+    [".", "|", "", "|", "", "|", ")", ")"]
+  );
+  const thirdAnimation = useTransform(
+    scrollYProgress,
+    [0, -3, -3.1, -3.2, -3.3, -3.4, -3.5, -3.5],
+    ["·", "|", "", "|", "", "|", "=", "="]
+  );
+  const fourthAnimation = useTransform(
+    scrollYProgress,
+    [0, -3.5, -2.1, -2.2, -2.3, -2.4, -2.5, -3],
+    ["·", "|", "", "|", "", "|", ">", ">"]
+  );
+  const fithAnimation = useTransform(
+    scrollYProgress,
+    [0, -4, -2.1, -2.2, -2.3, -2.4, -2.5, -3],
+    ["·", "|", "", "|", "", "|", ";", ";"]
+  );
+  console.log(firstAnimation.current);
 
   // DEBUGGING ANIMATION
   const handleScroll = () => {
@@ -150,11 +173,31 @@ export function LandingTwo() {
         </motion.div>
 
         <motion.div className="text-row">
-          {contentListTwo.map((content, index) => (
-            <span key={index} className="landing-text-two">
-              {content}
-            </span>
-          ))}
+          <motion.span className="landing-text-two">
+            {firstAnimation.current}
+          </motion.span>
+
+          <motion.span className="landing-text-two">
+            {secondAnimation.current}
+          </motion.span>
+
+          <motion.span className="landing-text-two">
+            {thirdAnimation.current}
+          </motion.span>
+
+          <motion.span className="landing-text-two">
+            {fourthAnimation.current}
+          </motion.span>
+
+          <span className="landing-text-two">{aboutText}</span>
+
+          <motion.span className="landing-text-two">
+            {fithAnimation.current}
+          </motion.span>
+          {/* <span className="landing-text-two">.</span>
+          <span className="landing-text-two">.</span>
+          <span className="landing-text-two">.</span>
+          <span className="landing-text-two">.</span> */}
         </motion.div>
       </div>
     </motion.div>

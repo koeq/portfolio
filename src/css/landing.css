@@ -43,7 +43,7 @@
 .landing-container-two {
   border: solid greenyellow;
   width: 100vw;
-  height: 200vh;
+  height: 600vh;
   display: flex;
   align-items: center;
   flex-direction: column;
