@@ -116,7 +116,7 @@ export function LandingTwo() {
   const { scrollYProgress } = useViewportScroll();
   const opacityAnimation = useTransform(
     scrollYProgress,
-    [-1.4, -1.9, -2.5, -2.6, -4],
+    [-1.4, -1.9, -2.5, -4, -4.5],
     [0, 1, 1, 1, 0]
   );
 
@@ -127,23 +127,23 @@ export function LandingTwo() {
   );
   const secondAnimation = useTransform(
     scrollYProgress,
-    [0, -2.5, -2.6, -2.7, -2.8, -2.9, -3, -3],
-    [".", "|", "", "|", "", "|", ")", ")"]
+    [0, -2, -2.5, -2.6, -2.7, -2.8, -2.8],
+    ["·", "", "|", "", "|", ")", ")"]
   );
   const thirdAnimation = useTransform(
     scrollYProgress,
-    [0, -3, -3.1, -3.2, -3.3, -3.4, -3.5, -3.5],
-    ["·", "|", "", "|", "", "|", "=", "="]
+    [0, -2, -2.8, -2.9, -3, -3.1, -3.1],
+    ["·", "", "|", "", "|", "=", "="]
   );
   const fourthAnimation = useTransform(
     scrollYProgress,
-    [0, -3.5, -2.1, -2.2, -2.3, -2.4, -2.5, -3],
-    ["·", "|", "", "|", "", "|", ">", ">"]
+    [0, -2, -3.1, -3.2, -3.3, -3.4, -3.4],
+    ["·", "", "|", "", "|", ">", ">"]
   );
   const fithAnimation = useTransform(
     scrollYProgress,
-    [0, -4, -2.1, -2.2, -2.3, -2.4, -2.5, -3],
-    ["·", "|", "", "|", "", "|", ";", ";"]
+    [0, -2, -3.4, -3.5, -3.6, -3.7, -3.7],
+    ["·", "", "|", "", "|", ";", ";"]
   );
   console.log(firstAnimation.current);
 

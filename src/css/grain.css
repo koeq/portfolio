@@ -1,7 +1,7 @@
 /* GRAIN EFFECT */
 .grain-container {
   position: absolute;
-  height: 500%;
+  height: 800%;
   width: 100%;
 }
 
@@ -19,7 +19,7 @@
   animation: grain 0.5s steps(10) infinite;
   background-image: url("../ressources/images/grain.jpeg");
   content: "";
-  height: 400%;
+  height: 800%;
   left: -50%;
   /* change opacity to increase grain effect */
   opacity: 0.1;
