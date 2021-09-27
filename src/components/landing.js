@@ -104,7 +104,6 @@ export function LandingTwo() {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
         accusamus eius perferendis! Ex, cum nostrum soluta odit et quas
         assumenda exercitationem dignissimos iusto, laboriosam sit ab possimus,
-        
       </p>
     </div>
   );
@@ -113,9 +112,10 @@ export function LandingTwo() {
   const [yProgress, setYProgress] = useState(0);
 
   const { scrollYProgress } = useViewportScroll();
+
   const opacityAnimation = useTransform(
     scrollYProgress,
-    [-1.4, -1.9, -2.5, -4, -4.4],
+    [-1.4, -1.9, -2.5, -4.5, -5],
     [0, 1, 1, 1, 0]
   );
 
@@ -144,7 +144,6 @@ export function LandingTwo() {
     [0, -2.2, -3.6, -3.7, -3.8, -3.9, -3.9],
     ["·", "", "|", "", "|", ";", ";"]
   );
-  console.log(firstAnimation.current);
 
   // DEBUGGING ANIMATION
   const handleScroll = () => {
@@ -154,8 +153,6 @@ export function LandingTwo() {
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
   });
-
-  console.log(yProgress);
 
   return (
     <motion.div

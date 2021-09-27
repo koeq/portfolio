@@ -44,7 +44,7 @@
 
 .landing-container-two {
   width: 100vw;
-  height: 350vh;
+  height: 400vh;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -52,7 +52,6 @@
 }
 
 .engineer-container {
-  position: relative;
   position: sticky;
   top: 0;
   /* top and margin top have to be the same value */

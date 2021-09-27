@@ -1,5 +1,6 @@
 import { Pivot as Hamburger } from "hamburger-react";
 import React, { useState, useEffect } from "react";
+import { motion, useViewportScroll, useTransform } from "framer-motion";
 
 export default function Nav() {
   const [isActive, setActive] = useState(false);
@@ -41,6 +42,20 @@ export default function Nav() {
     "œ"
   ];
 
+  // animation
+  const [YProgress, setYProgress] = useState(0);
+
+  const { scrollY } = useViewportScroll();
+  const height = useTransform(scrollY, [0, 9000], ["0px", "100%"]);
+
+  const handleScroll = () => {
+    setYProgress(scrollY.current);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+  });
+
   return (
     <div className="nav-container">
       <ul className={isActive ? "nav-list nav-list-active" : "nav-list"}>
@@ -53,6 +68,12 @@ export default function Nav() {
         })}
       </ul>
       <hr className="nav-border-dark" />
+      <motion.div
+        style={{
+          height: height
+        }}
+        className="scroll-progression-bar"
+      ></motion.div>
 
       <div className={isActive ? "slide-menu-active slide-menu" : "slide-menu"}>
         <div

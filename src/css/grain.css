@@ -1,7 +1,8 @@
 /* GRAIN EFFECT */
+
 .grain-container {
   position: absolute;
-  height: 1000%;
+  height: 10000px;
   width: 100%;
 }
 
