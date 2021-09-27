@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
 /* LANDING LANDING LANDING */
 /* frontend */
 .landing-container {
@@ -6,7 +7,6 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  border: solid greenyellow;
 }
 
 .frontend-container {
@@ -21,16 +21,18 @@
   flex-direction: column;
 }
 .text-row {
-  width: 80%;
-  max-width: 1200px;
+  width: min(60%, 1700px);
   height: 30rem;
+  height: min(17vw, 1200px);
+
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .landing-text {
-  font-size: 12rem;
+  /* font-size: 12rem; */
+  font-size: clamp(4rem, 6.3vw, 20rem);
   font-weight: 550;
 }
 .landing-text-two {
@@ -41,7 +43,6 @@
 /* engineer */
 
 .landing-container-two {
-  border: solid greenyellow;
   width: 100vw;
   height: 350vh;
   display: flex;
@@ -58,20 +59,33 @@
   width: 100vw;
   height: 100vh;
   flex-direction: column;
+  transform: scale(0.9);
 }
 
 .engineer-container-text span {
   display: block;
+
   font-size: 1.6rem;
+  font-size: clamp(0.9rem, 1vw, 3rem);
   font-weight: 600;
   letter-spacing: 0.3rem;
 }
 .engineer-container-text p {
+  /* blocksatz */
+  /* text-align: justify; */
   width: 40.5rem;
-  font-size: 1.4rem;
+  width: clamp(14rem, 20.5vw, 50rem);
+  font-size: clamp(0.7rem, 0.8vw, 1.9rem);
   font-weight: 300;
   letter-spacing: 0.1rem;
   margin-top: 2rem;
+  margin-top: clamp(0.9rem, 1vw, 2rem);
+}
+.arrow-function {
+  width: 7%;
+  font-size: clamp(4rem, 6.3vw, 20rem);
+  display: flex;
+  justify-content: center;
 }
 /* SECTION SECTION SECTION 1
 section {

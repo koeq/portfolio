@@ -1,13 +1,12 @@
 /* GRAIN EFFECT */
 .grain-container {
   position: absolute;
-  height: 800%;
+  height: 1000%;
   width: 100%;
 }
 
 .grain-dark {
   color: #fff;
-  background: #0c0c0c;
   background: linear-gradient(#0c0c0c, #000);
 }
 
@@ -19,10 +18,10 @@
   animation: grain 0.5s steps(10) infinite;
   background-image: url("../ressources/images/grain.jpeg");
   content: "";
-  height: 800%;
+  height: 600%;
   left: -50%;
   /* change opacity to increase grain effect */
-  opacity: 0.1;
+  opacity: 0.13;
   position: fixed;
   top: -100%;
   width: 500%;
