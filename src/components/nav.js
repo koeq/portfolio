@@ -45,16 +45,26 @@ export default function Nav() {
   // animation
   const [YProgress, setYProgress] = useState(0);
 
-  const { scrollY } = useViewportScroll();
-  const height = useTransform(scrollY, [0, 9000], ["0px", "100%"]);
+  const { scrollYProgress } = useViewportScroll();
+  const height = useTransform(scrollYProgress, [0, 1], ["0px", "100%"]);
 
   const handleScroll = () => {
-    setYProgress(scrollY.current);
+    setYProgress(scrollYProgress.current);
   };
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
   });
+
+  const setWidth = {
+    width: height,
+    height: "3px"
+  };
+
+  const setHeight = {
+    height: height,
+    width: "1px"
+  };
 
   return (
     <div className="nav-container">
@@ -69,9 +79,8 @@ export default function Nav() {
       </ul>
       <hr className="nav-border-dark" />
       <motion.div
-        style={{
-          height: height
-        }}
+        // change progressbar for mobile
+        style={window.innerWidth <= 480 ? setWidth : setHeight}
         className="scroll-progression-bar"
       ></motion.div>
 

@@ -1,8 +1,9 @@
 /* GRAIN EFFECT */
 
 .grain-container {
-  position: absolute;
-  height: 10000px;
+  /* not necessary when grain is wrapping the app */
+  /* position: absolute; */
+  height: 12000px;
   width: 100%;
 }
 

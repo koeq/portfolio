@@ -5,64 +5,31 @@ export function LandingOne() {
   const contentListOne = ["F", "R", "O", "N", "T"];
   const contentListTwo = ["E", "·", "N", "·", "D"];
 
-  const [animationOffset, setAnimationOffset] = useState(0);
-
-  const [textRowWidth, setTextRowWidth] = useState(0);
-  const [vw, setVw] = useState(0);
-
-  const textRowRef = useRef(null);
-
-  // progress of scroll in landing container
+  // // progress of scroll 0-1
   const { scrollYProgress } = useViewportScroll();
-
-  // change animation offset on window resize
-  const handleResize = () => {
-    setTextRowWidth(textRowRef.current.offsetWidth);
-    // get vw cross-browser
-    setVw(
-      Math.max(
-        document.documentElement.clientWidth || 0,
-        window.innerWidth || 0
-      )
-    );
-  };
-
-  useEffect(() => {
-    // width of fronted text container
-    setTextRowWidth(textRowRef.current.offsetWidth);
-    // get vw cross-browser
-    setVw(
-      Math.max(
-        document.documentElement.clientWidth || 0,
-        window.innerWidth || 0
-      )
-    );
-    //
-    const scrollListener = window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("scroll", scrollListener);
-    };
-  }, []);
-
-  useEffect(() => {
-    // get distance text has to be approx. (bc of transform scale)
-    // moved out of the screen in pixels
-
-    setAnimationOffset(textRowWidth * 2.5 + (vw - textRowWidth));
-    // move text according to scroll postion in landing container
-  }, [vw, textRowWidth]);
 
   const xPosAnimOne = useTransform(
     scrollYProgress,
-    [0, -1],
-    [0, -animationOffset]
+    [0, 0.03],
+    ["0vw", "-100vw"]
   );
   const xPosAnimTwo = useTransform(
     scrollYProgress,
-    [0, -1],
-    [0, animationOffset]
+    [0, 0.03],
+    ["0vw", "100vw"]
   );
+
+  // DEBUGGING DEBUGGING DEBUGGING
+  // const handleScroll = () => console.log(scrollYProgress.current);
+
+  // useEffect(() => {
+  //   //
+  //   const scrollListener = window.addEventListener("scroll", handleScroll);
+
+  //   return () => {
+  //     window.removeEventListener("scroll", scrollListener);
+  //   };
+  // }, []);
 
   return (
     <div className="landing-container">
@@ -71,11 +38,7 @@ export function LandingOne() {
         animate={{ opacity: 1, translateY: -30, scale: 0.9 }}
         transition={{ duration: 1.5, delay: 0.5, ease: "easeInOut" }}
       >
-        <motion.div
-          ref={textRowRef}
-          style={{ x: xPosAnimOne }}
-          className="text-row"
-        >
+        <motion.div style={{ x: xPosAnimOne }} className="text-row">
           {contentListOne.map((content, index) => (
             <span key={index} className="landing-text">
               {content}
@@ -109,8 +72,6 @@ export function LandingTwo() {
   );
 
   // ANIMATION
-  const [yProgress, setYProgress] = useState(0);
-
   const { scrollYProgress } = useViewportScroll();
 
   const opacityAnimation = useTransform(
@@ -147,7 +108,7 @@ export function LandingTwo() {
 
   // DEBUGGING ANIMATION
   const handleScroll = () => {
-    setYProgress(scrollYProgress.current);
+    console.log(scrollYProgress.current);
   };
 
   useEffect(() => {
