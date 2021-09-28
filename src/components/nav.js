@@ -43,18 +43,9 @@ export default function Nav() {
   ];
 
   // animation
-  const [YProgress, setYProgress] = useState(0);
 
   const { scrollYProgress } = useViewportScroll();
   const height = useTransform(scrollYProgress, [0, 1], ["0px", "100%"]);
-
-  const handleScroll = () => {
-    setYProgress(scrollYProgress.current);
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-  });
 
   const setWidth = {
     width: height,

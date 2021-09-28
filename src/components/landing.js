@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React from "react";
 import { motion, useViewportScroll, useTransform } from "framer-motion";
 
 export function LandingOne() {
@@ -18,18 +18,6 @@ export function LandingOne() {
     [0, 0.03],
     ["0vw", "100vw"]
   );
-
-  // DEBUGGING DEBUGGING DEBUGGING
-  // const handleScroll = () => console.log(scrollYProgress.current);
-
-  // useEffect(() => {
-  //   //
-  //   const scrollListener = window.addEventListener("scroll", handleScroll);
-
-  //   return () => {
-  //     window.removeEventListener("scroll", scrollListener);
-  //   };
-  // }, []);
 
   return (
     <div className="landing-container">
@@ -74,46 +62,120 @@ export function LandingTwo() {
   // ANIMATION
   const { scrollYProgress } = useViewportScroll();
 
-  const opacityAnimation = useTransform(
-    scrollYProgress,
-    [-1.4, -1.9, -2.5, -4.5, -5],
-    [0, 1, 1, 1, 0]
-  );
+  const animStart = 0.12;
+  const delta = 0.01;
+
+  const revealTimestamps = [
+    animStart - delta * 3.5,
+    animStart - delta * 2.5,
+    animStart + delta * 20,
+    animStart + delta * 21.5
+  ];
+
+  const opacityAnimation = useTransform(scrollYProgress, revealTimestamps, [
+    0,
+    1,
+    1,
+    0
+  ]);
+
+  // change values to change animation beginning/delay
+
+  const firstTimestamps = [
+    0,
+    animStart,
+    animStart + delta,
+    animStart + delta * 2,
+    animStart + delta * 3,
+    animStart + delta * 4,
+    animStart + delta * 5,
+    animStart + delta * 6,
+    animStart + delta * 6
+  ];
+  const firstContent = ["·", "·", "|", "", "|", "", "|", "(", "("];
+
+  const secondTimestamps = [
+    0,
+    animStart,
+    animStart + delta * 5,
+    animStart + delta * 6,
+    animStart + delta * 7,
+    animStart + delta * 8,
+    animStart + delta * 9,
+    animStart + delta * 9
+  ];
+  const secondContent = ["·", "·", "", "|", "", "|", ")", ")"];
+
+  const thirdTimestamps = [
+    0,
+    animStart,
+    animStart + delta * 8,
+    animStart + delta * 9,
+    animStart + delta * 10,
+    animStart + delta * 11,
+    animStart + delta * 12,
+    animStart + delta * 12
+  ];
+  const thirdContent = ["·", "·", "", "|", "", "|", "=", "="];
+
+  const fourthTimestamps = [
+    0,
+    animStart,
+    animStart + delta * 11,
+    animStart + delta * 12,
+    animStart + delta * 13,
+    animStart + delta * 14,
+    animStart + delta * 15,
+    animStart + delta * 16
+  ];
+  const fourthContent = ["·", "·", "", "|", "", "|", ">", ">"];
+
+  const fithTimestamps = [
+    0,
+    animStart,
+    animStart + delta * 15,
+    animStart + delta * 16,
+    animStart + delta * 17,
+    animStart + delta * 18,
+    animStart + delta * 19,
+    animStart + delta * 20
+  ];
+  const fithContent = ["·", "·", "", "|", "", "|", ";", ";"];
 
   const firstAnimation = useTransform(
     scrollYProgress,
-    [0, -2.2, -2.3, -2.4, -2.5, -2.6, -2.7, -2.7],
-    ["·", "|", "", "|", "", "|", "(", "("]
+    firstTimestamps,
+    firstContent
   );
   const secondAnimation = useTransform(
     scrollYProgress,
-    [0, -2.2, -2.7, -2.8, -2.9, -3, -3],
-    ["·", "", "|", "", "|", ")", ")"]
+    secondTimestamps,
+    secondContent
   );
   const thirdAnimation = useTransform(
     scrollYProgress,
-    [0, -2.2, -3, -3.1, -3.2, -3.3, -3.3],
-    ["·", "", "|", "", "|", "=", "="]
+    thirdTimestamps,
+    thirdContent
   );
   const fourthAnimation = useTransform(
     scrollYProgress,
-    [0, -2.2, -3.3, -3.4, -3.5, -3.6, -3.6],
-    ["·", "", "|", "", "|", ">", ">"]
+    fourthTimestamps,
+    fourthContent
   );
   const fithAnimation = useTransform(
     scrollYProgress,
-    [0, -2.2, -3.6, -3.7, -3.8, -3.9, -3.9],
-    ["·", "", "|", "", "|", ";", ";"]
+    fithTimestamps,
+    fithContent
   );
 
   // DEBUGGING ANIMATION
-  const handleScroll = () => {
-    console.log(scrollYProgress.current);
-  };
+  // const handleScroll = () => {
+  //   console.log(scrollYProgress.current);
+  // };
 
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-  });
+  // useEffect(() => {
+  //   window.addEventListener("scroll", handleScroll);
+  // });
 
   return (
     <motion.div
@@ -131,8 +193,11 @@ export function LandingTwo() {
         </motion.div>
 
         {/* SECOND ROW */}
-        <motion.div className="text-row">
-          <motion.span className="landing-text-two arrow-function">
+        <div className="text-row">
+          <motion.span
+            style={{ content: firstAnimation }}
+            className="landing-text-two arrow-function"
+          >
             {firstAnimation.current}
           </motion.span>
 
@@ -153,7 +218,7 @@ export function LandingTwo() {
           <motion.span className="landing-text-two arrow-function">
             {fithAnimation.current}
           </motion.span>
-        </motion.div>
+        </div>
       </div>
     </motion.div>
   );

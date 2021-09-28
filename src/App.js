@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React from "react";
 import "./App.css";
 import Grain from "./components/grain";
 import Nav from "./components/nav";
@@ -7,16 +7,8 @@ import { useViewportScroll } from "framer-motion";
 
 function App() {
   // get scrollProgress in View
-  const [yProgress, setYProgress] = useState(null);
+
   const { scrollYProgress } = useViewportScroll();
-
-  // useEffect(() => {
-  //   window.addEventListener("scroll", () =>
-  //     setYProgress(scrollYProgress.current)
-  //   );
-  // }, []);
-
-  // console.log(yProgress)
 
   return (
     <div className="App light-theme">
