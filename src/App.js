@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import Grain from "./components/grain";
 import Nav from "./components/nav";
@@ -7,7 +7,7 @@ import { useViewportScroll } from "framer-motion";
 
 function App() {
   // get scrollProgress in View
-
+  const [yProgress, setYProgress] = useState(null);
   const { scrollYProgress } = useViewportScroll();
 
   return (

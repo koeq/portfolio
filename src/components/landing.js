@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion, useViewportScroll, useTransform } from "framer-motion";
 
 export function LandingOne() {
@@ -61,6 +61,11 @@ export function LandingTwo() {
 
   // ANIMATION
   const { scrollYProgress } = useViewportScroll();
+  const [first, setFirst] = useState(0);
+  const [second, setSecond] = useState(0);
+  const [third, setThird] = useState(0);
+  const [fourth, setFourth] = useState(0);
+  const [fith, setFith] = useState(0);
 
   const animStart = 0.12;
   const delta = 0.01;
@@ -92,6 +97,7 @@ export function LandingTwo() {
     animStart + delta * 6,
     animStart + delta * 6
   ];
+
   const firstContent = ["·", "·", "|", "", "|", "", "|", "(", "("];
 
   const secondTimestamps = [
@@ -147,6 +153,7 @@ export function LandingTwo() {
     firstTimestamps,
     firstContent
   );
+
   const secondAnimation = useTransform(
     scrollYProgress,
     secondTimestamps,
@@ -167,6 +174,15 @@ export function LandingTwo() {
     fithTimestamps,
     fithContent
   );
+
+  // set event listeners because FM doesent render if Motion Value is not put in style object
+  useEffect(() => {
+    firstAnimation.onChange(latest => setFirst(latest));
+    secondAnimation.onChange(latest => setSecond(latest));
+    thirdAnimation.onChange(latest => setThird(latest));
+    fourthAnimation.onChange(latest => setFourth(latest));
+    fithAnimation.onChange(latest => setFith(latest));
+  }, []);
 
   // DEBUGGING ANIMATION
   // const handleScroll = () => {
