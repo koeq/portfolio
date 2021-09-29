@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { motion, useViewportScroll, useTransform } from "framer-motion";
-import { Parallax } from "./about";
+import { Parallax } from "./parallax";
 
 export function LandingOne() {
   const contentListOne = ["F", "R", "O", "N", "T"];

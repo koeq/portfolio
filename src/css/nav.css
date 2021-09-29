@@ -58,7 +58,7 @@
   justify-content: space-around;
   align-items: center;
   background: #0f0e0e;
-  transition: 2s ease;
+  transition: 2s ease-in-out;
   transform: translateX(-300vw);
 }
 
