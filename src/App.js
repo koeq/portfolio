@@ -1,20 +1,29 @@
-import React, { useState } from "react";
+import React, { useState, useLayoutEffect } from "react";
 import "./App.css";
 import Grain from "./components/grain";
 import Nav from "./components/nav";
 import { LandingOne, LandingTwo } from "./components/landing";
-import { useViewportScroll } from "framer-motion";
 
 function App() {
-  // get scrollProgress in View
-  const [yProgress, setYProgress] = useState(null);
-  const { scrollYProgress } = useViewportScroll();
+  const [screenWidth, setScreenWidth] = useState(0);
+
+  const handleResize = () => {
+    setScreenWidth(window.innerWidth);
+  };
+
+  useLayoutEffect(() => {
+    setScreenWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  
 
   return (
     <div className="App light-theme">
       <Grain>
-        <Nav />
-        <LandingOne scrollYProgress={scrollYProgress} />
+        <Nav screenWidth={screenWidth} />
+        <LandingOne />
         <LandingTwo />
       </Grain>
     </div>

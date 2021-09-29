@@ -182,7 +182,13 @@ export function LandingTwo() {
     thirdAnimation.onChange(latest => setThird(latest));
     fourthAnimation.onChange(latest => setFourth(latest));
     fithAnimation.onChange(latest => setFith(latest));
-  }, []);
+  }, [
+    firstAnimation,
+    secondAnimation,
+    thirdAnimation,
+    fourthAnimation,
+    fithAnimation
+  ]);
 
   // DEBUGGING ANIMATION
   // const handleScroll = () => {

@@ -2,7 +2,7 @@ import { Pivot as Hamburger } from "hamburger-react";
 import React, { useState, useEffect } from "react";
 import { motion, useViewportScroll, useTransform } from "framer-motion";
 
-export default function Nav() {
+export default function Nav({ screenWidth }) {
   const [isActive, setActive] = useState(false);
 
   const handleToggle = () => {
@@ -45,17 +45,7 @@ export default function Nav() {
   // animation
 
   const { scrollYProgress } = useViewportScroll();
-  const height = useTransform(scrollYProgress, [0, 1], ["0px", "100%"]);
-
-  const setWidth = {
-    width: height,
-    height: "3px"
-  };
-
-  const setHeight = {
-    height: height,
-    width: "1px"
-  };
+  const scrollProgress = useTransform(scrollYProgress, [0, 1], ["0px", "100%"]);
 
   return (
     <div className="nav-container">
@@ -71,7 +61,11 @@ export default function Nav() {
       <hr className="nav-border-dark" />
       <motion.div
         // change progressbar for mobile
-        style={window.innerWidth <= 480 ? setWidth : setHeight}
+        style={
+          screenWidth > 0 && screenWidth <= 480
+            ? { width: scrollProgress, height: "3px" }
+            : { height: scrollProgress, width: "0.5px" }
+        }
         className="scroll-progression-bar"
       ></motion.div>
 
