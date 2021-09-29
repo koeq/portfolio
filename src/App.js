@@ -3,6 +3,7 @@ import "./App.css";
 import Grain from "./components/grain";
 import Nav from "./components/nav";
 import { LandingOne, LandingTwo } from "./components/landing";
+import About from "./components/about";
 
 function App() {
   const [screenWidth, setScreenWidth] = useState(0);
@@ -17,14 +18,13 @@ function App() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  
-
   return (
     <div className="App light-theme">
       <Grain>
         <Nav screenWidth={screenWidth} />
         <LandingOne />
         <LandingTwo />
+        <About />
       </Grain>
     </div>
   );
