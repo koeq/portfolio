@@ -1,5 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { motion, useViewportScroll, useTransform } from "framer-motion";
+import {
+  motion,
+  useViewportScroll,
+  useTransform,
+  useSpring
+} from "framer-motion";
 import { Parallax } from "./parallax";
 
 export function LandingOne() {
@@ -9,16 +14,11 @@ export function LandingOne() {
   // // progress of scroll 0-1
   const { scrollYProgress } = useViewportScroll();
 
-  const xPosAnimOne = useTransform(
-    scrollYProgress,
-    [0, 0.03],
-    ["0vw", "-100vw"]
-  );
-  const xPosAnimTwo = useTransform(
-    scrollYProgress,
-    [0, 0.03],
-    ["0vw", "100vw"]
-  );
+  const xPosAnimOne = useTransform(scrollYProgress, [0, 0.03], [0, -2000]);
+  const xPosAnimTwo = useTransform(scrollYProgress, [0, 0.03], [0, 2000]);
+
+  const xOne = useSpring(xPosAnimOne, { stiffness: 700, damping: 90 });
+  const xTwo = useSpring(xPosAnimTwo, { stiffness: 700, damping: 90 });
 
   return (
     <div className="landing-container">
@@ -27,14 +27,14 @@ export function LandingOne() {
         animate={{ opacity: 1, translateY: -30, scale: 0.9 }}
         transition={{ duration: 1.5, delay: 0.5, ease: "easeInOut" }}
       >
-        <motion.div style={{ x: xPosAnimOne }} className="text-row">
+        <motion.div style={{ x: xOne }} className="text-row">
           {contentListOne.map((content, index) => (
             <span key={index} className="landing-text">
               {content}
             </span>
           ))}
         </motion.div>
-        <motion.div style={{ x: xPosAnimTwo }} className="text-row">
+        <motion.div style={{ x: xTwo }} className="text-row">
           {contentListTwo.map((content, index) => (
             <span key={index} className="landing-text">
               {content}
@@ -201,48 +201,50 @@ export function LandingTwo() {
   // });
 
   return (
-    <motion.div
-      className="landing-container-two"
-      // style={{ opacity: opacityAnimation }}
-    >
-      {/* FIRST ROW */}
+    <Parallax offset={20}>
+      <motion.div
+        className="landing-container-two"
+        // style={{ opacity: opacityAnimation }}
+      >
+        {/* FIRST ROW */}
 
-      <div className="flex-center engineer-container">
-        <motion.div className="text-row">
-          {contentListOne.map((content, index) => (
-            <span key={index} className="landing-text">
-              <Parallax offset={20}>{content}</Parallax>
+        <div className="flex-center engineer-container">
+          <motion.div className="text-row">
+            {contentListOne.map((content, index) => (
+              <span key={index} className="landing-text">
+                <Parallax offset={10}>{content}</Parallax>
+              </span>
+            ))}
+          </motion.div>
+
+          {/* SECOND ROW */}
+          <div className="text-row">
+            <motion.span className="landing-text-two arrow-function">
+              <Parallax offset={10}>{firstAnimation.current}</Parallax>
+            </motion.span>
+
+            <motion.span className="landing-text-two arrow-function">
+              <Parallax offset={10}>{secondAnimation.current}</Parallax>
+            </motion.span>
+
+            <motion.span className="landing-text-two arrow-function">
+              <Parallax offset={10}>{thirdAnimation.current}</Parallax>
+            </motion.span>
+
+            <motion.span className="landing-text-two arrow-function">
+              <Parallax offset={10}>{fourthAnimation.current}</Parallax>
+            </motion.span>
+
+            <span className="landing-text-two">
+              <Parallax offset={10}>{aboutText}</Parallax>
             </span>
-          ))}
-        </motion.div>
 
-        {/* SECOND ROW */}
-        <div className="text-row">
-          <motion.span className="landing-text-two arrow-function">
-            <Parallax offset={20}>{firstAnimation.current}</Parallax>
-          </motion.span>
-
-          <motion.span className="landing-text-two arrow-function">
-            <Parallax offset={20}>{secondAnimation.current}</Parallax>
-          </motion.span>
-
-          <motion.span className="landing-text-two arrow-function">
-            <Parallax offset={20}>{thirdAnimation.current}</Parallax>
-          </motion.span>
-
-          <motion.span className="landing-text-two arrow-function">
-            <Parallax offset={20}>{fourthAnimation.current}</Parallax>
-          </motion.span>
-
-          <span className="landing-text-two">
-            <Parallax offset={20}>{aboutText}</Parallax>
-          </span>
-
-          <motion.span className="landing-text-two arrow-function">
-            <Parallax offset={20}>{fithAnimation.current}</Parallax>
-          </motion.span>
+            <motion.span className="landing-text-two arrow-function">
+              <Parallax offset={10}>{fithAnimation.current}</Parallax>
+            </motion.span>
+          </div>
         </div>
-      </div>
-    </motion.div>
+      </motion.div>
+    </Parallax>
   );
 }

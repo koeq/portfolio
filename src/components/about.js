@@ -1,6 +1,5 @@
-import React, { useState, useRef, useLayoutEffect } from "react";
+import React from "react";
 import { Parallax } from "./parallax";
-
 
 export default function About() {
   return (
