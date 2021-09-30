@@ -35,14 +35,9 @@
 .technology-i-use {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 
   margin: 1.3vw 0 0 10vw;
-}
-
-.flex-center-column p {
-  margin: 0 !important;
-  font-size: clamp(0.5rem, 1vw, 3rem);
 }
 
 .about-content span {
@@ -58,6 +53,10 @@
   margin: 1.3vw 0 5vw 10vw;
 }
 
+.flex-center-column p {
+  margin: 0 0 0 0;
+  font-size: clamp(0.5rem, 1vw, 3rem);
+}
 .about-path {
   display: flex;
   flex-direction: column;

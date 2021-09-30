@@ -17,7 +17,7 @@ export default function About() {
       <div className="about-content-path">
         <div className="about-content">
           <Parallax offset={20}>
-            <span className="who-am-i">-WHO AM I</span>
+            <span className="who-am-i">WHO AM I</span>
           </Parallax>
           <Parallax offset={30}>
             <p>
@@ -29,7 +29,7 @@ export default function About() {
             </p>
           </Parallax>
           <Parallax offset={20}>
-            <span>-EDUCATION</span>
+            <span>EDUCATION</span>
           </Parallax>
           <Parallax offset={30}>
             <p>
@@ -39,30 +39,30 @@ export default function About() {
             </p>
           </Parallax>
           <Parallax offset={20}>
-            <span>-TECHNOLOGY I USE</span>
+            <span>TECHNOLOGY I USE</span>
           </Parallax>
 
           <Parallax offset={30}>
             <div className={"technology-i-use"}>
               <div className={"flex-center-column"}>
                 <FaHtml5 size={"3vw"} />
-                <p>HTML</p>
+                <p style={{ marginTop: "0.3vw" }}>HTML</p>
                 <p>(HTML5)</p>
               </div>
               <div className={"flex-center-column"}>
                 <FaCss3Alt size={"3vw"} />
-                <p>CSS</p>
+                <p style={{ marginTop: "0.3vw" }}>CSS</p>
                 <p>(FlexBox & Grid)</p>
               </div>
               <div className={"flex-center-column"}>
                 <SiJavascript size={"3vw"} />
-                <p>JS</p>
+                <p style={{ marginTop: "0.3vw" }}>JS</p>
                 <p>(ES6)</p>
               </div>
 
               <div className={"flex-center-column"}>
                 <FaReact size={"3vw"} />
-                <p>REACT (incl. Hooks)</p>
+                <p style={{ marginTop: "1vw" }}>React (incl. Hooks)</p>
               </div>
             </div>
           </Parallax>
