@@ -4,6 +4,7 @@ import Grain from "./components/grain";
 import Nav from "./components/nav";
 import { LandingOne, LandingTwo } from "./components/landing";
 import About from "./components/about";
+import Projects from "./components/projects"
 
 function App() {
   const [screenWidth, setScreenWidth] = useState(0);
@@ -25,6 +26,7 @@ function App() {
         <LandingOne screenWidth={screenWidth} />
         <LandingTwo />
         <About />
+        <Projects/>
       </Grain>
     </div>
   );

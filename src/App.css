@@ -75,5 +75,17 @@
   max-width: 100%;
 }
 
+.projects-heading {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 25vw;
+}
+
+.projects-heading h1 {
+  font-size: clamp(4rem, 7vw, 20rem);
+  font-weight: 800;
+  margin-right: min(15rem, 20vw);
+}
+
 /* @media only screen and (max-width: 480px) {
 } */

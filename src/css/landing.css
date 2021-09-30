@@ -22,6 +22,7 @@
 }
 .text-row {
   width: min(70%, 2000px);
+  /* width: min(80%, 2000px); */
   height: 30rem;
   height: min(20vw, 1200px);
 
@@ -31,12 +32,16 @@
 }
 
 .landing-text {
+  /* font-size: clamp(4rem, 18.9vw, 40rem);
+  font-weight: 800; */
   font-size: clamp(4rem, 9vw, 20rem);
   font-weight: 600;
 }
 .landing-text-two {
   font-size: 12rem;
   font-weight: 550;
+  /* font-weight: 800;
+  /* font-size: clamp(4rem, 18.9vw, 40rem);  */
 }
 
 /* engineer */
@@ -85,6 +90,7 @@
 .arrow-function {
   width: 7%;
   font-size: clamp(4rem, 6.3vw, 20rem);
+  /* font-size: clamp(4rem, 8vw, 40rem); */
   display: flex;
   justify-content: center;
 }
