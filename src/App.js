@@ -22,7 +22,7 @@ function App() {
     <div className="App light-theme">
       <Grain>
         <Nav screenWidth={screenWidth} />
-        <LandingOne />
+        <LandingOne screenWidth={screenWidth} />
         <LandingTwo />
         <About />
       </Grain>

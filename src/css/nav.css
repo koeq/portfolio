@@ -46,7 +46,7 @@
   transition: 1s ease;
 }
 .nav-list-active {
-  background: #0f0e0e;
+  background: #090809;
   transition: 0.5s ease;
 }
 
@@ -57,20 +57,20 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background: #0f0e0e;
+  background: #090809;
   transition: 2s ease-in-out;
   transform: translateX(-300vw);
 }
 
 .slide-menu-active {
   transform: translateX(0);
-  transition: 0.8s ease;
+  transition: 0.8s ease-in-out;
 }
 
 .slide-menu-item {
-  font-size: var(--fs-100);
+  font-size: clamp(5rem, 10vw, 21rem);
   font-weight: 800;
-  transition: 1s ease;
+  transition: 1s ease-in-out;
   transform: translateX(-300vw);
 }
 .slide-menu-item-active {
@@ -80,27 +80,27 @@
 .slide-menu-item span {
   position: relative;
   display: block;
-  font-size: var(--fs-14);
+  font-size: clamp(1rem, 1vw, 3rem);
   font-weight: 100;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.3vw;
   transform: translateX(-300vw);
 }
 .slide-menu-item-sub-active {
   transform: translateX(0) !important;
 }
 .slide-menu-item-sub1 {
-  left: 19rem;
-  bottom: 0.8rem;
+  left: 21.5vw;
+  bottom: 1vw;
   transition: 1.5s ease-in-out;
 }
 .slide-menu-item-sub2 {
-  left: 23.5rem;
-  bottom: 0.8px;
+  left: 21.5vw;
+  bottom: 1vw;
   transition: 1.6s ease-in-out;
 }
 .slide-menu-item-sub3 {
-  left: 6rem;
-  bottom: 0.8px;
+  left: 9vw;
+  bottom: 1vw;
   transition: 1.7s ease-in-out;
 }
 

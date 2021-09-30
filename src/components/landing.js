@@ -7,18 +7,26 @@ import {
 } from "framer-motion";
 import { Parallax } from "./parallax";
 
-export function LandingOne() {
+export function LandingOne({ screenWidth }) {
   const contentListOne = ["F", "R", "O", "N", "T"];
   const contentListTwo = ["E", "·", "N", "·", "D"];
 
   // // progress of scroll 0-1
   const { scrollYProgress } = useViewportScroll();
+  console.log(screenWidth);
+  const xPosAnimOne = useTransform(
+    scrollYProgress,
+    [0, 0.03],
+    [0, -screenWidth * 1.5]
+  );
+  const xPosAnimTwo = useTransform(
+    scrollYProgress,
+    [0, 0.03],
+    [0, screenWidth * 1.5]
+  );
 
-  const xPosAnimOne = useTransform(scrollYProgress, [0, 0.03], [0, -2000]);
-  const xPosAnimTwo = useTransform(scrollYProgress, [0, 0.03], [0, 2000]);
-
-  const xOne = useSpring(xPosAnimOne, { stiffness: 700, damping: 90 });
-  const xTwo = useSpring(xPosAnimTwo, { stiffness: 700, damping: 90 });
+  const xOne = useSpring(xPosAnimOne, { stiffness: 900, damping: 90 });
+  const xTwo = useSpring(xPosAnimTwo, { stiffness: 900, damping: 90 });
 
   return (
     <div className="landing-container">
@@ -70,20 +78,6 @@ export function LandingTwo() {
 
   const animStart = 0.15;
   const delta = 0.01;
-
-  const revealTimestamps = [
-    animStart - delta * 3.5,
-    animStart - delta * 2.5,
-    animStart + delta * 20,
-    animStart + delta * 21.5
-  ];
-
-  // const opacityAnimation = useTransform(scrollYProgress, revealTimestamps, [
-  //   0,
-  //   1,
-  //   1,
-  //   0
-  // ]);
 
   // change values to change animation beginning/delay
 

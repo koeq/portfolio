@@ -1,0 +1,122 @@
+.about-container {
+  width: 100%;
+  height: 130vh;
+  margin-top: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.about-heading {
+  width: 100%;
+}
+
+.about-heading h1 {
+  font-size: clamp(4rem, 7vw, 20rem);
+  font-weight: 550;
+  margin-left: min(15rem, 20vw);
+}
+
+.about-content-path {
+  /* border: 1px solid green; */
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6vw;
+}
+
+.about-content {
+  width: min(55%, 1700px);
+  margin-left: min(15rem, 20vw);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.technology-i-use {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 1.3vw 0 0 10vw;
+}
+
+.flex-center-column p {
+  margin: 0 !important;
+  font-size: clamp(0.5rem, 1vw, 3rem);
+}
+
+.about-content span {
+  font-size: clamp(0.9rem, 1.6vw, 4rem);
+  font-weight: 600;
+}
+.about-content p {
+  font-size: clamp(0.7rem, 1vw, 3rem);
+
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  line-height: 1.45vw;
+  margin: 1.3vw 0 5vw 10vw;
+}
+
+.about-path {
+  display: flex;
+  flex-direction: column;
+
+  width: min(25%, 1700px);
+  margin-right: min(var(--nav-width), 5vw);
+  /* border: 1px solid red; */
+}
+
+.about-path span {
+  font-size: clamp(0.9rem, 1.6vw, 4rem);
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+}
+
+.about-path-text {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 1.3vw;
+}
+
+.about-path-text p {
+  font-size: clamp(0.7rem, 0.8vw, 1.9rem);
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  line-height: 1.45vw;
+}
+
+.about-border {
+  width: 3px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.15);
+  transform: scalex(0.7);
+  transform: translateX(0.2vw);
+  margin-right: 2.5vw;
+}
+
+.about-quote {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-quote-text {
+  width: 65%;
+  margin-top: 15vw;
+  display: flex;
+  align-items: flex-end;
+}
+.about-quote span {
+  font-size: clamp(4rem, 18vw, 100rem);
+  margin: 0 1.5vw -2.5vw 0;
+}
+.about-quote p {
+  font-size: clamp(2rem, 2.8vw, 15rem);
+  font-weight: 550;
+}
+.about-quote-text-grey {
+  display: inline;
+  color: #a09f9e;
+}

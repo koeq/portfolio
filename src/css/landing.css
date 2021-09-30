@@ -3,7 +3,7 @@
 /* frontend */
 .landing-container {
   width: 100vw;
-  height: 150vh;
+  height: 200vh;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -21,7 +21,7 @@
   flex-direction: column;
 }
 .text-row {
-  width: min(60%, 1700px);
+  width: min(70%, 2000px);
   height: 30rem;
   height: min(20vw, 1200px);
 
@@ -31,8 +31,8 @@
 }
 
 .landing-text {
-  font-size: clamp(4rem, 6.8vw, 20rem);
-  font-weight: 550;
+  font-size: clamp(4rem, 9vw, 20rem);
+  font-weight: 600;
 }
 .landing-text-two {
   font-size: 12rem;
