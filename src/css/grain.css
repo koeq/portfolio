@@ -9,7 +9,8 @@
 
 .grain-dark {
   color: #fff;
-  background: linear-gradient(#0c0c0c, #000);
+  /* background: linear-gradient(#0c0c0c, #000); */
+  background: #0c0c0c;
 }
 
 .grain-light {

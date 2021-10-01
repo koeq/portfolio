@@ -13,7 +13,7 @@ export function LandingOne({ screenWidth }) {
 
   // // progress of scroll 0-1
   const { scrollYProgress } = useViewportScroll();
-  console.log(screenWidth);
+
   const xPosAnimOne = useTransform(
     scrollYProgress,
     [0, 0.03],
