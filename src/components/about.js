@@ -9,7 +9,7 @@ export default function About() {
   return (
     <div className="about-container">
       <div className="about-heading">
-        <Parallax offset={10} className={"flex-center"}>
+        <Parallax offset={20} className={"flex-center"}>
           <h1>ABOUT</h1>
         </Parallax>
       </div>

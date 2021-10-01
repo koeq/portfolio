@@ -40,26 +40,12 @@ function Project({ side, frame = false, img, num, cardWidth, cardHeight }) {
     </div>
   );
 }
-// function Project({ img, num, cardWidth, cardHeight }) {
-//   return (
-//     <div className="project">
-//       <div className="projects-name">
-//         <span>{num}</span>
-//       </div>
-//       <Parallax offset={30}>
-//         <Card width={cardWidth} height={cardHeight}>
-//           <img src={img} alt={`${img} website`} />
-//         </Card>
-//       </Parallax>
-//     </div>
-//   );
-// }
 
 export default function Projects() {
   return (
     <div className="projects-container">
       <div className="projects-heading">
-        <Parallax offset={10} className={"flex-center"}>
+        <Parallax offset={20} className={"flex-center"}>
           <h1>PROJECTS</h1>
         </Parallax>
       </div>
@@ -90,7 +76,7 @@ export default function Projects() {
         img={wttc}
         num={"04"}
         cardWidth={"45vw"}
-        cardHeight={"40vw"}
+        cardHeight={"21.2vw"}
       />
     </div>
   );
