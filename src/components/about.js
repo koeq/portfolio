@@ -10,14 +10,14 @@ export default function About() {
     <div className="about-container">
       <div className="about-heading">
         <Parallax offset={20} className={"flex-center"}>
-          <h1>ABOUT</h1>
+          <h1 className={"heading-l"}>ABOUT</h1>
         </Parallax>
       </div>
 
       <div className="about-content-path">
         <div className="about-content">
           <Parallax offset={20}>
-            <span className="who-am-i">WHO AM I</span>
+            <span className="who-am-i heading-s">WHO AM I</span>
           </Parallax>
           <Parallax offset={30}>
             <p>
@@ -29,7 +29,7 @@ export default function About() {
             </p>
           </Parallax>
           <Parallax offset={20}>
-            <span>EDUCATION</span>
+            <span className="heading-s">EDUCATION</span>
           </Parallax>
           <Parallax offset={30}>
             <p>
@@ -39,7 +39,7 @@ export default function About() {
             </p>
           </Parallax>
           <Parallax offset={20}>
-            <span>TECHNOLOGY I USE</span>
+            <span className="heading-s">TECHNOLOGY I USE</span>
           </Parallax>
 
           <Parallax offset={30}>
@@ -69,7 +69,7 @@ export default function About() {
         </div>
 
         <div className="about-path">
-          <span>MY PATH</span>
+          <span className="heading-s">MY PATH</span>
 
           <div className="about-path-text">
             <div className="about-border"></div>
@@ -102,7 +102,7 @@ export default function About() {
           <span>„</span>
 
           <Parallax offset={20}>
-            <p>
+            <p className="heading-m">
               My affinity with software engineering roots in an{" "}
               <div className="about-quote-text-grey">
                 excitement for the hands-on building process,

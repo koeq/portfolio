@@ -13,10 +13,6 @@
   font-family: "Mulish", sans-serif;
 }
 
-/* html {
-  scroll-behavior: smooth;
-} */
-
 /* VARS VARS VARS */
 :root {
   font-size: 10px;
@@ -25,6 +21,7 @@
   --fs-150: 15rem;
   --fs-100: 10rem;
   --nav-width: 8rem;
+  --side-margin: min(15rem, 20vw);
   scrollbar-width: none;
 }
 
@@ -56,6 +53,34 @@
 
 .light-theme {
   color: #000;
+}
+
+/* landing */
+.heading-xl {
+  font-size: clamp(3rem, 14vw, 40rem);
+  font-weight: 800;
+  letter-spacing: 1.2vw;
+}
+
+/* about / projects  */
+.heading-l {
+  font-size: clamp(3rem, 9vw, 20rem);
+  font-weight: 800;
+  letter-spacing: 0.2vw;
+}
+
+/* quote / project names */
+.heading-m {
+  font-size: clamp(2rem, 2.8vw, 15rem);
+  font-weight: 600;
+  letter-spacing: 0.15vw;
+}
+
+/* sub headings */
+.heading-s {
+  font-size: clamp(0.9rem, 1.6vw, 4rem);
+  font-weight: 600;
+  letter-spacing: 0.13vw;
 }
 
 /* @media only screen and (max-width: 480px) {

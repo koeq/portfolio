@@ -31,20 +31,20 @@ export function LandingOne({ screenWidth }) {
   return (
     <div className="landing-container">
       <motion.div
-        className="flex-center frontend-container"
-        animate={{ opacity: 1, translateY: -30, scale: 0.9 }}
+        className="frontend-container"
+        animate={{ opacity: 1, translateY: -30, scale: 1 }}
         transition={{ duration: 1.5, delay: 0.5, ease: "easeInOut" }}
       >
         <motion.div style={{ x: xOne }} className="text-row">
           {contentListOne.map((content, index) => (
-            <span key={index} className="landing-text">
+            <span key={index} className="heading-xl">
               {content}
             </span>
           ))}
         </motion.div>
         <motion.div style={{ x: xTwo }} className="text-row">
           {contentListTwo.map((content, index) => (
-            <span key={index} className="landing-text">
+            <span key={index} className="heading-xl">
               {content}
             </span>
           ))}
@@ -195,18 +195,15 @@ export function LandingTwo() {
   // });
 
   return (
-    <Parallax offset={20}>
-      <motion.div
-        className="landing-container-two"
-        // style={{ opacity: opacityAnimation }}
-      >
+    <Parallax offset={30}>
+      <motion.div className="landing-container-two">
         {/* FIRST ROW */}
 
         <div className="flex-center engineer-container">
           <motion.div className="text-row">
             {contentListOne.map((content, index) => (
-              <span key={index} className="landing-text">
-                <Parallax offset={10}>{content}</Parallax>
+              <span key={index} className="heading-xl">
+                {content}
               </span>
             ))}
           </motion.div>
@@ -214,27 +211,25 @@ export function LandingTwo() {
           {/* SECOND ROW */}
           <div className="text-row">
             <motion.span className="landing-text-two arrow-function">
-              <Parallax offset={10}>{firstAnimation.current}</Parallax>
+              {firstAnimation.current}
             </motion.span>
 
             <motion.span className="landing-text-two arrow-function">
-              <Parallax offset={10}>{secondAnimation.current}</Parallax>
+              {secondAnimation.current}
             </motion.span>
 
             <motion.span className="landing-text-two arrow-function">
-              <Parallax offset={10}>{thirdAnimation.current}</Parallax>
+              {thirdAnimation.current}
             </motion.span>
 
             <motion.span className="landing-text-two arrow-function">
-              <Parallax offset={10}>{fourthAnimation.current}</Parallax>
+              {fourthAnimation.current}
             </motion.span>
 
-            <span className="landing-text-two">
-              <Parallax offset={10}>{aboutText}</Parallax>
-            </span>
+            <span className="landing-text-two">{aboutText}</span>
 
             <motion.span className="landing-text-two arrow-function">
-              <Parallax offset={10}>{fithAnimation.current}</Parallax>
+              {fithAnimation.current}
             </motion.span>
           </div>
         </div>

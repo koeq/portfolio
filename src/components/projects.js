@@ -1,6 +1,8 @@
 import React from "react";
 import { Parallax } from "./parallax";
 import studioMkPlay from "../ressources/images/studioMkPlay.png";
+import studioMkLab from "../ressources/images/studioMkLab.png";
+import studioMk from "../ressources/images/studioMk.png";
 import githubBattle from "../ressources/images/github-battle.png";
 import hackerNewsClone from "../ressources/images/hacker-news-clone.png";
 import wttc from "../ressources/images/wttc.png";
@@ -16,47 +18,12 @@ function Card(props) {
   );
 }
 
-function Project({
-  side,
-  name = "project",
-  frame = false,
-  img,
-  num,
-  cardWidth,
-  cardHeight
-}) {
+function Project({ img, cardWidth, cardHeight }) {
   return (
-    <div className={`project-${side}`}>
-      <div className={`projects-name-${side}`}>
-        {side === "left" ? (
-          <>
-            <span>{name}</span>
-            <span>{num}</span>
-          </>
-        ) : (
-          <>
-            <span>{num}</span>
-            <span>{name}</span>
-          </>
-        )}
-      </div>
-      <div className="project">
-        {frame ? (
-          <Parallax offset={30}>
-            <div className="project-frame">
-              <Card width={cardWidth} height={cardHeight}>
-                <img src={img} alt={`${img} website`} />
-              </Card>
-            </div>
-          </Parallax>
-        ) : (
-          <Parallax offset={30}>
-            <Card width={cardWidth} height={cardHeight}>
-              <img src={img} alt={`${img} website`} />
-            </Card>
-          </Parallax>
-        )}
-      </div>
+    <div className="project">
+      <Card width={cardWidth} height={cardHeight}>
+        <img src={img} alt={`${img} website`} />
+      </Card>
     </div>
   );
 }
@@ -66,18 +33,28 @@ export default function Projects() {
     <div className="projects-container">
       <div className="projects-heading">
         <Parallax offset={20} className={"flex-center"}>
-          <h1>PROJECTS</h1>
+          <h1 className={"heading-l"}>PROJECTS</h1>
         </Parallax>
       </div>
+      <div className="project-one">
+        <div className={`projects-name-left`}>
+          <span className="heading-m">01</span>
+          <span className="heading-m">STUDIO MK</span>
+        </div>
 
-      <Project
-        name="STUDIO MK"
-        side={"left"}
-        img={studioMkPlay}
-        num={"01"}
-        cardWidth={"36vw"}
-        cardHeight={"44vw"}
-      />
+        <div className="project-cards-container">
+          <Project img={studioMkLab} cardWidth={"28vw"} cardHeight={"41.6vw"} />
+
+          <div className="projects-one-column">
+            <Project
+              img={studioMkPlay}
+              cardWidth={"20vw"}
+              cardHeight={"24.4vw"}
+            />
+            <Project img={studioMk} cardWidth={"20vw"} cardHeight={"17vw"} />
+          </div>
+        </div>
+      </div>
       <Project
         name="GITHUB BATTLE"
         side={"right"}

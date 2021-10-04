@@ -5,17 +5,14 @@
   position: relative;
 
   /* box shadow for dark theme */
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.5), 0 15px 12px rgba(0, 0, 0, 0.42);
+  /* box-shadow: 0 19px 38px rgba(0, 0, 0, 0.5), 0 15px 12px rgba(0, 0, 0, 0.42); */
   /* box shadow for light theme */
-  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); */
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.14), 0 6px 6px rgba(0, 0, 0, 0.18); */
   transition: all 0.4s ease-in-out;
   cursor: pointer;
-  border-radius: 0.2vw;
+  /* border-radius: 0vw; */
 }
 
-.card-container:hover {
-  transform: scale(1.03);
-}
 .card-container h1 {
   color: black;
 }
@@ -24,10 +21,15 @@
   max-width: 100%;
 }
 
+.project {
+  /* z-index: 2; */
+}
+
 .projects-container {
   display: flex;
   flex-direction: column;
-  /* border: 1px solid red; */
+  margin-left: min(12rem, 20vw);
+  margin-right: min(12rem, 20vw);
 }
 
 .projects-heading {
@@ -36,35 +38,14 @@
   margin-top: 25vw;
 }
 
-.projects-heading h1 {
-  font-size: clamp(4rem, 9vw, 20rem);
-  font-weight: 800;
-  margin-right: min(15rem, 20vw);
-}
-.project {
-  z-index: 2;
-}
-
 .project-left {
-  /* border: 1px solid yellowgreen; */
-  margin: 0 min(15rem, 20vw);
-  margin-top: 10vw;
   display: flex;
   flex-direction: column;
 }
 .project-right {
-  /* border: 1px solid yellowgreen; */
-  margin: 0 min(15rem, 20vw);
-  margin-top: 10vw;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-}
-
-.project-frame {
-  width: 100%;
-
-  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .projects-name-left {
@@ -78,13 +59,27 @@
   justify-content: space-between;
   margin-bottom: 5vw;
 }
-.projects-name-left span {
-  font-size: clamp(0.9rem, 1.6vw, 4rem);
-  font-weight: 600;
-  letter-spacing: 0.2vw;
+
+.project-cards-container {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  /* background: rgba(255, 255, 255, 0.95); */
+  padding: 0.5vw;
 }
-.projects-name-right span {
-  font-size: clamp(0.9rem, 1.6vw, 4rem);
-  font-weight: 600;
-  letter-spacing: 0.2vw;
+
+.project-one {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12vw;
+}
+
+.projects-one-column {
+  display: flex;
+  flex-direction: column;
+}
+.projects-one-column:first-child {
+  margin-bottom: 1vw;
 }

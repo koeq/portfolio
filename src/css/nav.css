@@ -7,20 +7,18 @@
   width: 100%;
   height: 100vh;
   background: transparent;
-  z-index: 1;
+  z-index: 6;
 }
 
 .nav-border-dark {
   height: 100vh;
   border-right: 1px solid rgba(250, 250, 250, 0.1);
   transform: scalex(0.05);
-  z-index: 2;
 }
 .nav-border-light {
   height: 100%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.01);
   transform: scalex(0.05);
-  z-index: 2;
 }
 
 .scroll-progression-bar {
@@ -60,6 +58,7 @@
   background: #090809;
   transition: 2s ease-in-out;
   transform: translateX(-300vw);
+  z-index: 99;
 }
 
 .slide-menu-active {
