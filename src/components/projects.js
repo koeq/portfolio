@@ -16,27 +16,47 @@ function Card(props) {
   );
 }
 
-function Project({ side, frame = false, img, num, cardWidth, cardHeight }) {
+function Project({
+  side,
+  name = "project",
+  frame = false,
+  img,
+  num,
+  cardWidth,
+  cardHeight
+}) {
   return (
     <div className={`project-${side}`}>
       <div className={`projects-name-${side}`}>
-        <span>{num}</span>
+        {side === "left" ? (
+          <>
+            <span>{name}</span>
+            <span>{num}</span>
+          </>
+        ) : (
+          <>
+            <span>{num}</span>
+            <span>{name}</span>
+          </>
+        )}
       </div>
-      {frame ? (
-        <Parallax offset={30}>
-          <div className="project-frame">
+      <div className="project">
+        {frame ? (
+          <Parallax offset={30}>
+            <div className="project-frame">
+              <Card width={cardWidth} height={cardHeight}>
+                <img src={img} alt={`${img} website`} />
+              </Card>
+            </div>
+          </Parallax>
+        ) : (
+          <Parallax offset={30}>
             <Card width={cardWidth} height={cardHeight}>
               <img src={img} alt={`${img} website`} />
             </Card>
-          </div>
-        </Parallax>
-      ) : (
-        <Parallax offset={30}>
-          <Card width={cardWidth} height={cardHeight}>
-            <img src={img} alt={`${img} website`} />
-          </Card>
-        </Parallax>
-      )}
+          </Parallax>
+        )}
+      </div>
     </div>
   );
 }
@@ -51,6 +71,7 @@ export default function Projects() {
       </div>
 
       <Project
+        name="STUDIO MK"
         side={"left"}
         img={studioMkPlay}
         num={"01"}
@@ -58,6 +79,7 @@ export default function Projects() {
         cardHeight={"44vw"}
       />
       <Project
+        name="GITHUB BATTLE"
         side={"right"}
         img={githubBattle}
         num={"02"}
@@ -65,6 +87,7 @@ export default function Projects() {
         cardHeight={"38.5vw"}
       />
       <Project
+        name="HACKER NEWS CLONE"
         side={"left"}
         img={hackerNewsClone}
         num={"03"}
@@ -72,6 +95,7 @@ export default function Projects() {
         cardHeight={"39.4vw"}
       />
       <Project
+        name="WTTC - WEB TRACKING TRAFFIC COLLECTOR"
         side={"right"}
         img={wttc}
         num={"04"}
