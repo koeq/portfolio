@@ -21,7 +21,7 @@ export default function About() {
           </Parallax>
           <Parallax offset={30}>
             <p>
-              I'm Benedikt König a 27 year old Developer and sport fanatic from
+              I'm Benedikt König a 27 year old developer and sport fanatic from
               Hamburg, Germany. When I'm not sharpening my coding skills I love
               to move. Mountain biking, strength and conditioning, running or
               surfing when on vacation. You name it! It's all about the balance
@@ -62,7 +62,8 @@ export default function About() {
 
               <div className={"flex-center-column"}>
                 <FaReact size={"3vw"} />
-                <p style={{ marginTop: "1vw" }}>React (incl. Hooks)</p>
+                <p style={{ marginTop: "0.3vw" }}>React</p>
+                <p>(incl. Hooks)</p>
               </div>
             </div>
           </Parallax>
