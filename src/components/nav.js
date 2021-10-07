@@ -70,59 +70,61 @@ export default function Nav({ screenWidth }) {
       ></motion.div>
 
       <div className={isActive ? "slide-menu-active slide-menu" : "slide-menu"}>
-        <div
-          className={
-            isActive
-              ? "slide-menu-item slide-menu-item-active"
-              : "slide-menu-item"
-          }
-        >
-          About
-          <span
+        <div className="slide-menu-item-container">
+          <div
             className={
               isActive
-                ? "slide-menu-item-sub1 slide-menu-item-sub-active"
-                : "slide-menu-item-sub1"
+                ? "slide-menu-item slide-menu-item-active heading-nav"
+                : "slide-menu-item"
             }
           >
-            Benedikt König
-          </span>
-        </div>
-        <div
-          className={
-            isActive
-              ? "slide-menu-item slide-menu-item-active"
-              : "slide-menu-item"
-          }
-        >
-          Projects
-          <span
+            About
+            <span
+              className={
+                isActive
+                  ? "slide-menu-item-sub1 slide-menu-item-sub-active"
+                  : "slide-menu-item-sub1"
+              }
+            >
+              Benedikt König
+            </span>
+          </div>
+          <div
             className={
               isActive
-                ? "slide-menu-item-sub2 slide-menu-item-sub-active"
-                : "slide-menu-item-sub2"
+                ? "slide-menu-item slide-menu-item-active heading-nav"
+                : "slide-menu-item"
             }
           >
-            Have a look
-          </span>
-        </div>
-        <div
-          className={
-            isActive
-              ? "slide-menu-item slide-menu-item-active"
-              : "slide-menu-item"
-          }
-        >
-          Contact
-          <span
+            Projects
+            <span
+              className={
+                isActive
+                  ? "slide-menu-item-sub2 slide-menu-item-sub-active"
+                  : "slide-menu-item-sub2"
+              }
+            >
+              Have a look
+            </span>
+          </div>
+          <div
             className={
               isActive
-                ? "slide-menu-item-sub3 slide-menu-item-sub-active"
-                : "slide-menu-item-sub3"
+                ? "slide-menu-item slide-menu-item-active heading-nav"
+                : "slide-menu-item"
             }
           >
-            Send me a message
-          </span>
+            Contact
+            <span
+              className={
+                isActive
+                  ? "slide-menu-item-sub3 slide-menu-item-sub-active"
+                  : "slide-menu-item-sub3"
+              }
+            >
+              Send me a message
+            </span>
+          </div>
         </div>
       </div>
     </div>

@@ -4,6 +4,7 @@
 @import url("./css/landing.css");
 @import url("./css/about.css");
 @import url("./css/projects.css");
+@import url("./css/contact.css");
 
 * {
   padding: 0;
@@ -55,6 +56,11 @@
 }
 
 /* landing */
+.heading-nav {
+  font-size: clamp(3rem, 13vw, 22rem);
+  font-weight: 700;
+  letter-spacing: 1.2vw;
+}
 .heading-xxl {
   font-size: clamp(3rem, 23vw, 60rem);
   font-weight: 600;

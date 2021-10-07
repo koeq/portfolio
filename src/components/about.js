@@ -82,13 +82,14 @@ export default function About() {
               up. But reality hits you hard when you realize that there is one
               interesting course for ten boring ones like accounting or
               corporate reporting.
-              <span> So what now?</span> A ray of hope! Business Informatics. Not
-              all courses are boring afterall. It turnes out you can even put
-              your main emphasis on that. Nice! My masters programm (Management
-              Information Systems) got even more technical. As luck would have
-              it my working student job required my colleague and me to develope
-              a small web application. Since we did'nt have to much programming
-              experience besides university a lot of learning had to take place.
+              <span> So what now?</span> A ray of hope! Business Informatics.
+              Not all courses are boring afterall. It turnes out you can even
+              put your main emphasis on that. Nice! My masters programm
+              (Management Information Systems) got even more technical. As luck
+              would have it my working student job required my colleague and me
+              to develope a small web application. Since we did'nt have to much
+              programming experience besides university a lot of learning had to
+              take place.
               <span> Boom! I was instantly hooked.</span> The feedback from
               learning new technology and the direct application of that
               knowledge was fascinating and rewarding at the same time. And just

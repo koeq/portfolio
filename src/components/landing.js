@@ -195,13 +195,13 @@ export function LandingTwo() {
   ]);
 
   // DEBUGGING ANIMATION
-  // const handleScroll = () => {
-  //   console.log(scrollYProgress.current);
-  // };
+  const handleScroll = () => {
+    console.log(scrollYProgress.current);
+  };
 
-  // useEffect(() => {
-  //   window.addEventListener("scroll", handleScroll);
-  // });
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+  });
 
   return (
     <Parallax offset={30}>

@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
 /* LANDING LANDING LANDING */
 /* FRONTEND SECTION */
 .landing-container {
@@ -26,14 +25,8 @@
 }
 .text-row {
   width: min(100%, 2000px);
-  height: 18vw;
+  height: 20vw;
   display: flex;
-  align-items: center;
-}
-
-.text-row span {
-  display: flex;
-  justify-content: center;
   align-items: center;
 }
 
