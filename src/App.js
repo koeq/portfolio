@@ -28,7 +28,7 @@ function App() {
         <LandingTwo />
         <About />
         {/* <Projects /> */}
-        <Contact />
+        <Contact screenWidth={screenWidth} />
       </Grain>
     </div>
   );
