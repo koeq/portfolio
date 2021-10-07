@@ -1,8 +1,8 @@
 import React from "react";
 import { Parallax } from "./parallax";
-import studioMkPlay from "../ressources/images/studioMkPlay.png";
-import studioMkLab from "../ressources/images/studioMkLab.png";
-import studioMk from "../ressources/images/studioMk.png";
+import studioMkPlay from "../ressources/images/studioMK/studioMkPlay.png";
+import studioMkLab from "../ressources/images/studioMK/studioMkLab.png";
+import studioMk from "../ressources/images/studioMK/studioMk.png";
 import githubBattle from "../ressources/images/github-battle.png";
 import hackerNewsClone from "../ressources/images/hacker-news-clone.png";
 import wttc from "../ressources/images/wttc.png";

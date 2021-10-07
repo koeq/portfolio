@@ -37,17 +37,26 @@ export function LandingOne({ screenWidth }) {
       >
         <motion.div style={{ x: xOne }} className="text-row">
           {contentListOne.map((content, index) => (
-            <span key={index} className="heading-xl">
+            <span key={index} className="heading-xxl ">
               {content}
             </span>
           ))}
         </motion.div>
         <motion.div style={{ x: xTwo }} className="text-row">
-          {contentListTwo.map((content, index) => (
-            <span key={index} className="heading-xl">
+          {/* {contentListTwo.map((content, index) => (
+            <span key={index} className="heading-xxl">
               {content}
             </span>
-          ))}
+          ))} */}
+          <span className="heading-xxl">E</span>
+          <span className="heading-xxl flex-center" style={{ width: "9.1vw" }}>
+            ·
+          </span>
+          <span className="heading-xxl">N</span>
+          <span className="heading-xxl flex-center" style={{ width: "9.1vw" }}>
+            ·
+          </span>
+          <span className="heading-xxl">D</span>
         </motion.div>
       </motion.div>
     </div>
@@ -228,7 +237,10 @@ export function LandingTwo() {
 
             <span className="landing-text-two">{aboutText}</span>
 
-            <motion.span className="landing-text-two arrow-function">
+            <motion.span
+              className="landing-text-two arrow-function"
+              style={{ width: "9vw" }}
+            >
               {fithAnimation.current}
             </motion.span>
           </div>

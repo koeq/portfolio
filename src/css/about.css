@@ -38,10 +38,7 @@
   margin: 2vw 0 0 10vw;
 }
 
-.about-content span {
-  font-size: clamp(0.9rem, 1.6vw, 4rem);
-  font-weight: 600;
-}
+
 .about-content p {
   font-size: clamp(0.7rem, 1vw, 3rem);
 
@@ -62,12 +59,6 @@
   width: min(25%, 1700px);
   margin-right: min(var(--nav-width), 5vw);
   /* border: 1px solid red; */
-}
-
-.about-path span {
-  font-size: clamp(0.9rem, 1.6vw, 4rem);
-  font-weight: 600;
-  letter-spacing: 0.2rem;
 }
 
 .about-path-text {
@@ -104,10 +95,6 @@
   margin-top: 20vw;
   display: flex;
   align-items: flex-end;
-}
-.about-quote span {
-  font-size: clamp(4rem, 18vw, 100rem);
-  margin: 0 1.5vw -2.5vw 0;
 }
 
 .about-quote-text-grey {
