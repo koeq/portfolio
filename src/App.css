@@ -59,7 +59,7 @@
 /* landing */
 .heading-nav {
   font-size: clamp(3rem, 13vw, 22rem);
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 1.2vw;
 }
 .heading-xxl {

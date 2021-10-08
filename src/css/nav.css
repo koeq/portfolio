@@ -12,7 +12,7 @@
 }
 
 .nav-element {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .nav-border-dark {
@@ -80,7 +80,7 @@
 
 .slide-menu-item {
   font-size: clamp(5rem, 10vw, 21rem);
-  font-weight: 800;
+  font-weight: 500;
   transition: 1s ease-in-out;
   transform: translateX(-300vw);
 }

@@ -3,10 +3,16 @@
 .start-container {
   width: calc(100% - 7.85rem);
   margin-left: 7.85rem;
+  height: 1150vh;
+  margin-bottom: 100vh;
 }
 
 .start-slider-container {
   height: 100vh;
+  position: relative;
+  position: sticky;
+  top: 0rem;
+  margin-top: 0rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,7 +21,7 @@
 .slider-wrapper {
   max-width: 100%;
   overflow: hidden;
-  height: 33vh;
+  height: 35vh;
 }
 
 .slider-marquee {
@@ -24,9 +30,7 @@
   display: inline-block;
   height: 100%;
 }
-.slider-marquee-one {
-  /* left: -1000px; */
-}
+
 .slider-marquee-two p {
   display: inline;
   margin: 0 7vw;
@@ -34,7 +38,6 @@
 
 .slider-marquee p {
   color: #fff;
-  /* display: inline-block; */
   font-weight: 600;
   font-size: clamp(1.5rem, 35vh, 40rem);
   letter-spacing: 0.5vw;
@@ -42,19 +45,29 @@
   height: 100%;
   display: flex;
   align-items: center;
+  /* display: inline-block; */
 }
 
-.arrow-function-container {
+.arrow-func-container {
   height: 100%;
   display: flex;
   justify-content: center;
 }
-.arrow-function-container span {
+.arrow-func-container div {
   color: #fff;
-  font-weight: 100;
+  font-weight: 500;
   font-size: clamp(1.5rem, 8vw, 20rem);
   letter-spacing: 2vw;
   height: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+.name {
+  position: absolute;
+}
+.arrow-func span {
+  width: 7vw;
+  display: flex;
+  justify-content: center;
 }
