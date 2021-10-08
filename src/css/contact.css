@@ -1,0 +1,62 @@
+/* CONTACT CONTACT CONTACT */
+
+.contact-container {
+  position: relative;
+  margin-top: 50vh;
+  margin-left: 7.85rem;
+  width: calc(100% - 7.85rem);
+  height: 100vh;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.wrapper {
+  max-width: 100%;
+  overflow: hidden;
+  background: #fff;
+  height: 30vh;
+  margin: 0.5vh 0;
+}
+
+.marquee {
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  height: 100%;
+}
+
+.social-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.social-container > * {
+  font-size: clamp(1rem, 20vh, 40rem);
+  margin: 1vw 4vw;
+  display: inline-block;
+}
+
+.marqueeTwo {
+  left: -180%;
+}
+
+.marquee p {
+  color: #000;
+  /* display: inline-block; */
+  font-weight: 700;
+  font-size: clamp(1.5rem, 30vh, 30rem);
+  letter-spacing: 0.5vw;
+  margin: 0 2vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.marquee div {
+  color: #000;
+  display: inline-block;
+  margin: 0 2vw;
+}

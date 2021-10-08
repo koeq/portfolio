@@ -2,6 +2,7 @@ import React, { useState, useLayoutEffect } from "react";
 import "./App.css";
 import Grain from "./components/grain";
 import Nav from "./components/nav";
+import Start from "./components/start";
 import { LandingOne, LandingTwo } from "./components/landing";
 import About from "./components/about";
 import Projects from "./components/projects";
@@ -24,11 +25,13 @@ function App() {
     <div className="App light-theme">
       <Grain>
         <Nav screenWidth={screenWidth} />
-        <LandingOne screenWidth={screenWidth} />
-        <LandingTwo />
+        <Start screenWidth={screenWidth} />
+        {/* <LandingOne screenWidth={screenWidth} /> */}
+        {/* <LandingTwo /> */}
+
         <About />
-        {/* <Projects /> */}
         <Contact screenWidth={screenWidth} />
+        {/* <Projects /> */}
       </Grain>
     </div>
   );

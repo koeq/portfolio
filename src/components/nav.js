@@ -78,7 +78,7 @@ export default function Nav({ screenWidth }) {
                 : "slide-menu-item"
             }
           >
-            ABOUT
+            about
             <span
               className={
                 isActive
@@ -96,7 +96,7 @@ export default function Nav({ screenWidth }) {
                 : "slide-menu-item"
             }
           >
-            PROJECTS
+            projects
             <span
               className={
                 isActive
@@ -114,7 +114,7 @@ export default function Nav({ screenWidth }) {
                 : "slide-menu-item"
             }
           >
-            CONTACT
+            contact
             <span
               className={
                 isActive
