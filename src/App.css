@@ -66,17 +66,17 @@
 .heading-nav {
   font-size: clamp(3rem, 13vw, 22rem);
   font-weight: 600;
-  letter-spacing: 1.2vw;
+  letter-spacing: 0.6vw;
 }
 .heading-xxl {
   font-size: clamp(3rem, 23vw, 60rem);
   font-weight: 600;
-  letter-spacing: 1.2vw;
+  letter-spacing: 1vw;
 }
 .heading-xl {
   font-size: clamp(2rem, 15vw, 40rem);
   font-weight: 600;
-  letter-spacing: 1.2vw;
+  letter-spacing: 1vw;
 }
 
 /* about / projects  */
