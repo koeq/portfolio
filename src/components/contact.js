@@ -34,7 +34,7 @@ export default function Contact({ screenWidth }) {
     <div className="contact-container">
       <div className="wrapper">
         <motion.div style={{ x: xOne }} className="marquee">
-          <p>
+          <p className="heading-slide-scroll">
             contact contact contact contact contact contact contact contact
             contact
           </p>
@@ -69,7 +69,7 @@ export default function Contact({ screenWidth }) {
 
       <div className="wrapper">
         <motion.div style={{ x: xThree }} className="marquee ">
-          <p>
+          <p className="heading-slide-scroll">
             contact contact contact contact contact contact contact contact
             contact
           </p>

@@ -57,6 +57,12 @@
 }
 
 /* landing */
+.heading-slide-scroll {
+  font-weight: 600;
+  font-size: clamp(1.5rem, 32vh, 40rem);
+  letter-spacing: 0.7vw;
+}
+
 .heading-nav {
   font-size: clamp(3rem, 13vw, 22rem);
   font-weight: 600;

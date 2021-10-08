@@ -175,10 +175,8 @@ export default function Start({ screenWidth }) {
             style={{ x: xOne }}
             className="slider-marquee slider-marquee-one"
           >
-            <p>front end front end front end front end front end front end</p>
-            <p>
-              front end front end front end front end front end front end front
-              end front end front end front end front end
+            <p className="heading-slide-scroll">
+              front end front end front end front end front end front end
             </p>
           </motion.div>
         </div>
@@ -208,7 +206,7 @@ export default function Start({ screenWidth }) {
 
         <div className="slider-wrapper">
           <motion.div style={{ x: xTwo }} className="slider-marquee ">
-            <p>
+            <p className="heading-slide-scroll">
               engineer engineer engineer engineer engineer engineer engineer
               engineer engineer engineer engineer engineer
             </p>
