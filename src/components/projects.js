@@ -18,12 +18,15 @@ function Card(props) {
   );
 }
 
-function Project({ img, cardWidth, cardHeight }) {
+function Project({ children, side, num, projectName }) {
   return (
     <div className="project">
-      <Card width={cardWidth} height={cardHeight}>
-        <img src={img} alt={`${img} website`} />
-      </Card>
+      <div className={`project-name-${side}`}>
+        <span className="heading-m">{num}</span>
+        <span className="heading-m">{projectName}</span>
+      </div>
+
+      <div className="project-content">{children}</div>
     </div>
   );
 }
@@ -32,53 +35,73 @@ export default function Projects() {
   return (
     <div className="projects-container">
       <div className="projects-heading">
-        <Parallax offset={20} className={"flex-center"}>
+        <Parallax offset={20}>
           <h1 className={"heading-l"}>PROJECTS</h1>
         </Parallax>
       </div>
-      <div className="project-one">
-        <div className={`projects-name-left`}>
-          <span className="heading-m">01</span>
-          <span className="heading-m">STUDIO MK</span>
-        </div>
-
-        <div className="project-cards-container">
-          <Project img={studioMkLab} cardWidth={"28vw"} cardHeight={"41.6vw"} />
-
-          <div className="projects-one-column">
-            <Project
-              img={studioMkPlay}
-              cardWidth={"20vw"}
-              cardHeight={"24.4vw"}
-            />
-            <Project img={studioMk} cardWidth={"20vw"} cardHeight={"17vw"} />
+      {/* 01 */}
+      <Project side={"right"} num={"01"} projectName={"STUDIO MK"}>
+        <div className="project-cards-container"></div>
+        <div className="project-text-container">
+          <div className="project-text">
+            <h3 className="heading-s">THE PROJECT</h3>
+            <p className="text project-description">
+              {" "}
+              STUDIO MK is a creative design studio owned by Miriam König
+              located Regensburg, Germany. To present her work as well as
+              additional creative endeavors I got to build the new website for
+              STUDIO MK.{" "}
+            </p>
+            <h3 className="heading-s">THE TECHNOLOGY</h3>
           </div>
         </div>
-      </div>
+      </Project>
+      {/* 02 */}
+      <Project side={"left"} num={"02"} projectName={"GITHUB BATTLE"}>
+        <div className="project-text-container">
+          <h3 className="heading-s">THE PROJECT</h3>
+          <p className="text project-description">
+            {" "}
+            STUDIO MK is a creative design studio owned by Miriam König located
+            Regensburg, Germany. To present her work as well as additional
+            creative endeavors I got to build the new website for STUDIO MK.{" "}
+          </p>
+          <h3 className="heading-s">THE TECHNOLOGY</h3>
+        </div>
+        <div className="project-cards-container"></div>
+      </Project>
+      {/* 03 */}
+      <Project side={"right"} num={"03"} projectName={"HACKER NEWS CLONE"}>
+        <div className="project-cards-container"></div>
+        <div className="project-text-container">
+          <h3 className="heading-s">THE PROJECT</h3>
+          <p className="text project-description">
+            {" "}
+            STUDIO MK is a creative design studio owned by Miriam König located
+            Regensburg, Germany. To present her work as well as additional
+            creative endeavors I got to build the new website for STUDIO MK.{" "}
+          </p>
+          <h3 className="heading-s">THE TECHNOLOGY</h3>
+        </div>
+      </Project>
+      {/* 04 */}
       <Project
-        name="GITHUB BATTLE"
-        side={"right"}
-        img={githubBattle}
-        num={"02"}
-        cardWidth={"40vw"}
-        cardHeight={"38.5vw"}
-      />
-      <Project
-        name="HACKER NEWS CLONE"
         side={"left"}
-        img={hackerNewsClone}
-        num={"03"}
-        cardWidth={"40vw"}
-        cardHeight={"39.4vw"}
-      />
-      <Project
-        name="WTTC - WEB TRACKING TRAFFIC COLLECTOR"
-        side={"right"}
-        img={wttc}
         num={"04"}
-        cardWidth={"45vw"}
-        cardHeight={"21.2vw"}
-      />
+        projectName={"WTTC - WEB TRACKING TRAFFIC COLLECTOR "}
+      >
+        <div className="project-text-container">
+          <h3 className="heading-s">THE PROJECT</h3>
+          <p className="text project-description">
+            {" "}
+            STUDIO MK is a creative design studio owned by Miriam König located
+            Regensburg, Germany. To present her work as well as additional
+            creative endeavors I got to build the new website for STUDIO MK.{" "}
+          </p>
+          <h3 className="heading-s">THE TECHNOLOGY</h3>
+        </div>
+        <div className="project-cards-container"></div>
+      </Project>
     </div>
   );
 }
