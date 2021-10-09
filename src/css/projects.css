@@ -81,3 +81,9 @@
 .project-description {
   margin: 3vw 0 6vw 10vw;
 }
+
+.technology-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 3vw 0 6vw 10vw;
+}

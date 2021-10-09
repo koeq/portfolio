@@ -1,11 +1,6 @@
 import React from "react";
+import Technology from "./technology";
 import { Parallax } from "./parallax";
-import studioMkPlay from "../ressources/images/studioMK/studioMkPlay.png";
-import studioMkLab from "../ressources/images/studioMK/studioMkLab.png";
-import studioMk from "../ressources/images/studioMK/studioMk.png";
-import githubBattle from "../ressources/images/github-battle.png";
-import hackerNewsClone from "../ressources/images/hacker-news-clone.png";
-import wttc from "../ressources/images/wttc.png";
 
 function Card(props) {
   return (
@@ -53,6 +48,10 @@ export default function Projects() {
               STUDIO MK.{" "}
             </p>
             <h3 className="heading-s">THE TECHNOLOGY</h3>
+
+            <div className="technology-container">
+              <Technology react={false} />
+            </div>
           </div>
         </div>
       </Project>
@@ -61,12 +60,16 @@ export default function Projects() {
         <div className="project-text-container">
           <h3 className="heading-s">THE PROJECT</h3>
           <p className="text project-description">
-            {" "}
-            STUDIO MK is a creative design studio owned by Miriam König located
-            Regensburg, Germany. To present her work as well as additional
-            creative endeavors I got to build the new website for STUDIO MK.{" "}
+            GITHUB BATTLE is a website that let’s you battle your friends via
+            your Github account. Put in your Github name and battle!
+            Additionally the website gives you an overview over the most popular
+            Github repositories. To achieve the functionality GITHUB BATTLE
+            utilizes the Github Users API plus a lot of AJAX requests.
           </p>
           <h3 className="heading-s">THE TECHNOLOGY</h3>
+          <div className="technology-container">
+            <Technology react={true} />
+          </div>
         </div>
         <div className="project-cards-container"></div>
       </Project>
@@ -76,12 +79,15 @@ export default function Projects() {
         <div className="project-text-container">
           <h3 className="heading-s">THE PROJECT</h3>
           <p className="text project-description">
-            {" "}
-            STUDIO MK is a creative design studio owned by Miriam König located
-            Regensburg, Germany. To present her work as well as additional
-            creative endeavors I got to build the new website for STUDIO MK.{" "}
+            The name stands for it self! A simple project that tried to
+            replicate the basic functionality of the news page Hacker News. The
+            Project utilizes the Hacker News API. That means again lots and lots
+            of AJAX requests.
           </p>
           <h3 className="heading-s">THE TECHNOLOGY</h3>
+          <div className="technology-container">
+            <Technology react={true} />
+          </div>
         </div>
       </Project>
       {/* 04 */}
@@ -93,10 +99,27 @@ export default function Projects() {
         <div className="project-text-container">
           <h3 className="heading-s">THE PROJECT</h3>
           <p className="text project-description">
-            {" "}
-            STUDIO MK is a creative design studio owned by Miriam König located
-            Regensburg, Germany. To present her work as well as additional
-            creative endeavors I got to build the new website for STUDIO MK.{" "}
+            WTTC is a software project that was build in the context of my
+            master thesis. To analyze the characteristics of web tracker on the
+            network layer, which was the main goal of the thesis, there was a
+            need for a dataset that contained web traffic with labeled web
+            tracker packets. To achieve this I built three components that make
+            up WTTC:
+            <br />
+            <br />
+            1. a web crawler that visits the specified websites and extracts a
+            protocol of filter rules that where applied during the visits.
+            Therefore the crawler uses Selenium WebDriver, the uBlock browser
+            extension as well as the filterlist EasyPrivacy.
+            <br />
+            <br />
+            2. a web traffic collector that uses Tcpdump to capture the traffic
+            of the specified websites. Docker containers are used to filter out
+            any background noise.
+            <br />
+            <br />
+            3. a algorithm that labels the web tracker of the collected dataset
+            based on the protocol of filter rules extracted by the web crawler.
           </p>
           <h3 className="heading-s">THE TECHNOLOGY</h3>
         </div>
