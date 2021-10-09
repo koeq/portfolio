@@ -3,7 +3,6 @@
 .grain-container {
   /* not necessary when grain is wrapping the app */
   /* position: absolute; */
-  height: 14000px;
   width: 100%;
 }
 

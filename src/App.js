@@ -30,8 +30,8 @@ function App() {
         {/* <LandingTwo /> */}
 
         <About />
+        <Projects />
         <Contact screenWidth={screenWidth} />
-        {/* <Projects /> */}
       </Grain>
     </div>
   );
