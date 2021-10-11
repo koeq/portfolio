@@ -59,8 +59,8 @@
 /* landing */
 .heading-slide-scroll {
   font-weight: 600;
-  font-size: clamp(1.5rem, 32vh, 40rem);
-  letter-spacing: 0.7vw;
+  font-size: clamp(1.5rem, 22.2vh, 40rem);
+  letter-spacing: 0.6vw;
 }
 
 .heading-nav {
@@ -90,7 +90,7 @@
 .heading-m {
   font-size: clamp(2rem, 3.5vw, 15rem);
   font-weight: 200;
-  letter-spacing: 0.1vw;
+  letter-spacing: 0.15vw;
   line-height: 4.35vw;
 }
 

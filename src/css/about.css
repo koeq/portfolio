@@ -72,8 +72,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-end;
-  margin-top: 20vw;
-  margin-top: 170px;
+  margin-top: 18vw;
   margin-left: 5vw;
   /* border: 1px solid red; */
 }
@@ -86,7 +85,7 @@
 
 .quotation-mark {
   position: relative;
-  top: 2vw;
+  top: 1.5vw;
   left: 3.5vw;
   line-height: 0vw;
 }

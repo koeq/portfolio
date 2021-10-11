@@ -5,6 +5,8 @@
   margin-left: 7.85rem;
   height: 1150vh;
   margin-bottom: 100vh;
+
+  /* border: 1px solid red; */
 }
 
 .start-slider-container {
@@ -15,13 +17,32 @@
   margin-top: 0rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+
+  /* border: 1px solid blue; */
 }
 
 .slider-wrapper {
   max-width: 100%;
   overflow: hidden;
-  height: 35vh;
+  height: 19vh;
+
+  /* border: 1px solid yellow; */
+}
+.slider-wrapper-short {
+  width: 85%;
+  margin-bottom: 38vh;
+}
+
+.slider-wrapper-name {
+  width: 85%;
+}
+
+.slider-marquee-long {
+  right: 2vh;
+}
+.slider-marquee-short {
+  right: 6vh;
 }
 
 .slider-marquee {
@@ -45,7 +66,7 @@
 .arrow-func-container {
   height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 }
 .arrow-func-container div {
   height: 100%;
@@ -55,16 +76,17 @@
 }
 .name {
   position: absolute;
-  font-weight: 600;
-  font-size: clamp(1.5rem, 7vw, 20rem);
-  letter-spacing: 2vw;
+  font-weight: 500;
+  font-size: clamp(1.5rem, 6.3vh, 20rem);
+  letter-spacing: 0.47vw;
 }
 .arrow-func span {
-  width: 7vw;
+  width: 7vh;
   display: flex;
-  justify-content: center;
-  font-weight: 600;
-  font-size: clamp(1.5rem, 10vw, 40rem);
-  margin: 0 1vw;
+  justify-content: flex-end;
+  font-weight: 500;
+  font-size: clamp(1.5rem, 8.5vh, 20rem);
+  letter-spacing: 0.47vw;
+  /* margin: 0 0.5vw; */
   /* letter-spacing: 3vw; */
 }

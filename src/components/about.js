@@ -81,7 +81,7 @@ export default function About() {
         </div>
       </div>
 
-      <Parallax offset={20}>
+      <Parallax offset={40}>
         <div className="about-quote">
           <div className="about-quote-text">
             <p className="heading-m">

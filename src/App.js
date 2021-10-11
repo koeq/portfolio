@@ -3,7 +3,6 @@ import "./App.css";
 import Grain from "./components/grain";
 import Nav from "./components/nav";
 import Start from "./components/start";
-import { LandingOne, LandingTwo } from "./components/landing";
 import About from "./components/about";
 import Projects from "./components/projects";
 import Contact from "./components/contact";

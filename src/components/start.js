@@ -18,7 +18,7 @@ export default function Start({ screenWidth }) {
   const xAnimTwo = useTransform(
     scrollYProgress,
     [0, 0.6],
-    [0, -screenWidth * 6]
+    [0, -screenWidth * 5]
   );
   const xOne = useSpring(xAnimOne, { stiffness: 600, damping: 120 });
   const xTwo = useSpring(xAnimTwo, { stiffness: 600, damping: 120 });
@@ -32,8 +32,8 @@ export default function Start({ screenWidth }) {
   const [fith, setFith] = useState(0);
   const [sixth, setSixth] = useState(0);
 
-  const animStart = 0.2;
-  const delta = 0.015;
+  const animStart = 0.15;
+  const delta = 0.014;
 
   // change values to change animation beginning/delay
 
@@ -173,15 +173,30 @@ export default function Start({ screenWidth }) {
         <div className="slider-wrapper">
           <motion.div
             style={{ x: xOne }}
-            className="slider-marquee slider-marquee-one"
+            className="slider-marquee slider-marquee-long"
           >
             <p className="heading-slide-scroll">
-              front end front end front end front end front end front end
+              FRONT END FRONT END FRONT END FRONT END FRONT END FRONT END FRONT
+              END FRONT END FRONT END FRONT END FRONT END FRONT END FRONT END
             </p>
           </motion.div>
         </div>
 
-        <div className="slider-wrapper">
+        <div className="slider-wrapper slider-wrapper-short">
+          <motion.div
+            style={{ x: xTwo }}
+            className="slider-marquee slider-marquee-short"
+          >
+            <p className="heading-slide-scroll">
+              R ENGINEER ENGINEER ENGINEER ENGINEER ENGINEER ENGINEER ENGINEER
+              ENGINEER ENGINEER ENGINEER ENGINEER ENGINEER ENGINEER ENGINEER
+              ENGINEER ENGINEER ENGINEER ENGINEER ENGINEER ENGINEER ENGINEER
+              ENGINEER ENGINEER ENGINEER ENGINEER ENGINEER ENGINEER ENGINEER
+            </p>
+          </motion.div>
+        </div>
+
+        <div className="slider-wrapper slider-wrapper-name">
           <div className="arrow-func-container">
             <div className="name">
               <motion.span style={{ opacity: fade }}>
@@ -195,22 +210,17 @@ export default function Start({ screenWidth }) {
 
               <motion.span>{thirdAnimation.current}</motion.span>
 
-              <motion.span>{fourthAnimation.current}</motion.span>
+              <motion.span style={{ right: "1.5vh" }}>
+                {fourthAnimation.current}
+              </motion.span>
 
-              <motion.span>{fithAnimation.current}</motion.span>
+              <motion.span style={{ left: "2.3vh" }}>
+                {fithAnimation.current}
+              </motion.span>
 
               <motion.span>{sixthAnimation.current}</motion.span>
             </div>
           </div>
-        </div>
-
-        <div className="slider-wrapper">
-          <motion.div style={{ x: xTwo }} className="slider-marquee ">
-            <p className="heading-slide-scroll">
-              engineer engineer engineer engineer engineer engineer engineer
-              engineer engineer engineer engineer engineer
-            </p>
-          </motion.div>
         </div>
       </div>
     </div>
