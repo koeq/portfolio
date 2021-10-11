@@ -81,9 +81,9 @@
 
 /* about / projects  */
 .heading-l {
-  font-size: clamp(3rem, 9vw, 20rem);
+  font-size: clamp(5rem, 6.65vw, 20rem);
   font-weight: 600;
-  letter-spacing: 0.2vw;
+  letter-spacing: 0.28vw;
 }
 
 /* quote / project names */
@@ -95,15 +95,16 @@
 
 /* sub headings */
 .heading-s {
-  font-size: clamp(1.3rem, 1.6vw, 4rem);
-  font-weight: 600;
-  letter-spacing: 0.13vw;
+  font-size: clamp(1.8rem, 1.55vw, 4rem);
+  font-weight: 500;
+  letter-spacing: 0.47vw;
 }
 
-.text {
-  font-size: clamp(1rem, 0.9vw, 10rem);
-  letter-spacing: 0.1vw;
+.running-text {
+  font-size: clamp(1.4rem, 1.41vw, 10rem);
+  letter-spacing: 0.03vw;
   font-weight: 300;
+  line-height: max(2rem, 2.2vw);
 }
 
 /* @media only screen and (max-width: 480px) {
