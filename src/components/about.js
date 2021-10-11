@@ -59,32 +59,31 @@ export default function About() {
               leave school to go to university you imagine studying business
               administration as learning how to build the next succesfull start
               up. But reality hits you hard when you realize that there is one
-              interesting course for ten boring ones like accounting or
-              corporate reporting. <br /> <br />
+              interesting course for ten boring ones. <br /> <br />
               So what now?
-              <br /> <br /> A ray of hope! Business Informatics. Not all courses
-              are boring afterall. It turnes out you can even put your main
-              emphasis on that. Nice! My masters programm (Management
-              Information Systems) got even more technical. As luck would have
-              it my working student job required my colleague and me to develope
-              a small web application. Since we did'nt have to much programming
-              experience besides university a lot of learning had to take place.
+              <br /> <br /> A spark of hope! Business Informatics. Seems like
+              not all courses are boring afterall. It turnes out you can even
+              put your main emphasis on that. Nice! Finally i chose to take a
+              more technical masters programm (Management Information Systems).
+              As luck would have it my working student job required my colleague
+              and me to develop a small web application. Since we did'nt have
+              too much programming experience a lot of learning had to take
+              place.
               <br />
               <br />
               Boom! I was instantly hooked. The feedback from learning new
               technology and the direct application of that knowledge was
-              fascinating and rewarding at the same time. And just like that i
-              was in for a ride deciding to become a software engineer.
+              fascinating and rewarding at the same time. This experience laid
+              the foundation for my desire of wanting to become a software
+              developer.
             </p>
           </div>
         </div>
       </div>
 
-      <div className="about-quote">
-        <div className="about-quote-text">
-          <span className="heading-xl">„</span>
-
-          <Parallax offset={20}>
+      <Parallax offset={20}>
+        <div className="about-quote">
+          <div className="about-quote-text">
             <p className="heading-m">
               My affinity with software engineering roots in an{" "}
               <span className="about-quote-text-grey">
@@ -96,9 +95,10 @@ export default function About() {
                 dedication towards continuous learning.
               </span>
             </p>
-          </Parallax>
+          </div>
+          <span className="heading-l quotation-mark">„</span>
         </div>
-      </div>
+      </Parallax>
     </div>
   );
 }

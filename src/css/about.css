@@ -68,19 +68,29 @@
 }
 
 .about-quote {
-  width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-top: 20vw;
+  margin-top: 170px;
+  margin-left: 5vw;
+  /* border: 1px solid red; */
 }
 .about-quote-text {
-  width: 65%;
-  margin-top: 20vw;
+  width: 65vw;
   display: flex;
   align-items: flex-end;
+  /* border: 1px solid blue; */
 }
 
+.quotation-mark {
+  position: relative;
+  top: 2vw;
+  left: 3.5vw;
+  line-height: 0vw;
+}
 .about-quote-text-grey {
   display: inline;
-  color: #a09f9e;
+  font-weight: 600;
 }
