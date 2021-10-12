@@ -17,8 +17,10 @@ function Project({ children, side, num, projectName }) {
   return (
     <div className="project">
       <div className={`project-name-${side}`}>
-        <span className="heading-m">{num}</span>
-        <span className="heading-m">{projectName}</span>
+        <span style={{ marginRight: "1.7vw" }} className="heading-m-thin">
+          {num}
+        </span>
+        <span className="heading-m-bold">{projectName}</span>
       </div>
 
       <div className="project-content">{children}</div>
@@ -35,7 +37,7 @@ export default function Projects() {
         </Parallax>
       </div>
       {/* 01 */}
-      <Project side={"right"} num={"01"} projectName={"STUDIO MK"}>
+      <Project side={"right"} num={"01"} projectName={"Studio MK"}>
         <div className="project-cards-container"></div>
         <div className="project-text-container">
           <div className="project-text">
