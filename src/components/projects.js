@@ -1,6 +1,7 @@
 import React from "react";
 import Technology from "./technology";
 import { Parallax } from "./parallax";
+import studioMkHome from "../ressources/videos/studioMK/studioMkHome.mp4";
 
 function Card(props) {
   return (
@@ -17,7 +18,7 @@ function Project({ children, side, num, projectName }) {
   return (
     <div className="project">
       <div className={`project-name-${side}`}>
-        <span style={{ marginRight: "1.7vw" }} className="heading-m-thin">
+        <span style={{ marginRight: "1.5vw" }} className="heading-m-thin">
           {num}
         </span>
         <span className="heading-m-bold">{projectName}</span>
@@ -38,8 +39,33 @@ export default function Projects() {
       </div>
       {/* 01 */}
       <Project side={"right"} num={"01"} projectName={"Studio MK"}>
-        <div className="project-cards-container"></div>
-        <div className="project-text-container">
+        <Parallax offset={50}>
+          <div className="project-card-container">
+            <div className="project-card-sidebar">
+              <span
+                style={{ letterSpacing: "0", lineHeight: "1.2vw" }}
+                className="heading-s flex-center"
+              >
+                œ
+              </span>
+
+              <div className="project-card-sidebar-horizontal">
+                <span className="heading-s">CHECK OUT LIVE</span>
+              </div>
+            </div>
+            <div className="project-card">
+              <video
+                width="90%"
+                autoPlay
+                loop
+                src={studioMkHome}
+                alt="studio MK website video"
+              ></video>
+            </div>
+          </div>
+        </Parallax>
+
+        {/* <div className="project-text-container">
           <div className="project-text">
             <h3 className="heading-s">THE PROJECT</h3>
             <p className="text project-description">
@@ -55,7 +81,7 @@ export default function Projects() {
               <Technology react={false} />
             </div>
           </div>
-        </div>
+        </div> */}
       </Project>
       {/* 02 */}
       <Project side={"left"} num={"02"} projectName={"GITHUB BATTLE"}>

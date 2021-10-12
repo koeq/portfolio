@@ -95,9 +95,15 @@
   letter-spacing: 0.15vw;
   line-height: 4.35vw;
 }
+.heading-m-regular {
+  font-size: clamp(2rem, 3.5vw, 15rem);
+  font-weight: 300;
+  letter-spacing: 0.15vw;
+  line-height: 4.35vw;
+}
 .heading-m-bold {
   font-size: clamp(2rem, 3.5vw, 15rem);
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.15vw;
   line-height: 4.35vw;
 }

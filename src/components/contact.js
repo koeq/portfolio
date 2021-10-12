@@ -14,8 +14,8 @@ export default function Contact() {
           <p className="heading-slide-scroll flex-center">MAIL</p>
         </div>
 
-        <div style={{ height: "20vh" }} class="wrapper">
-          <div class="marquee">
+        <div style={{ height: "20vh" }} className="wrapper">
+          <div className="marquee">
             <p
               style={{ marginRight: "5.5vh" }}
               className="heading-slide-scroll"

@@ -84,14 +84,14 @@ export default function About() {
       <Parallax offset={40}>
         <div className="about-quote">
           <div className="about-quote-text">
-            <p className="heading-m">
+            <p className="heading-m-regular">
               My affinity with software engineering roots in an{" "}
-              <span className="about-quote-text-grey">
+              <span className="heading-m-bold">
                 excitement for the hands-on building process,
               </span>{" "}
               the creative joy involved in the associated problem solving as
               well as a{" "}
-              <span className="about-quote-text-grey">
+              <span className="heading-m-bold">
                 dedication towards continuous learning.
               </span>
             </p>
