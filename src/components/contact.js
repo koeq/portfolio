@@ -1,79 +1,36 @@
 import React from "react";
-import { BsGithub, BsInstagram, BsLinkedin } from "react-icons/bs";
-import { MdEmail } from "react-icons/md";
 
-import {
-  motion,
-  useViewportScroll,
-  useTransform,
-  useSpring
-} from "framer-motion";
-
-export default function Contact({ screenWidth }) {
-  const { scrollYProgress } = useViewportScroll();
-  const xAnimOne = useTransform(
-    scrollYProgress,
-    [0.56, 0.8],
-    [0, -screenWidth * 3]
-  );
-  const xAnimTwo = useTransform(
-    scrollYProgress,
-    [0.58, 0.8],
-    [0, screenWidth * 2]
-  );
-  const xAnimThree = useTransform(
-    scrollYProgress,
-    [0.58, 0.8],
-    [0, -screenWidth * 5]
-  );
-  const xOne = useSpring(xAnimOne, { stiffness: 600, damping: 120 });
-  const xTwo = useSpring(xAnimTwo, { stiffness: 600, damping: 120 });
-  const xThree = useSpring(xAnimThree, { stiffness: 600, damping: 120 });
-
+export default function Contact() {
   return (
     <div className="contact-container">
-      <div className="wrapper">
-        <motion.div style={{ x: xOne }} className="marquee">
-          <p className="heading-slide-scroll">
-            contact contact contact contact contact contact contact contact
-            contact
-          </p>
-        </motion.div>
+      <div className="get-in-contact-container">
+        <span style={{ marginBottom: "10vh" }} className="heading-s-vh">
+          GET IN CONTACT
+        </span>
+        <span className="heading-s-vh">œ</span>
       </div>
+      <div className="contact-animation-container">
+        <div className="contact-animation-wrapper flex-center">
+          <p className="heading-slide-scroll flex-center">MAIL</p>
+        </div>
 
-      <div className="wrapper">
-        <motion.div className="marquee marqueeTwo" style={{ x: xTwo }}>
-          <div
-            className="social-container"
-            style={{ display: "flex", alignItems: "center" }}
-          >
-            <BsGithub />
-            <BsInstagram />
-            <BsLinkedin />
-            <MdEmail />
-            <BsGithub />
-            <BsInstagram />
-            <BsLinkedin />
-            <MdEmail />
-            <BsGithub />
-            <BsInstagram />
-            <BsLinkedin />
-            <MdEmail />
-            <BsGithub />
-            <BsInstagram />
-            <BsLinkedin />
-            <MdEmail />
+        <div style={{ height: "20vh" }} class="wrapper">
+          <div class="marquee">
+            <p
+              style={{ marginRight: "5.5vh" }}
+              className="heading-slide-scroll"
+            >
+              GITHUB INSTAGRAM LINKEDIN GITHUB INSTAGRAM LINKEDIN GITHUB
+              INSTAGRAM LINKEDIN GITHUB INSTAGRAM LINKEDIN GITHUB INSTAGRAM
+              LINKEDIN GITHUB INSTAGRAM LINKEDIN GITHUB INSTAGRAM LINKEDIN
+            </p>
+            <p className="heading-slide-scroll">
+              GITHUB INSTAGRAM LINKEDIN GITHUB INSTAGRAM LINKEDIN GITHUB
+              INSTAGRAM LINKEDIN GITHUB INSTAGRAM LINKEDIN GITHUB INSTAGRAM
+              LINKEDIN GITHUB INSTAGRAM LINKEDIN GITHUB INSTAGRAM LINKEDIN
+            </p>
           </div>
-        </motion.div>
-      </div>
-
-      <div className="wrapper">
-        <motion.div style={{ x: xThree }} className="marquee ">
-          <p className="heading-slide-scroll">
-            contact contact contact contact contact contact contact contact
-            contact
-          </p>
-        </motion.div>
+        </div>
       </div>
     </div>
   );

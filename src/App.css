@@ -100,6 +100,12 @@
   font-weight: 500;
   letter-spacing: 0.47vw;
 }
+/* sub headings */
+.heading-s-vh {
+  font-size: clamp(1.4rem, 2.9vh, 4rem);
+  font-weight: 500;
+  letter-spacing: 0.47vw;
+}
 
 .running-text {
   font-size: clamp(1.4rem, 1.41vw, 10rem);

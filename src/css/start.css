@@ -3,7 +3,7 @@
 .start-container {
   width: calc(100% - 7.85rem);
   margin-left: 7.85rem;
-  height: 1150vh;
+  height: 1500vh;
   margin-bottom: 100vh;
 
   /* border: 1px solid red; */
@@ -78,7 +78,7 @@
   position: absolute;
   font-weight: 500;
   font-size: clamp(1.5rem, 6.3vh, 20rem);
-  letter-spacing: 0.47vw;
+  letter-spacing: 1vh;
 }
 .arrow-func span {
   width: 7vh;
@@ -86,7 +86,5 @@
   justify-content: flex-end;
   font-weight: 500;
   font-size: clamp(1.5rem, 8.5vh, 20rem);
-  letter-spacing: 0.47vw;
-  /* margin: 0 0.5vw; */
-  /* letter-spacing: 3vw; */
+  letter-spacing: 1vh;
 }
