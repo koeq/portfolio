@@ -1,7 +1,8 @@
 import React from "react";
 import Technology from "./technology";
 import { Parallax } from "./parallax";
-import studioMkHome from "../ressources/videos/studioMK/studioMkHome.mp4";
+import studioMkHome from "../ressources/videos/studioMK/studioMkHome_compressed.mp4";
+import studioMkMobile from "../ressources/videos/studioMK/studioMk_mobile_compressed.mp4";
 
 function Card(props) {
   return (
@@ -39,7 +40,7 @@ export default function Projects() {
       </div>
       {/* 01 */}
       <Project side={"right"} num={"01"} projectName={"Studio MK"}>
-        <Parallax offset={50}>
+        <div className="project-container">
           <div className="project-card-container">
             <div className="project-card-sidebar">
               <span
@@ -59,11 +60,48 @@ export default function Projects() {
                 autoPlay
                 loop
                 src={studioMkHome}
-                alt="studio MK website video"
+                alt="studio MK website video desktop"
               ></video>
             </div>
           </div>
-        </Parallax>
+          <div className="project-mobile-container">
+            <div className="project-card-sidebar">
+              <span className="project-card-sidebar-horizontal heading-s">
+                ON GITHUB
+              </span>
+            </div>
+            <div
+              className="project-mobile-content"
+              style={{
+                display: "flex",
+                justifyContent: "space-between"
+              }}
+            >
+              <div className="project-mobile-text running-text">
+                <p>
+                  STUDIO MK is a creative design studio owned by Miriam König
+                  located Regensburg, Germany. To present her work as well as
+                  additional creative endeavors I got to build the new website
+                  for STUDIO MK.
+                </p>
+                <br />
+                <p style={{ marginBottom: "3.7vw" }}>
+                  No need to get fancy! HTML, CSS and Vanilla JavaScript are
+                  doing the job.
+                </p>
+                <Technology react={false} />
+              </div>
+
+              <video
+                autoPlay
+                loop
+                width="25%"
+                src={studioMkMobile}
+                alt="studio MK website video mobile"
+              ></video>
+            </div>
+          </div>
+        </div>
 
         {/* <div className="project-text-container">
           <div className="project-text">
