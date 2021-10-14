@@ -14,7 +14,7 @@ export default function Technology({ react = true }) {
             flexDirection: "column",
             justifyContent: "space-between"
           }}
-          style={{ marginRight: "7.5vw" }}
+          style={{ marginRight: "9.5vw" }}
         >
           <div className={"flex-center-column"} style={{ marginBottom: "4vw" }}>
             <FaHtml5 size={"max(22px,2vw)"} />

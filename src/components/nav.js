@@ -51,7 +51,11 @@ export default function Nav({ screenWidth }) {
       <ul className={isActive ? "nav-list nav-list-active" : "nav-list"}>
         {navElements.map((element, index) => {
           return (
-            <li key={index} className="nav-element">
+            <li
+              key={index}
+              className="nav-element heading-s"
+              style={{ textAlign: "center" }}
+            >
               {element}
             </li>
           );

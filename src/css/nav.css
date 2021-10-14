@@ -12,7 +12,9 @@
 }
 
 .nav-element {
-  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  border: 1px solid white;
 }
 
 .nav-border-dark {
