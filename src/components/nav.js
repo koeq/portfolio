@@ -53,8 +53,11 @@ export default function Nav({ screenWidth }) {
           return (
             <li
               key={index}
-              className="nav-element heading-s"
-              style={{ textAlign: "center" }}
+              className="nav-element"
+              style={{
+                fontSize: "clamp(1.8rem, 1.55vw, 3rem",
+                fontWeight: "500"
+              }}
             >
               {element}
             </li>

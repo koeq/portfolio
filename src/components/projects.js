@@ -254,7 +254,7 @@ export default function Projects() {
       <Project
         side={"left"}
         num={"04"}
-        projectName={"WTTC - Web Tr acking Traffic Collector"}
+        projectName={"WTTC - Web Tracking Traffic Collector"}
       >
         <div className="project-container">
           <div

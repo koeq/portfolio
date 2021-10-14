@@ -1,8 +1,8 @@
 /* START START START */
 
 .start-container {
-  width: calc(100% - 7.85rem);
-  margin-left: 7.85rem;
+  width: calc(100% - 7.88rem);
+  margin-left: 7.88rem;
   height: 1500vh;
   margin-bottom: 100vh;
 
@@ -78,10 +78,10 @@
   position: absolute;
   font-weight: 500;
   font-size: clamp(1.5rem, 6.3vh, 20rem);
-  letter-spacing: 1vh;
+  letter-spacing: 1.3vh;
 }
 .arrow-func span {
-  width: 7vh;
+  width: 7.5vh;
   display: flex;
   justify-content: flex-end;
   font-weight: 500;
