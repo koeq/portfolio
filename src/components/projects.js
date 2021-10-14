@@ -1,6 +1,6 @@
 import React from "react";
 import Technology from "./technology";
-import { Parallax } from "./parallax";
+import { ParallaxTwo } from "./parallax";
 import studioMkHome from "../ressources/videos/studioMK/studioMkHome_compressed.mp4";
 import studioMkMobile from "../ressources/videos/studioMK/studioMk_mobile_compressed.mp4";
 import GithubBattle from "../ressources/videos/github_battle/GithubBattle.mov";
@@ -13,26 +13,17 @@ import { FaTerminal } from "react-icons/fa";
 import { SiSelenium } from "react-icons/si";
 import { FaDocker } from "react-icons/fa";
 
-function Card(props) {
-  return (
-    <div
-      className="card-container"
-      style={{ width: props.width, height: props.height }}
-    >
-      {props.children}
-    </div>
-  );
-}
-
 function Project({ children, side, num, projectName }) {
   return (
     <div className="project">
-      <div className={`project-name-${side}`}>
-        <span style={{ marginRight: "1.5vw" }} className="heading-m-thin">
-          {num}
-        </span>
-        <span className="heading-m-bold">{projectName}</span>
-      </div>
+      <ParallaxTwo offset={80}>
+        <div className={`project-name-${side}`}>
+          <span style={{ marginRight: "1.5vw" }} className="heading-m-thin">
+            {num}
+          </span>
+          <span className="heading-m-bold">{projectName}</span>
+        </div>
+      </ParallaxTwo>
 
       <div className="project-content">{children}</div>
     </div>
@@ -42,10 +33,8 @@ function Project({ children, side, num, projectName }) {
 export default function Projects() {
   return (
     <div className="projects-container">
-      <div className="projects-heading">
-        <Parallax offset={20}>
-          <h1 className={"heading-l"}>PROJECTS</h1>
-        </Parallax>
+      <div className="projects-heading-container">
+        <h1 className={"heading-l"}>PROJECTS</h1>
       </div>
       {/* 01 */}
       <Project side={"right"} num={"01"} projectName={"Studio MK"}>

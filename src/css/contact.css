@@ -1,7 +1,6 @@
 /* CONTACT CONTACT CONTACT */
 
 .contact-container {
-  margin-top: 100vw;
   margin-left: 7.85rem;
   width: calc(100% - 7.85rem);
   height: 100vh;
@@ -31,7 +30,6 @@
   display: inline-block;
   height: 17vh;
   top: 3vh;
-  /* border: 1px solid rgb(227, 227, 253); */
 }
 
 .wrapper {

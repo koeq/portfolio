@@ -12,12 +12,13 @@
   flex-direction: column;
   margin-left: min(12rem, 20vw);
   margin-right: min(12rem, 20vw);
+  margin-top: 20vw;
 }
 
-.projects-heading {
+.projects-heading-container {
   display: flex;
   justify-content: flex-start;
-  margin-top: 25vw;
+  margin-bottom: 9vw;
 }
 
 /* CARD CONTAINER */
@@ -95,7 +96,8 @@
 .project {
   display: flex;
   flex-direction: column;
-  margin-top: 12vw;
+  /* margin-top: 12vw; */
+  margin-bottom: 16.6vw;
   /* border: 1px solid red; */
 }
 

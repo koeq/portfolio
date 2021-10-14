@@ -4,7 +4,7 @@
   width: calc(100% - 7.88rem);
   margin-left: 7.88rem;
   height: 1500vh;
-  margin-bottom: 100vh;
+  margin-bottom: 10.8vw;
 
   /* border: 1px solid red; */
 }
@@ -84,6 +84,8 @@
   width: 7.5vh;
   display: flex;
   justify-content: flex-end;
+  align-items: flex-start;
+
   font-weight: 500;
   font-size: clamp(1.5rem, 8.5vh, 20rem);
   letter-spacing: 1vh;

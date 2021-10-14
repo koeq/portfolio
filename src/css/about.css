@@ -8,7 +8,7 @@
 
 .about-heading-container {
   width: 100%;
-  margin-bottom: 8vw;
+  margin-bottom: 9vw;
 }
 
 .about-content-path {
@@ -72,7 +72,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-end;
-  margin-top: 18vw;
+  margin-top: 16vw;
   margin-left: 5vw;
   /* border: 1px solid red; */
 }

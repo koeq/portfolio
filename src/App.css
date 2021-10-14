@@ -85,7 +85,7 @@
 .heading-l {
   font-size: clamp(5rem, 6.65vw, 20rem);
   font-weight: 600;
-  letter-spacing: 0.28vw;
+  letter-spacing: 0.4vw;
 }
 
 /* quote / project names */
@@ -126,6 +126,13 @@
   letter-spacing: 0.03vw;
   font-weight: 300;
   line-height: max(2rem, 2.2vw);
+}
+.running-text-small {
+  font-size: clamp(0.5rem, 1.2vw, 10rem);
+  letter-spacing: 0.03vw;
+  font-weight: 300;
+  line-height: max(2rem, 2.2vw);
+  /* font-style: italic; */
 }
 
 /* @media only screen and (max-width: 480px) {

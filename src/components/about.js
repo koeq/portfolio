@@ -1,6 +1,7 @@
 import React from "react";
 import Technology from "./technology";
-import { Parallax } from "./parallax";
+import { ParallaxTwo } from "./parallax";
+import { ParallaxOne } from "./parallax";
 
 export default function About() {
   return (
@@ -12,7 +13,11 @@ export default function About() {
       <div className="about-content-path">
         <div className="about-content">
           <div className="about-content-sub-container">
-            <span className="heading-s about-content-subheading">WHO AM I</span>
+            <ParallaxTwo offset={30}>
+              <span className="heading-s about-content-subheading">
+                WHO AM I
+              </span>
+            </ParallaxTwo>
 
             <div className="sub-text">
               <span className="running-text">
@@ -26,9 +31,11 @@ export default function About() {
           </div>
 
           <div className="about-content-sub-container">
-            <span className="heading-s about-content-subheading">
-              EDUCATION
-            </span>
+            <ParallaxTwo offset={30}>
+              <span className="heading-s about-content-subheading">
+                EDUCATION
+              </span>
+            </ParallaxTwo>
 
             <div className="sub-text">
               <p className="running-text">
@@ -40,7 +47,9 @@ export default function About() {
           </div>
 
           <div className="about-content-sub-container">
-            <span className="heading-s about-content-subheading">TOOLS</span>
+            <ParallaxTwo offset={30}>
+              <span className="heading-s about-content-subheading">TOOLS</span>
+            </ParallaxTwo>
 
             <div className={"technology-i-use sub-text"}>
               <Technology react={true} />
@@ -48,41 +57,42 @@ export default function About() {
           </div>
         </div>
 
-        <div className="about-path">
-          <span className="heading-s">MY PATH</span>
+        <ParallaxTwo offset={100}>
+          <div className="about-path">
+            <span className="heading-s">MY PATH</span>
 
-          <div className="about-path-text">
-            <div className="about-border"></div>
-            <p className="running-text">
-              Like many people i began my developer journey as a lost business
-              student not satisfied with the content of my studies. When you
-              leave school to go to university you imagine studying business
-              administration as learning how to build the next succesfull start
-              up. But reality hits you hard when you realize that there is one
-              interesting course for ten boring ones. <br /> <br />
-              So what now?
-              <br /> <br /> A spark of hope! Business Informatics. Seems like
-              not all courses are boring afterall. It turnes out you can even
-              put your main emphasis on that. Nice! Finally i chose to take a
-              more technical masters programm (Management Information Systems).
-              As luck would have it my working student job required my colleague
-              and me to develop a small web application. Since we did'nt have
-              too much programming experience a lot of learning had to take
-              place.
-              <br />
-              <br />
-              Boom! I was instantly hooked. The feedback from learning new
-              technology and the direct application of that knowledge was
-              fascinating and rewarding at the same time. This experience laid
-              the foundation for my desire of wanting to become a software
-              developer.
-            </p>
+            <div className="about-path-text">
+              <p className="running-text">
+                Like many people I began my developer journey as a lost business
+                student not satisfied with the content of my studies. When you
+                leave school to go to university you imagine studying business
+                administration as learning how to build the next succesfull
+                start up. But reality hits you hard when you realize that there
+                is one interesting course for ten boring ones. <br /> <br />
+                So what now?
+                <br /> <br /> A spark of hope! Business Informatics. Seems like
+                not all courses are boring afterall. It turnes out you can even
+                put your main emphasis on that. Nice! Finally i chose to take a
+                more technical masters programm (Management Information
+                Systems). As luck would have it my working student job required
+                my colleague and me to develop a small web application. Since we
+                did'nt have too much programming experience a lot of learning
+                had to take place.
+                <br />
+                <br />
+                Boom! I was instantly hooked. The feedback from learning new
+                technology and the direct application of that knowledge was
+                fascinating and rewarding at the same time. This experience laid
+                the foundation for my desire of wanting to become a software
+                developer.
+              </p>
+            </div>
           </div>
-        </div>
+        </ParallaxTwo>
       </div>
 
-      <Parallax offset={40}>
-        <div className="about-quote">
+      <div className="about-quote">
+        <ParallaxOne offset={100}>
           <div className="about-quote-text">
             <p className="heading-m-regular">
               My affinity with software engineering roots in an{" "}
@@ -96,9 +106,9 @@ export default function About() {
               </span>
             </p>
           </div>
-          <span className="heading-l quotation-mark">„</span>
-        </div>
-      </Parallax>
+        </ParallaxOne>
+        <span className="heading-l quotation-mark">„</span>
+      </div>
     </div>
   );
 }
