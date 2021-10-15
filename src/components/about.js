@@ -3,7 +3,7 @@ import Technology from "./technology";
 import { ParallaxTwo } from "./parallax";
 import { ParallaxOne } from "./parallax";
 
-export default function About() {
+export default function About({ screenWidth }) {
   return (
     <div className="about-container">
       <div className="about-heading-container">
@@ -13,7 +13,7 @@ export default function About() {
       <div className="about-content-path">
         <div className="about-content">
           <div className="about-content-sub-container">
-            <ParallaxTwo offset={30}>
+            <ParallaxTwo offset={screenWidth > 768 ? 50 : 30}>
               <span className="heading-s about-content-subheading">
                 WHO AM I
               </span>
@@ -31,7 +31,7 @@ export default function About() {
           </div>
 
           <div className="about-content-sub-container">
-            <ParallaxTwo offset={30}>
+            <ParallaxTwo offset={screenWidth > 768 ? 50 : 30}>
               <span className="heading-s about-content-subheading">
                 EDUCATION
               </span>
@@ -47,7 +47,7 @@ export default function About() {
           </div>
 
           <div className="about-content-sub-container">
-            <ParallaxTwo offset={30}>
+            <ParallaxTwo offset={screenWidth > 768 ? 50 : 30}>
               <span className="heading-s about-content-subheading">TOOLS</span>
             </ParallaxTwo>
 
@@ -57,7 +57,7 @@ export default function About() {
           </div>
         </div>
 
-        <ParallaxTwo offset={100}>
+        <ParallaxTwo offset={screenWidth > 768 ? 70 : 50}>
           <div className="about-path">
             <span className="heading-s">MY PATH</span>
 
@@ -92,7 +92,7 @@ export default function About() {
       </div>
 
       <div className="about-quote">
-        <ParallaxOne offset={100}>
+        <ParallaxOne offset={screenWidth > 768 ? 70 : 50}>
           <div className="about-quote-text">
             <p className="heading-m-regular">
               My affinity with software engineering roots in an{" "}

@@ -16,6 +16,7 @@ export function ParallaxOne({ children, offset = 50 }) {
 
   // start animating our element when we've scrolled it into view
   const initial = elementTop - clientHeight;
+
   // end our animation when we've scrolled the offset specified
   const final = elementTop + offset;
 

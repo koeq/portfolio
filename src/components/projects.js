@@ -13,10 +13,10 @@ import { FaTerminal } from "react-icons/fa";
 import { SiSelenium } from "react-icons/si";
 import { FaDocker } from "react-icons/fa";
 
-function Project({ children, side, num, projectName }) {
+function Project({ children, screenWidth, side, num, projectName }) {
   return (
     <div className="project">
-      <ParallaxTwo offset={80}>
+      <ParallaxTwo offset={screenWidth > 768 ? 60 : 30}>
         <div className={`project-name-${side}`}>
           <span style={{ marginRight: "1.5vw" }} className="heading-m-thin">
             {num}

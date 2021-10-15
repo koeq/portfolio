@@ -25,12 +25,10 @@ function App() {
       <Grain>
         <Nav screenWidth={screenWidth} />
         <Start screenWidth={screenWidth} />
-        {/* <LandingOne screenWidth={screenWidth} /> */}
-        {/* <LandingTwo /> */}
 
-        <About />
-        <Projects />
-        <Contact screenWidth={screenWidth} />
+        <About screenWidth={screenWidth} />
+        <Projects screenWidth={screenWidth} />
+        <Contact />
       </Grain>
     </div>
   );
