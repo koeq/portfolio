@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 export default function Contact() {
   return (
@@ -15,39 +16,26 @@ export default function Contact() {
         </div>
 
         <div style={{ height: "20vh" }} className="wrapper">
-          <div className="marquee">
+          <motion.div
+            className="marquee"
+            initial={{ x: 0 }}
+            animate={{ x: "-50%" }}
+            transition={{
+              ease: "linear",
+              duration: 20,
+              loop: Infinity
+            }}
+          >
             <p
               style={{ marginRight: "5.5vh" }}
               className="heading-slide-scroll"
             >
-              GITHUB INSTAGRAM LINKEDIN GITHUB INSTAGRAM LINKEDIN GITHUB
-              INSTAGRAM LINKEDIN GITHUB INSTAGRAM LINKEDIN GITHUB INSTAGRAM
-              LINKEDIN GITHUB INSTAGRAM LINKEDIN GITHUB INSTAGRAM LINKEDIN
-              GITHUB INSTAGRAM LINKEDIN GITHUB INSTAGRAM LINKEDIN GITHUB
-              INSTAGRAM LINKEDIN GITHUB INSTAGRAM LINKEDIN GITHUB INSTAGRAM
-              LINKEDIN GITHUB INSTAGRAM LINKEDIN GITHUB INSTAGRAM LINKEDIN
-              GITHUB INSTAGRAM LINKEDIN GITHUB INSTAGRAM LINKEDIN GITHUB
-              INSTAGRAM LINKEDIN GITHUB INSTAGRAM LINKEDIN GITHUB INSTAGRAM
-              LINKEDIN GITHUB INSTAGRAM LINKEDIN GITHUB INSTAGRAM LINKEDIN
-              GITHUB INSTAGRAM LINKEDIN GITHUB INSTAGRAM LINKEDIN GITHUB
-              INSTAGRAM LINKEDIN GITHUB INSTAGRAM LINKEDIN GITHUB INSTAGRAM
-              LINKEDIN GITHUB INSTAGRAM LINKEDIN GITHUB INSTAGRAM LINKEDIN
+              GITHUB INSTAGRAM LINKEDIN GITHUB INSTAGRAM LINKEDIN
             </p>
             <p className="heading-slide-scroll">
-              GITHUB INSTAGRAM LINKEDIN GITHUB INSTAGRAM LINKEDIN GITHUB
-              INSTAGRAM LINKEDIN GITHUB INSTAGRAM LINKEDIN GITHUB INSTAGRAM
-              LINKEDIN GITHUB INSTAGRAM LINKEDIN GITHUB INSTAGRAM LINKEDIN
-              GITHUB INSTAGRAM LINKEDIN GITHUB INSTAGRAM LINKEDIN GITHUB
-              INSTAGRAM LINKEDIN GITHUB INSTAGRAM LINKEDIN GITHUB INSTAGRAM
-              LINKEDIN GITHUB INSTAGRAM LINKEDIN GITHUB INSTAGRAM LINKEDIN
-              GITHUB INSTAGRAM LINKEDIN GITHUB INSTAGRAM LINKEDIN GITHUB
-              INSTAGRAM LINKEDIN GITHUB INSTAGRAM LINKEDIN GITHUB INSTAGRAM
-              LINKEDIN GITHUB INSTAGRAM LINKEDIN GITHUB INSTAGRAM LINKEDIN
-              GITHUB INSTAGRAM LINKEDIN GITHUB INSTAGRAM LINKEDIN GITHUB
-              INSTAGRAM LINKEDIN GITHUB INSTAGRAM LINKEDIN GITHUB INSTAGRAM
-              LINKEDIN GITHUB INSTAGRAM LINKEDIN GITHUB INSTAGRAM LINKEDIN
+              GITHUB INSTAGRAM LINKEDIN GITHUB INSTAGRAM LINKEDIN
             </p>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

@@ -1,11 +1,13 @@
-import React, { useState, useLayoutEffect } from "react";
+import React, { useState, useLayoutEffect, lazy, Suspense } from "react";
 import "./App.css";
 import Grain from "./components/grain";
 import Nav from "./components/nav";
 import Start from "./components/start";
 import About from "./components/about";
-import Projects from "./components/projects";
+// import Projects from "./components/projects";
+// lazy load component with the videos
 import Contact from "./components/contact";
+const Projects = lazy(() => import("./components/projects"));
 
 function App() {
   const [screenWidth, setScreenWidth] = useState(0);
@@ -27,7 +29,9 @@ function App() {
         <Start screenWidth={screenWidth} />
 
         <About screenWidth={screenWidth} />
-        <Projects screenWidth={screenWidth} />
+        <Suspense fallback={<div>loading...</div>}>
+          <Projects screenWidth={screenWidth} />
+        </Suspense>
         <Contact />
       </Grain>
     </div>

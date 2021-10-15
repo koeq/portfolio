@@ -41,7 +41,7 @@
   white-space: nowrap;
   overflow: hidden;
   display: inline-block;
-  animation: marquee 280s linear infinite;
+  /* animation: marquee 280s linear infinite; */
 }
 
 .marquee p {
