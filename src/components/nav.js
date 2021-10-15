@@ -38,7 +38,7 @@ export default function Nav({
     "",
     "",
     "",
-    "œ"
+    <div className="oe">œ</div>
   ];
 
   // animation

@@ -74,7 +74,7 @@ a {
 /* landing */
 .heading-slide-scroll {
   font-weight: 600;
-  font-size: clamp(1.5rem, 22.2vh, 40rem);
+  font-size: clamp(1rem, 22.2vh, 40rem);
   letter-spacing: 0.6vw;
 }
 
@@ -98,7 +98,7 @@ a {
 
 /* about / projects  */
 .heading-l {
-  font-size: clamp(5rem, 6.65vw, 20rem);
+  font-size: clamp(8rem, 6.65vw, 20rem);
   font-weight: 600;
   letter-spacing: 0.4vw;
 }
@@ -125,7 +125,7 @@ a {
 
 /* sub headings */
 .heading-s {
-  font-size: clamp(1.8rem, 1.55vw, 4rem);
+  font-size: clamp(2rem, 1.55vw, 4rem);
   font-weight: 500;
   letter-spacing: 0.47vw;
 }
@@ -137,7 +137,7 @@ a {
 }
 
 .running-text {
-  font-size: clamp(0.5rem, 1.41vw, 10rem);
+  font-size: clamp(1.3rem, 1.41vw, 10rem);
   letter-spacing: 0.03vw;
   font-weight: 300;
   line-height: max(2rem, 2.2vw);

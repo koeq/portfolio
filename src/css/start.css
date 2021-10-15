@@ -90,3 +90,20 @@
   font-size: clamp(1.5rem, 8.5vh, 20rem);
   letter-spacing: 1vh;
 }
+
+@media only screen and (max-width: 768px) {
+  .start-container {
+    width: 100%;
+    margin-left: 0;
+  }
+  .start-slider-container {
+    height: calc(100vh - var(--nav-width));
+  }
+  .slider-wrapper {
+    margin-top: calc(var(--nav-width) + 10px);
+  }
+  .slider-wrapper-short {
+    margin: 0 0 15vh 0;
+  }
+
+}
