@@ -22,7 +22,7 @@ export default function Contact() {
             animate={{ x: "-50%" }}
             transition={{
               ease: "linear",
-              duration: 20,
+              duration: 40,
               loop: Infinity
             }}
           >
@@ -30,10 +30,12 @@ export default function Contact() {
               style={{ marginRight: "5.5vh" }}
               className="heading-slide-scroll"
             >
-              GITHUB INSTAGRAM LINKEDIN GITHUB INSTAGRAM LINKEDIN
+              GITHUB INSTAGRAM LINKEDIN GITHUB INSTAGRAM LINKEDIN GITHUB
+              INSTAGRAM LINKEDIN GITHUB INSTAGRAM LINKEDIN
             </p>
             <p className="heading-slide-scroll">
-              GITHUB INSTAGRAM LINKEDIN GITHUB INSTAGRAM LINKEDIN
+              GITHUB INSTAGRAM LINKEDIN GITHUB INSTAGRAM LINKEDIN GITHUB
+              INSTAGRAM LINKEDIN GITHUB INSTAGRAM LINKEDIN
             </p>
           </motion.div>
         </div>

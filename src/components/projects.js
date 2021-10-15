@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Technology from "./technology";
 import { ParallaxTwo } from "./parallax";
 import studioMkHome from "../ressources/videos/studioMK/studioMkHome_compressed.mp4";
@@ -30,7 +30,7 @@ function Project({ children, screenWidth, side, num, projectName }) {
   );
 }
 
-export default function Projects() {
+export default function Projects({ isActive }) {
   return (
     <div className="projects-container">
       <div className="projects-heading-container">
@@ -48,8 +48,16 @@ export default function Projects() {
                 œ
               </span>
 
-              <div className="project-card-sidebar-horizontal">
-                <span className="heading-s">CHECK OUT LIVE</span>
+              <div
+                className={`project-card-sidebar-horizontal ${
+                  isActive ? "hide-link" : "show-link"
+                }`}
+              >
+                <span className="heading-s">
+                  <a href="https://www.miriamkoenig.org" target={"_blank"}>
+                    CHECK OUT LIVE
+                  </a>
+                </span>
               </div>
             </div>
             <div className="project-card">
@@ -63,9 +71,15 @@ export default function Projects() {
             </div>
           </div>
           <div className="project-mobile-container">
-            <div className="project-card-sidebar">
+            <div
+              className={`project-card-sidebar ${
+                isActive ? "hide-link" : "show-link"
+              }`}
+            >
               <span className="project-card-sidebar-horizontal heading-s">
-                ON GITHUB
+                <a href="https://github.com/koebe1/studioMK" target={"_blank"}>
+                  ON GITHUB
+                </a>
               </span>
             </div>
             <div
@@ -119,8 +133,16 @@ export default function Projects() {
                 œ
               </span>
 
-              <div className="project-card-sidebar-horizontal">
-                <span className="heading-s">CHECK OUT LIVE</span>
+              <div
+                className={`project-card-sidebar-horizontal ${
+                  isActive ? "hide-link" : "show-link"
+                }`}
+              >
+                <span className="heading-s">
+                  <a href="https://koebe1-hnc.netlify.app/" target={"_blank"}>
+                    CHECK OUT LIVE
+                  </a>
+                </span>
               </div>
             </div>
             <div className="project-card" style={{ alignItems: "flex-start" }}>
@@ -137,9 +159,18 @@ export default function Projects() {
             className="project-mobile-container"
             style={{ flexDirection: "row-reverse" }}
           >
-            <div className="project-card-sidebar">
+            <div
+              className={`project-card-sidebar ${
+                isActive ? "hide-link" : "show-link"
+              }`}
+            >
               <span className="project-card-sidebar-horizontal heading-s">
-                ON GITHUB
+                <a
+                  href="https://github.com/koebe1/hacker-news-clone"
+                  target={"_blank"}
+                >
+                  ON GITHUB
+                </a>
               </span>
             </div>
             <div
@@ -185,8 +216,19 @@ export default function Projects() {
                 œ
               </span>
 
-              <div className="project-card-sidebar-horizontal">
-                <span className="heading-s">CHECK OUT LIVE</span>
+              <div
+                className={`project-card-sidebar-horizontal ${
+                  isActive ? "hide-link" : "show-link"
+                }`}
+              >
+                <span className="heading-s">
+                  <a
+                    href="https://koebe1-github-battle.netlify.app"
+                    target={"_blank"}
+                  >
+                    CHECK OUT LIVE
+                  </a>
+                </span>
               </div>
             </div>
             <div className="project-card">
@@ -200,9 +242,18 @@ export default function Projects() {
             </div>
           </div>
           <div className="project-mobile-container">
-            <div className="project-card-sidebar">
+            <div
+              className={`project-card-sidebar ${
+                isActive ? "hide-link" : "show-link"
+              }`}
+            >
               <span className="project-card-sidebar-horizontal heading-s">
-                ON GITHUB
+                <a
+                  href="https://github.com/koebe1/github-battle"
+                  target={"_blank"}
+                >
+                  ON GITHUB
+                </a>
               </span>
             </div>
             <div
@@ -258,8 +309,19 @@ export default function Projects() {
                 œ
               </span>
 
-              <div className="project-card-sidebar-horizontal">
-                <span className="heading-s">CHECK OUT MASTER'S THESIS</span>
+              <div
+                className={`project-card-sidebar-horizontal ${
+                  isActive ? "hide-link" : "show-link"
+                }`}
+              >
+                <span className="heading-s">
+                  <a
+                    href="https://github.com/koebe1/WTTC-Web_Tracking_Traffic_Collector"
+                    target={"_blank"}
+                  >
+                    CHECK OUT MASTER'S THESIS
+                  </a>
+                </span>
               </div>
             </div>
             <div className="project-card" style={{ alignItems: "flex-start" }}>
@@ -276,9 +338,18 @@ export default function Projects() {
             className="project-mobile-container"
             style={{ flexDirection: "row-reverse" }}
           >
-            <div className="project-card-sidebar">
+            <div
+              className={`project-card-sidebar ${
+                isActive ? "hide-link" : "show-link"
+              }`}
+            >
               <span className="project-card-sidebar-horizontal heading-s">
-                ON GITHUB
+                <a
+                  href="https://github.com/koebe1/WTTC-Web_Tracking_Traffic_Collector"
+                  target={"_blank"}
+                >
+                  ON GITHUB
+                </a>
               </span>
             </div>
             <div

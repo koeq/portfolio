@@ -55,6 +55,22 @@
   color: #000;
 }
 
+a {
+  text-decoration: none;
+  cursor: pointer;
+  /*  color to emulate grain effect */
+  color: #ebe9eb;
+}
+
+.show-link {
+  z-index: 99;
+  transition: 10s;
+}
+
+.hide-link {
+  z-index: 0;
+}
+
 /* landing */
 .heading-slide-scroll {
   font-weight: 600;

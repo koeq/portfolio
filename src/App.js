@@ -11,6 +11,11 @@ const Projects = lazy(() => import("./components/projects"));
 
 function App() {
   const [screenWidth, setScreenWidth] = useState(0);
+  const [isActive, setActive] = useState(false);
+
+  const handleNavToggle = () => {
+    setActive(!isActive);
+  };
 
   const handleResize = () => {
     setScreenWidth(window.innerWidth);
@@ -25,12 +30,17 @@ function App() {
   return (
     <div className="App light-theme">
       <Grain>
-        <Nav screenWidth={screenWidth} />
+        <Nav
+          handleNavToggle={() => handleNavToggle}
+          isActive={isActive}
+          setActive={setActive}
+          screenWidth={screenWidth}
+        />
         <Start screenWidth={screenWidth} />
 
         <About screenWidth={screenWidth} />
         <Suspense fallback={<div>loading...</div>}>
-          <Projects screenWidth={screenWidth} />
+          <Projects isActive={isActive} screenWidth={screenWidth} />
         </Suspense>
         <Contact />
       </Grain>

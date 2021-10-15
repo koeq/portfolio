@@ -2,16 +2,16 @@ import { Pivot as Hamburger } from "hamburger-react";
 import React, { useState, useEffect } from "react";
 import { motion, useViewportScroll, useTransform } from "framer-motion";
 
-export default function Nav({ screenWidth }) {
-  const [isActive, setActive] = useState(false);
-
-  const handleToggle = () => {
-    setActive(!isActive);
-  };
-
+export default function Nav({
+  screenWidth,
+  handleNavToggle,
+  isActive,
+  setActive
+}) {
   // deactivate scrolling in nav-slide-menu
   useEffect(() => {
     const html = document.getElementsByTagName("html")[0];
+    // container of all links
 
     isActive
       ? (html.style.overflow = "hidden")
@@ -22,7 +22,7 @@ export default function Nav({ screenWidth }) {
     <Hamburger
       toggled={isActive}
       toggle={setActive}
-      onToggle={handleToggle}
+      onToggle={handleNavToggle}
       size={32}
       direction="right"
       distance="s,"
