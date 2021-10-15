@@ -42,7 +42,7 @@ function App() {
         <Suspense fallback={<div>loading...</div>}>
           <Projects isActive={isActive} screenWidth={screenWidth} />
         </Suspense>
-        <Contact />
+        <Contact isActive={isActive} />
       </Grain>
     </div>
   );
