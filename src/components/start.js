@@ -11,13 +11,13 @@ export default function Start({ screenWidth }) {
   const { scrollYProgress } = useViewportScroll();
   const xAnimOne = useTransform(
     scrollYProgress,
-    [0, 0.6],
+    [0, 0.7],
     [0, -screenWidth * 3]
   );
 
   const xAnimTwo = useTransform(
     scrollYProgress,
-    [0, 0.6],
+    [0, 0.7],
     [0, -screenWidth * 5]
   );
   const xOne = useSpring(xAnimOne, { stiffness: 600, damping: 120 });
@@ -170,30 +170,33 @@ export default function Start({ screenWidth }) {
   return (
     <div className="start-container">
       <div className="start-slider-container">
-        <div className="slider-wrapper">
-          <motion.div
-            style={{ x: xOne }}
-            className="slider-marquee slider-marquee-long"
-          >
-            <p className="heading-slide-scroll">
-              FRONT END FRONT END FRONT END FRONT END FRONT END FRONT END FRONT
-              END FRONT END FRONT END FRONT END FRONT END FRONT END FRONT END
-            </p>
-          </motion.div>
-        </div>
+        <div>
+          <div className="slider-wrapper">
+            <motion.div
+              style={{ x: xOne }}
+              className="slider-marquee slider-marquee-long"
+            >
+              <p className="heading-slide-scroll">
+                FRONT END FRONT END FRONT END FRONT END FRONT END FRONT END
+                FRONT END FRONT END FRONT END FRONT END FRONT END FRONT END
+                FRONT END
+              </p>
+            </motion.div>
+          </div>
 
-        <div className="slider-wrapper slider-wrapper-short">
-          <motion.div
-            style={{ x: xTwo }}
-            className="slider-marquee slider-marquee-short"
-          >
-            <p className="heading-slide-scroll">
-              R ENGINEER ENGINEER ENGINEER ENGINEER ENGINEER ENGINEER ENGINEER
-              ENGINEER ENGINEER ENGINEER ENGINEER ENGINEER ENGINEER ENGINEER
-              ENGINEER ENGINEER ENGINEER ENGINEER ENGINEER ENGINEER ENGINEER
-              ENGINEER ENGINEER ENGINEER ENGINEER ENGINEER ENGINEER ENGINEER
-            </p>
-          </motion.div>
+          <div className="slider-wrapper slider-wrapper-short">
+            <motion.div
+              style={{ x: xTwo }}
+              className="slider-marquee slider-marquee-short"
+            >
+              <p className="heading-slide-scroll">
+                R ENGINEER ENGINEER ENGINEER ENGINEER ENGINEER ENGINEER ENGINEER
+                ENGINEER ENGINEER ENGINEER ENGINEER ENGINEER ENGINEER ENGINEER
+                ENGINEER ENGINEER ENGINEER ENGINEER ENGINEER ENGINEER ENGINEER
+                ENGINEER ENGINEER ENGINEER ENGINEER ENGINEER ENGINEER ENGINEER
+              </p>
+            </motion.div>
+          </div>
         </div>
 
         <div className="slider-wrapper slider-wrapper-name">
@@ -210,11 +213,11 @@ export default function Start({ screenWidth }) {
 
               <motion.span>{thirdAnimation.current}</motion.span>
 
-              <motion.span style={{ right: "1.5vh" }}>
+              <motion.span style={{ right: "1vw" }}>
                 {fourthAnimation.current}
               </motion.span>
 
-              <motion.span style={{ left: "2.3vh" }}>
+              <motion.span style={{ left: "max(1.5rem,1.4vw)" }}>
                 {fithAnimation.current}
               </motion.span>
 
