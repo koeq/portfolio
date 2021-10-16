@@ -68,7 +68,7 @@ export default function Nav({
       <motion.div
         // change progressbar for mobile
         style={
-          screenWidth > 0 && screenWidth <= 480
+          screenWidth > 0 && screenWidth <= 768
             ? { width: scrollProgress, height: "3px" }
             : { height: scrollProgress, width: "0.5px" }
         }
