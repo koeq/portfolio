@@ -11,7 +11,7 @@ export default function Contact({ isActive }) {
         <span className="heading-s-vh">œ</span>
       </div>
       <div className="contact-animation-container">
-        <div className="contact-animation-wrapper flex-center">
+        <div className="mail-wrapper flex-center">
           <p className="heading-slide-scroll flex-center">
             <a
               className="show-link"
@@ -23,10 +23,7 @@ export default function Contact({ isActive }) {
           </p>
         </div>
 
-        <div
-          style={{ height: "20vh" }}
-          className={`wrapper ${isActive ? "hide-link" : "show-link"}`}
-        >
+        <div className={`wrapper ${isActive ? "hide-link" : "show-link"}`}>
           <motion.div
             className={`marquee`}
             style={{ zIndex: "10" }}
