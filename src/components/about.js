@@ -13,7 +13,7 @@ export default function About({ screenWidth }) {
       <div className="about-content-path">
         <div className="about-content">
           <div className="about-content-sub-container">
-            <ParallaxTwo offset={screenWidth > 768 ? 50 : 30}>
+            <ParallaxTwo offset={screenWidth > 768 ? 40 : 20}>
               <span className="heading-s about-content-subheading">
                 WHO AM I
               </span>
@@ -31,7 +31,7 @@ export default function About({ screenWidth }) {
           </div>
 
           <div className="about-content-sub-container">
-            <ParallaxTwo offset={screenWidth > 768 ? 50 : 30}>
+            <ParallaxTwo offset={screenWidth > 768 ? 40 : 20}>
               <span className="heading-s about-content-subheading">
                 EDUCATION
               </span>
@@ -47,7 +47,7 @@ export default function About({ screenWidth }) {
           </div>
 
           <div className="about-content-sub-container">
-            <ParallaxTwo offset={screenWidth > 768 ? 50 : 30}>
+            <ParallaxTwo offset={screenWidth > 768 ? 40 : 20}>
               <span className="heading-s about-content-subheading">TOOLS</span>
             </ParallaxTwo>
 
@@ -57,7 +57,7 @@ export default function About({ screenWidth }) {
           </div>
         </div>
 
-        <ParallaxTwo offset={screenWidth > 768 ? 70 : 50}>
+        <ParallaxTwo offset={screenWidth > 768 ? 60 : 40}>
           <div className="about-path">
             <span className="heading-s">MY PATH</span>
 
@@ -92,7 +92,7 @@ export default function About({ screenWidth }) {
       </div>
 
       <div className="about-quote">
-        <ParallaxOne offset={screenWidth > 768 ? 70 : 50}>
+        <ParallaxOne offset={screenWidth > 768 ? 50 : 20}>
           <div className="about-quote-text">
             <p className="heading-m-regular">
               My affinity with software engineering roots in an{" "}

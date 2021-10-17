@@ -16,7 +16,7 @@ import { FaDocker } from "react-icons/fa";
 function Project({ children, screenWidth, side, num, projectName }) {
   return (
     <div className="project">
-      <ParallaxTwo offset={screenWidth > 768 ? 60 : 30}>
+      <ParallaxTwo offset={screenWidth > 768 ? 50 : 20}>
         <div className={`project-name-${side}`}>
           <span style={{ marginRight: "1.5vw" }} className="heading-m-thin">
             {num}
@@ -43,7 +43,7 @@ export default function Projects({ isActive }) {
             <div className="project-card-sidebar">
               <span
                 style={{ letterSpacing: "0", lineHeight: "1.2vw" }}
-                className="heading-s flex-center"
+                className="heading-s-tech flex-center"
               >
                 œ
               </span>
@@ -53,7 +53,7 @@ export default function Projects({ isActive }) {
                   isActive ? "hide-link" : "show-link"
                 }`}
               >
-                <span className="heading-s">
+                <span className="heading-s-tech">
                   <a href="https://www.miriamkoenig.org" target={"_blank"}>
                     CHECK OUT LIVE
                   </a>
@@ -76,7 +76,7 @@ export default function Projects({ isActive }) {
                 isActive ? "hide-link" : "show-link"
               }`}
             >
-              <span className="project-card-sidebar-horizontal heading-s">
+              <span className="project-card-sidebar-horizontal heading-s-tech">
                 <a href="https://github.com/koebe1/studioMK" target={"_blank"}>
                   ON GITHUB
                 </a>
@@ -128,7 +128,7 @@ export default function Projects({ isActive }) {
             <div className="project-card-sidebar">
               <span
                 style={{ letterSpacing: "0", lineHeight: "1.2vw" }}
-                className="heading-s flex-center"
+                className="heading-s-tech flex-center"
               >
                 œ
               </span>
@@ -138,7 +138,7 @@ export default function Projects({ isActive }) {
                   isActive ? "hide-link" : "show-link"
                 }`}
               >
-                <span className="heading-s">
+                <span className="heading-s-tech">
                   <a href="https://koebe1-hnc.netlify.app/" target={"_blank"}>
                     CHECK OUT LIVE
                   </a>
@@ -164,7 +164,7 @@ export default function Projects({ isActive }) {
                 isActive ? "hide-link" : "show-link"
               }`}
             >
-              <span className="project-card-sidebar-horizontal heading-s">
+              <span className="project-card-sidebar-horizontal heading-s-tech">
                 <a
                   href="https://github.com/koebe1/hacker-news-clone"
                   target={"_blank"}
@@ -211,7 +211,7 @@ export default function Projects({ isActive }) {
             <div className="project-card-sidebar">
               <span
                 style={{ letterSpacing: "0", lineHeight: "1.2vw" }}
-                className="heading-s flex-center"
+                className="heading-s-tech flex-center"
               >
                 œ
               </span>
@@ -221,7 +221,7 @@ export default function Projects({ isActive }) {
                   isActive ? "hide-link" : "show-link"
                 }`}
               >
-                <span className="heading-s">
+                <span className="heading-s-tech">
                   <a
                     href="https://koebe1-github-battle.netlify.app"
                     target={"_blank"}
@@ -247,7 +247,7 @@ export default function Projects({ isActive }) {
                 isActive ? "hide-link" : "show-link"
               }`}
             >
-              <span className="project-card-sidebar-horizontal heading-s">
+              <span className="project-card-sidebar-horizontal heading-s-tech">
                 <a
                   href="https://github.com/koebe1/github-battle"
                   target={"_blank"}
@@ -304,7 +304,7 @@ export default function Projects({ isActive }) {
             <div className="project-card-sidebar">
               <span
                 style={{ letterSpacing: "0", lineHeight: "1.2vw" }}
-                className="heading-s flex-center"
+                className="heading-s-tech flex-center"
               >
                 œ
               </span>
@@ -314,12 +314,12 @@ export default function Projects({ isActive }) {
                   isActive ? "hide-link" : "show-link"
                 }`}
               >
-                <span className="heading-s">
+                <span className="heading-s-tech">
                   <a
                     href="https://github.com/koebe1/WTTC-Web_Tracking_Traffic_Collector"
                     target={"_blank"}
                   >
-                    CHECK OUT MASTER'S THESIS
+                    CHECK OUT THESIS
                   </a>
                 </span>
               </div>
@@ -343,7 +343,7 @@ export default function Projects({ isActive }) {
                 isActive ? "hide-link" : "show-link"
               }`}
             >
-              <span className="project-card-sidebar-horizontal heading-s">
+              <span className="project-card-sidebar-horizontal heading-s-tech">
                 <a
                   href="https://github.com/koebe1/WTTC-Web_Tracking_Traffic_Collector"
                   target={"_blank"}
@@ -403,7 +403,7 @@ export default function Projects({ isActive }) {
                     >
                       <FaPython size={"max(22px,2vw)"} />
                       <span
-                        className="heading-s"
+                        className="heading-s-tech"
                         style={{ marginTop: "0.6vw" }}
                       >
                         Python
@@ -412,7 +412,7 @@ export default function Projects({ isActive }) {
                     <div className="icon-container">
                       <SiSelenium size={"max(22px,2vw)"} />
                       <span
-                        className="heading-s"
+                        className="heading-s-tech"
                         style={{ marginTop: "0.6vw" }}
                       >
                         Selenium
@@ -428,7 +428,7 @@ export default function Projects({ isActive }) {
                     >
                       <FaTerminal size={"max(22px,2vw)"} />
                       <span
-                        className="heading-s"
+                        className="heading-s-tech"
                         style={{ marginTop: "0.6vw" }}
                       >
                         Shell
@@ -437,7 +437,7 @@ export default function Projects({ isActive }) {
                     <div className="icon-container">
                       <FaDocker size={"max(22px,2vw)"} />
                       <span
-                        className="heading-s"
+                        className="heading-s-tech"
                         style={{ marginTop: "0.6vw" }}
                       >
                         Docker

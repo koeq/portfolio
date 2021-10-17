@@ -19,6 +19,8 @@
   display: flex;
   flex-direction: column;
   margin-right: 9.5vw;
+
+  /* border: 1px solid red; */
 }
 
 .about-content-sub-container {
@@ -53,7 +55,7 @@
 
 .about-path-text {
   display: flex;
-  flex-wrap: nowrap;
+  /* flex-wrap: nowrap; */
   margin-top: 2.7vw;
   width: 26.8vw;
 }
@@ -73,11 +75,11 @@
   justify-content: flex-start;
   align-items: flex-end;
   margin-top: 16vw;
-  margin-left: 5vw;
+  margin-left: 6vw;
   /* border: 1px solid red; */
 }
 .about-quote-text {
-  width: 65vw;
+  width: 70vw;
   display: flex;
   align-items: flex-end;
   /* border: 1px solid blue; */
@@ -86,7 +88,7 @@
 .quotation-mark {
   position: relative;
   top: 1.5vw;
-  left: 3.5vw;
+  left: 5.5vw;
   line-height: 0vw;
 }
 .about-quote-text-grey {
@@ -97,5 +99,25 @@
 @media only screen and (max-width: 768px) {
   .about-container {
     margin-left: 4rem;
+  }
+
+  .about-path-text {
+    width: 30vw;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .about-content {
+    margin-right: 5.5vw;
+
+    /* border: 1px solid red; */
+  }
+
+  .sub-text {
+    margin-left: 5.5vw;
+  }
+
+  .about-path-text {
+    width: 37vw;
   }
 }
