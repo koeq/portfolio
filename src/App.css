@@ -80,8 +80,8 @@ a {
 }
 
 .heading-nav {
-  /* font-size: clamp(3rem, 12vw, 22rem); */
-  font-size: clamp(3rem, 25vh, 22rem);
+  /* font-size: clamp(9rem, 12vw, 22rem); */
+  font-size: clamp(1rem, 20vh, 15vw);
   font-weight: 600;
   /* letter-spacing: 0.6vw; */
   letter-spacing: 1.5vh;

@@ -4,7 +4,6 @@
   top: 0;
   display: flex;
   align-items: center;
-  font-size: var(--fs-16);
   width: 100%;
   height: 100%;
   background: transparent;
@@ -32,6 +31,7 @@
 .scroll-progression-bar {
   height: 100vh;
   background: rgba(255, 255, 255, 0.2);
+  background: #4c4d4c;
   width: 0.5px;
 
   transform: scalex(0.8);
@@ -41,14 +41,12 @@
 .nav-list {
   height: 100%;
   width: var(--nav-width);
-  font-size: 2.5rem;
-  font-weight: 200;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   list-style: none;
-  z-index: 5;
+  z-index: 200;
   transition: 1s ease;
 }
 .nav-list-active {
@@ -64,13 +62,12 @@
   height: 100%;
 }
 .slide-menu {
-  width: 100%;
+  width: 102%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   background: #0f1111;
   transition: 2s ease-in-out;
   transform: translateX(-300vw);
@@ -78,14 +75,12 @@
 }
 
 .slide-menu-active {
-  transform: translateX(0);
+  transform: translateX(0px);
   transition: 0.8s ease-in-out;
   z-index: 100 !important;
 }
 
 .slide-menu-item {
-  font-size: clamp(5rem, 10vw, 21rem);
-  font-weight: 500;
   transition: 1s ease-in-out;
   transform: translateX(-300vw);
 }
@@ -99,10 +94,11 @@
   /* font-size: clamp(1.5rem, 1.3vw, 3rem); */
   font-size: clamp(1.5rem, 2.6vh, 3rem);
   font-weight: 100;
-  bottom: 1.3vw;
-  bottom: 4vh;
-  /* letter-spacing: min(0.8vh, 1rem); */
-  letter-spacing: min(0.4vw, 1rem);
+  /* bottom: 4vh; */
+  bottom: 3vh;
+  bottom: min(1.3vw, 3vh);
+  letter-spacing: min(0.8vh, 1rem);
+  /* letter-spacing: min(0.4vw, 1rem); */
 
   transform: translateX(-300vw);
 }
