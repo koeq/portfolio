@@ -131,7 +131,7 @@ a {
   letter-spacing: 0.47vw;
 }
 .heading-s-tech {
-  font-size: clamp(1.5rem, 1.55vw, 4rem);
+  font-size: clamp(1.6rem, 1.55vw, 4rem);
   font-weight: 500;
   letter-spacing: 0.47vw;
 }

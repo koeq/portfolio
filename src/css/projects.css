@@ -69,17 +69,20 @@
   justify-content: space-between;
   margin-top: 7vw;
 
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .project-mobile-content {
+  display: flex;
+  align-items: flex-start;
   width: 88%;
-  border: 1px solid yellow;
+
+  /* border: 1px solid yellow; */
 }
 .project-mobile-text {
   width: 52%;
 
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 
 .project-name-right {

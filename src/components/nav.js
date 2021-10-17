@@ -55,7 +55,8 @@ export default function Nav({
               key={index}
               className="nav-element"
               style={{
-                fontSize: "clamp(1.8rem, 1.55vw, 3rem",
+                // heading-s-tech without letter-spacing
+                fontSize: "clamp(1.6rem, 1.55vw, 4rem)",
                 fontWeight: "500"
               }}
             >

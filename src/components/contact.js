@@ -8,7 +8,7 @@ export default function Contact({ isActive }) {
         <span style={{ marginBottom: "10vh" }} className="heading-s-vh">
           GET IN CONTACT
         </span>
-        <span className="heading-s">œ</span>
+        <span className="heading-s-tech">œ</span>
       </div>
       <div className="contact-animation-container">
         <div className="mail-wrapper flex-center">
