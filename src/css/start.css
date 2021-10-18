@@ -1,8 +1,8 @@
 /* START START START */
 
 .start-container {
-  width: calc(100% - 7.88rem);
-  margin-left: 7.88rem;
+  width: calc(100%);
+  margin-left: 8rem;
   height: 1500vh;
   height: max(7000px, 1200vw);
   margin-bottom: 10.8vw;

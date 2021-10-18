@@ -48,33 +48,47 @@ export default function Nav({
 
   return (
     <div className="nav-container">
-      <ul className={isActive ? "nav-list nav-list-active" : "nav-list"}>
-        {navElements.map((element, index) => {
-          return (
-            <li
-              key={index}
-              className="nav-element"
-              style={{
-                // heading-s-tech without letter-spacing
-                fontSize: "clamp(1.6rem, 1.55vw, 4rem)",
-                fontWeight: "500"
-              }}
-            >
-              {element}
-            </li>
-          );
-        })}
-      </ul>
-      <hr className="nav-border-dark" />
-      <motion.div
-        // change progressbar for mobile
-        style={
-          screenWidth > 0 && screenWidth <= 768
-            ? { width: scrollProgress, height: "1px" }
-            : { height: scrollProgress, width: "1px" }
+      <div
+        className={
+          isActive
+            ? "nav-list-container nav-list-container-active"
+            : "nav-list-container"
         }
-        className="scroll-progression-bar"
-      ></motion.div>
+      >
+        <ul className="nav-list">
+          {navElements.map((element, index) => {
+            return (
+              <li
+                key={index}
+                className="nav-element"
+                style={{
+                  // heading-s-tech without letter-spacing
+                  fontSize: "clamp(1.6rem, 1.55vw, 4rem)",
+                  fontWeight: "500",
+                  zIndex: "300 !important"
+                }}
+              >
+                {element}
+              </li>
+            );
+          })}
+        </ul>
+        <div
+          className="nav-border-container"
+          // style={{ height: "100%", display: "flex", alignItems: "center" }}
+        >
+          <hr className="nav-border-dark" />
+          <motion.div
+            // change progressbar for mobile
+            style={
+              screenWidth > 0 && screenWidth <= 768
+                ? { width: scrollProgress, height: "1px" }
+                : { height: scrollProgress, width: "1px" }
+            }
+            className="scroll-progression-bar"
+          ></motion.div>
+        </div>
+      </div>
 
       <div className={isActive ? "slide-menu-active slide-menu" : "slide-menu"}>
         <div className="slide-menu-item-container">
