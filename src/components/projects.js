@@ -64,6 +64,7 @@ export default function Projects({ isActive }) {
               <video
                 width="90%"
                 autoPlay
+                playsInline
                 muted
                 loop
                 src={studioMkHome}
@@ -110,6 +111,7 @@ export default function Projects({ isActive }) {
               <video
                 className="mobile"
                 autoPlay
+                playsInline
                 loop
                 muted
                 width="25%"
