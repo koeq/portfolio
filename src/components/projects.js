@@ -64,6 +64,7 @@ export default function Projects({ isActive }) {
               <video
                 width="90%"
                 autoPlay
+                muted
                 loop
                 src={studioMkHome}
                 alt="studio MK website video desktop"
@@ -110,6 +111,7 @@ export default function Projects({ isActive }) {
                 className="mobile"
                 autoPlay
                 loop
+                muted
                 width="25%"
                 src={studioMkMobile}
                 alt="studio MK website video mobile"
@@ -149,7 +151,9 @@ export default function Projects({ isActive }) {
               <video
                 width="90%"
                 autoPlay
+                playsInline
                 loop
+                muted
                 src={HackerNews}
                 alt="Hacker News website desktop"
               ></video>
@@ -236,6 +240,8 @@ export default function Projects({ isActive }) {
                 width="90%"
                 autoPlay
                 loop
+                muted
+                playsInline
                 src={GithubBattle}
                 alt="Github Battle website video desktop"
               ></video>
@@ -328,7 +334,9 @@ export default function Projects({ isActive }) {
               <video
                 width="90%"
                 autoPlay
+                playsInline
                 loop
+                muted
                 src={wttc}
                 alt="WTTC application in use"
               ></video>

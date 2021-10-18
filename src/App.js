@@ -2,12 +2,14 @@ import React, { useState, useLayoutEffect, lazy, Suspense } from "react";
 import "./App.css";
 import Grain from "./components/grain";
 import Nav from "./components/nav";
+import StartMobile from "./components/startMobile";
 import Start from "./components/start";
 import About from "./components/about";
 // import Projects from "./components/projects";
 // lazy load component with the videos
 import Contact from "./components/contact";
-const Projects = lazy(() => import("./components/projects"));
+// const Projects = lazy(() => import("./components/projects"));
+import Projects from "./components/projects";
 
 function App() {
   const [screenWidth, setScreenWidth] = useState(0);
@@ -36,7 +38,12 @@ function App() {
           setActive={setActive}
           screenWidth={screenWidth}
         />
-        <Start screenWidth={screenWidth} />
+
+        {screenWidth <= 480 ? (
+          <StartMobile />
+        ) : (
+          <Start screenWidth={screenWidth} />
+        )}
 
         <About screenWidth={screenWidth} />
         <Suspense fallback={<div>loading...</div>}>
@@ -47,12 +54,5 @@ function App() {
     </div>
   );
 }
-
-// disable horizontal scroll to make position: sticky and overflow-x: hidden work
-window.onscroll = function() {
-  window.scroll({
-    left: 0
-  });
-};
 
 export default App;

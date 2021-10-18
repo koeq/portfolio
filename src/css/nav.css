@@ -107,7 +107,7 @@
 .slide-menu-item span {
   position: relative;
   display: block;
-  font-size: clamp(1.5rem, 2.6vh, 2vw);
+  font-size: clamp(1.35rem, 2.6vh, 2vw);
   font-weight: 100;
   bottom: min(1.3vw, 3vh);
   letter-spacing: min(0.8vh, 1vw);
