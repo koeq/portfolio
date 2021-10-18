@@ -14,7 +14,7 @@ export default function About({ screenWidth }) {
         <div className="about-content">
           <div className="about-content-sub-container">
             <ParallaxTwo offset={screenWidth > 768 ? 40 : 20}>
-              <span className="heading-s about-content-subheading">
+              <span className="heading-s-tech about-content-subheading">
                 WHO AM I
               </span>
             </ParallaxTwo>
@@ -32,7 +32,7 @@ export default function About({ screenWidth }) {
 
           <div className="about-content-sub-container">
             <ParallaxTwo offset={screenWidth > 768 ? 40 : 20}>
-              <span className="heading-s about-content-subheading">
+              <span className="heading-s-tech about-content-subheading">
                 EDUCATION
               </span>
             </ParallaxTwo>
@@ -48,7 +48,9 @@ export default function About({ screenWidth }) {
 
           <div className="about-content-sub-container">
             <ParallaxTwo offset={screenWidth > 768 ? 40 : 20}>
-              <span className="heading-s about-content-subheading">TOOLS</span>
+              <span className="heading-s-tech about-content-subheading">
+                TOOLS
+              </span>
             </ParallaxTwo>
 
             <div className={"technology-i-use sub-text"}>

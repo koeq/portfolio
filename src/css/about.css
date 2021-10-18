@@ -98,7 +98,7 @@
 
 @media only screen and (max-width: 768px) {
   .about-container {
-    margin-left: 4rem;
+    margin-left: 5.8vw;
   }
 
   .about-path-text {
@@ -108,9 +108,7 @@
 
 @media only screen and (max-width: 650px) {
   .about-content {
-    margin-right: 5.5vw;
-
-    /* border: 1px solid red; */
+    margin-right: 5.8vw;
   }
 
   .sub-text {
@@ -118,6 +116,6 @@
   }
 
   .about-path-text {
-    width: 37vw;
+    width: 35vw;
   }
 }

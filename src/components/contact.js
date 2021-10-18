@@ -1,15 +1,18 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { ParallaxTwo } from "./parallax";
 
-export default function Contact({ isActive }) {
+export default function Contact({ isActive, screenWidth }) {
   return (
     <div className="contact-container">
-      <div className="get-in-contact-container">
-        <span style={{ marginBottom: "10vh" }} className="heading-s-vh">
-          GET IN CONTACT
-        </span>
-        <span className="heading-s-tech">œ</span>
-      </div>
+      <ParallaxTwo offset={screenWidth > 768 ? 100 : 50}>
+        <div className="get-in-contact-container">
+          <span style={{ marginBottom: "10vh" }} className="heading-s-vh">
+            GET IN CONTACT
+          </span>
+          <span className="heading-s-tech">œ</span>
+        </div>
+      </ParallaxTwo>
       <div className="contact-animation-container">
         <div className="mail-wrapper flex-center">
           <p className="heading-slide-scroll flex-center">

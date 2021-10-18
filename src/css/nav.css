@@ -29,13 +29,14 @@
 .nav-element {
   display: flex;
   justify-content: center;
-  /* border: 1px solid white; */
+  z-index: 200;
 }
 
 .nav-border-container {
   height: 100%;
   display: flex;
   align-items: center;
+  z-index: 200;
 }
 .nav-border-dark {
   height: 100vh;
@@ -65,7 +66,7 @@
   justify-content: space-around;
   align-items: center;
   list-style: none;
-  z-index: 100;
+  z-index: 200;
   transition: 1s ease;
 }
 
@@ -146,6 +147,8 @@
     display: block;
     justify-content: space-between;
     transition: 1s ease;
+
+    backdrop-filter: blur(5px);
   }
 
   .nav-list {
@@ -177,6 +180,6 @@
     height: 2px !important;
     bottom: 1px;
     z-index: 1000;
-    transform: scaley(0.5);
+    transform: scaley(0.6);
   }
 }
