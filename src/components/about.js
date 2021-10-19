@@ -5,7 +5,7 @@ import { ParallaxOne } from "./parallax";
 
 export default function About({ screenWidth }) {
   return (
-    <div className="about-container">
+    <div id="about" className="about-container">
       <div className="about-heading-container">
         <h1 className={"heading-l"}>ABOUT</h1>
       </div>

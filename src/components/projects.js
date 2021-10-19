@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Technology from "./technology";
 import { ParallaxTwo } from "./parallax";
 import studioMkHome from "../ressources/videos/studioMK/studioMkHome_compressed2.mp4";
@@ -16,7 +16,7 @@ import { FaDocker } from "react-icons/fa";
 function Project({ children, screenWidth, side, num, projectName }) {
   return (
     <div className="project">
-      <ParallaxTwo offset={screenWidth > 768 ? 50 : 20}>
+      <ParallaxTwo offset={screenWidth > 768 ? 50 : 10}>
         <div className={`project-name-${side}`}>
           <span style={{ marginRight: "1.5vw" }} className="heading-m-thin">
             {num}
@@ -32,7 +32,7 @@ function Project({ children, screenWidth, side, num, projectName }) {
 
 export default function Projects({ isActive }) {
   return (
-    <div className="projects-container">
+    <div id="projects" className="projects-container">
       <div className="projects-heading-container">
         <h1 className={"heading-l"}>PROJECTS</h1>
       </div>
@@ -43,7 +43,7 @@ export default function Projects({ isActive }) {
             <div className="project-card-sidebar">
               <span
                 style={{ letterSpacing: "0", lineHeight: "1.2vw" }}
-                className="heading-s-tech flex-center"
+                className="heading-s-tech flex-center "
               >
                 œ
               </span>
@@ -54,7 +54,11 @@ export default function Projects({ isActive }) {
                 }`}
               >
                 <span className="heading-s-tech">
-                  <a href="https://www.miriamkoenig.org" target={"_blank"}>
+                  <a
+                    href="https://www.miriamkoenig.org"
+                    target={"_blank"}
+                    rel="noopener noreferrer"
+                  >
                     CHECK OUT LIVE
                   </a>
                 </span>
@@ -79,7 +83,11 @@ export default function Projects({ isActive }) {
               }`}
             >
               <span className="project-card-sidebar-horizontal heading-s-tech">
-                <a href="https://github.com/koebe1/studioMK" target={"_blank"}>
+                <a
+                  href="https://github.com/koebe1/studioMK"
+                  target={"_blank"}
+                  rel="noopener noreferrer"
+                >
                   ON GITHUB
                 </a>
               </span>
@@ -143,7 +151,11 @@ export default function Projects({ isActive }) {
                 }`}
               >
                 <span className="heading-s-tech">
-                  <a href="https://koebe1-hnc.netlify.app/" target={"_blank"}>
+                  <a
+                    href="https://koebe1-hnc.netlify.app/"
+                    target={"_blank"}
+                    rel="noopener noreferrer"
+                  >
                     CHECK OUT LIVE
                   </a>
                 </span>
@@ -174,6 +186,7 @@ export default function Projects({ isActive }) {
                 <a
                   href="https://github.com/koebe1/hacker-news-clone"
                   target={"_blank"}
+                  rel="noopener noreferrer"
                 >
                   ON GITHUB
                 </a>
@@ -231,6 +244,7 @@ export default function Projects({ isActive }) {
                   <a
                     href="https://koebe1-github-battle.netlify.app"
                     target={"_blank"}
+                    rel="noopener noreferrer"
                   >
                     CHECK OUT LIVE
                   </a>
@@ -259,6 +273,7 @@ export default function Projects({ isActive }) {
                 <a
                   href="https://github.com/koebe1/github-battle"
                   target={"_blank"}
+                  rel="noopener noreferrer"
                 >
                   ON GITHUB
                 </a>
@@ -326,6 +341,7 @@ export default function Projects({ isActive }) {
                   <a
                     href="https://github.com/koebe1/WTTC-Web_Tracking_Traffic_Collector"
                     target={"_blank"}
+                    rel="noopener noreferrer"
                   >
                     CHECK OUT THESIS
                   </a>
@@ -357,6 +373,7 @@ export default function Projects({ isActive }) {
                 <a
                   href="https://github.com/koebe1/WTTC-Web_Tracking_Traffic_Collector"
                   target={"_blank"}
+                  rel="noopener noreferrer"
                 >
                   ON GITHUB
                 </a>

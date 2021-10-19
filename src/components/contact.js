@@ -4,7 +4,7 @@ import { ParallaxTwo } from "./parallax";
 
 export default function Contact({ isActive, screenWidth }) {
   return (
-    <div className="contact-container">
+    <div id="contact" className="contact-container">
       <ParallaxTwo offset={screenWidth > 768 ? 100 : 50}>
         <div className="get-in-contact-container">
           <span style={{ marginBottom: "10vh" }} className="heading-s-vh">
@@ -17,7 +17,6 @@ export default function Contact({ isActive, screenWidth }) {
         <div className="mail-wrapper flex-center">
           <p className="heading-slide-scroll flex-center">
             <a
-              className="show-link"
               className={` ${isActive ? "hide-link" : "show-link"}`}
               href="mailto:koe.be@web.de"
             >
@@ -46,6 +45,7 @@ export default function Contact({ isActive, screenWidth }) {
                 style={{ marginRight: "5.5vh" }}
                 href="https://github.com/koebe1"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 GITHUB
               </a>
@@ -53,16 +53,23 @@ export default function Contact({ isActive, screenWidth }) {
                 style={{ marginRight: "5.5vh" }}
                 href="https://www.instagram.com/koe_bene/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 INSTAGRAM
               </a>
-              <a style={{ marginRight: "5.5vh" }} href="" target="_blank">
+              <a
+                style={{ marginRight: "5.5vh" }}
+                href="http://benediktkoenig.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 LINKEDIN
               </a>
               <a
                 style={{ marginRight: "5.5vh" }}
                 href="https://github.com/koebe1"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 GITHUB
               </a>
@@ -70,10 +77,16 @@ export default function Contact({ isActive, screenWidth }) {
                 style={{ marginRight: "5.5vh" }}
                 href="https://www.instagram.com/koe_bene/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 INSTAGRAM
               </a>
-              <a style={{ marginRight: "5.5vh" }} href="" target="_blank">
+              <a
+                style={{ marginRight: "5.5vh" }}
+                href="http://benediktkoenig.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 LINKEDIN
               </a>
             </p>
@@ -86,6 +99,7 @@ export default function Contact({ isActive, screenWidth }) {
                 style={{ marginRight: "5.5vh" }}
                 href="https://github.com/koebe1"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 GITHUB
               </a>
@@ -93,16 +107,23 @@ export default function Contact({ isActive, screenWidth }) {
                 style={{ marginRight: "5.5vh" }}
                 href="https://www.instagram.com/koe_bene/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 INSTAGRAM
               </a>
-              <a style={{ marginRight: "5.5vh" }} href="" target="_blank">
+              <a
+                style={{ marginRight: "5.5vh" }}
+                href="http://benediktkoenig.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 LINKEDIN
               </a>
               <a
                 style={{ marginRight: "5.5vh" }}
                 href="https://github.com/koebe1"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 GITHUB
               </a>
@@ -110,10 +131,16 @@ export default function Contact({ isActive, screenWidth }) {
                 style={{ marginRight: "5.5vh" }}
                 href="https://www.instagram.com/koe_bene/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 INSTAGRAM
               </a>
-              <a style={{ marginRight: "5.5vh" }} href="" target="_blank">
+              <a
+                style={{ marginRight: "5.5vh" }}
+                href="http://www.benediktkoenig.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 LINKEDIN
               </a>
             </p>
