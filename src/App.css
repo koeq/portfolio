@@ -14,6 +14,10 @@
   font-family: "Clash Grotesk", sans-serif;
 }
 
+.app {
+  border: 1px solid red;
+}
+
 /* VARS VARS VARS */
 :root {
   font-size: 10px;
@@ -81,11 +85,10 @@ a {
 }
 
 .start-mobile-heading {
-  font-size: clamp(1rem, 22.2vw, 23rem);
+  font-size: clamp(1rem, 29vw, 23rem);
   font-weight: 600;
   letter-spacing: 0.6vw;
-  /* line-height: min(18.5rem, 18vw); */
-
+  line-height: min(18.5rem, 28vw);
 }
 .heading-nav {
   font-size: clamp(1rem, 20vh, 15vw);

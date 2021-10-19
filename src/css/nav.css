@@ -134,6 +134,7 @@
 
 @media only screen and (max-width: 768px) {
   .oe {
+    font-weight: 600;
     margin-left: 1.75vw;
   }
   .nav-container {

@@ -11,7 +11,10 @@ export default function StartMobile() {
           <span className="start-mobile-heading">END</span>
         </div>
         <div className="heading-row">
-          <span className="start-mobile-heading">ENGINEER</span>
+          <span className="start-mobile-heading">ENGINE</span>
+        </div>
+        <div className="heading-row">
+          <span className="start-mobile-heading">ER</span>
         </div>
       </div>
 
