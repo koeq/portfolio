@@ -50,10 +50,9 @@
 }
 
 .scroll-progression-bar {
-  /* height: 100vh !important; */
   background: #4c4d4c;
-  z-index: 200 !important;
-  transform: scalex(0.8);
+
+  transform: scalex(0.7);
 
   transform: translateX(-1.6px);
 }

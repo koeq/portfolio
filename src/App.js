@@ -1,4 +1,4 @@
-import React, { useState, useLayoutEffect, lazy, Suspense } from "react";
+import React, { useState, useEffect, lazy, Suspense } from "react";
 import "./App.css";
 import Grain from "./components/grain";
 import Nav from "./components/nav";
@@ -8,8 +8,8 @@ import About from "./components/about";
 // import Projects from "./components/projects";
 // lazy load component with the videos
 import Contact from "./components/contact";
-// const Projects = lazy(() => import("./components/projects"));
-import Projects from "./components/projects";
+const Projects = lazy(() => import("./components/projects"));
+// import Projects from "./components/projects";
 
 function App() {
   const [screenWidth, setScreenWidth] = useState(0);
@@ -23,7 +23,7 @@ function App() {
     setScreenWidth(window.innerWidth);
   };
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     setScreenWidth(window.innerWidth);
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);

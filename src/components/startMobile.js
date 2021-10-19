@@ -21,10 +21,10 @@ export default function StartMobile() {
       <div className="start-mobile-name">
         <span
           style={{
-            fontSize: "clamp(0.5rem, 8.8vw, 20rem)",
+            fontSize: "clamp(0.5rem, 7.5vw, 20rem)",
             fontWeight: "400",
-            letterSpacing: "0.9vw",
-            marginBottom: "12vh"
+            letterSpacing: "1.5vw",
+            marginBottom: "11vh"
           }}
         >
           Benedikt König
