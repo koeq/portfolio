@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
 import Technology from "./technology";
 import { ParallaxTwo } from "./parallax";
-import studioMkHome from "../ressources/videos/studioMK/studioMkHome_compressed.mp4";
-import studioMkMobile from "../ressources/videos/studioMK/studioMk_mobile_compressed.mp4";
-import GithubBattle from "../ressources/videos/github_battle/GithubBattle.mov";
+import studioMkHome from "../ressources/videos/studioMK/studioMkHome_compressed2.mp4";
+import studioMkMobile from "../ressources/videos/studioMK/studioMk_mobile_compressed2.mp4";
+import GithubBattle from "../ressources/videos/github_battle/githubBattle_compressed.mp4";
 import GithubBattleMobile from "../ressources/images/githubBattle/githubBattle_mobile.jpg";
-import HackerNews from "../ressources/videos/hacker_news_clone/HackerNews.mov";
+import HackerNews from "../ressources/videos/hacker_news_clone/hackerNews_compressed.mp4";
 import HackerNewsMobile from "../ressources/images/hackerNews/hackerNews_mobile.jpg";
-import wttc from "../ressources/videos/wttc/wttc_compressed.mp4";
+import wttc from "../ressources/videos/wttc/wttc_compressed2.mp4";
 import { FaPython } from "react-icons/fa";
 import { FaTerminal } from "react-icons/fa";
 import { SiSelenium } from "react-icons/si";

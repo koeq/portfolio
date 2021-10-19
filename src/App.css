@@ -80,6 +80,13 @@ a {
   line-height: min(18.5rem, 18vw);
 }
 
+.start-mobile-heading {
+  font-size: clamp(1rem, 22.2vw, 23rem);
+  font-weight: 600;
+  letter-spacing: 0.6vw;
+  /* line-height: min(18.5rem, 18vw); */
+
+}
 .heading-nav {
   font-size: clamp(1rem, 20vh, 15vw);
   font-weight: 600;
