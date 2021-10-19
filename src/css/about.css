@@ -1,6 +1,6 @@
 .about-container {
   /* margin-top: 25vh; */
-  margin-left: clamp(8rem, 10.8vw, 13.8rem);
+  margin-left: min(12rem, 20vw);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -13,6 +13,8 @@
 
 .about-content-path {
   display: flex;
+
+  /* border: 1px solid yellow; */
 }
 
 .about-content {
@@ -29,6 +31,8 @@
   align-items: flex-start;
   justify-content: flex-start;
   margin-bottom: 10vw;
+
+  /* border: 1px solid blue; */
 }
 .about-content-subheading {
   display: flex;
@@ -38,7 +42,7 @@
 }
 
 .sub-text {
-  margin-left: 8.5vw;
+  margin-left: 7.5vw;
   width: 35.5vw;
 }
 
@@ -76,7 +80,6 @@
   align-items: flex-end;
   margin-top: 16vw;
   margin-left: 6vw;
-  /* border: 1px solid red; */
 }
 .about-quote-text {
   width: 70vw;
@@ -117,5 +120,39 @@
 
   .about-path-text {
     width: 35vw;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .about-heading-container {
+    margin-bottom: 12vw;
+  }
+  .about-content-path {
+    flex-direction: column;
+
+    width: 100%;
+  }
+
+  .sub-text {
+    width: 100%;
+    margin-left: 7vw;
+  }
+  .about-path {
+    margin-top: 5vw;
+  }
+  .about-path-text {
+    width: auto;
+    margin-right: 5.8vw;
+  }
+
+  .about-quote {
+    margin-left: 0;
+    margin-top: 20vw;
+    /* border: 1px solid yellow; */
+    width: 90%;
+  }
+  .about-quote-text {
+    margin-left: 0vw;
+    width: 82vw;
   }
 }

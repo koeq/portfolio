@@ -85,7 +85,7 @@ a {
 }
 
 .start-mobile-heading {
-  font-size: clamp(1rem, 29vw, 23rem);
+  font-size: clamp(1rem, 29.4vw, 23rem);
   font-weight: 600;
   letter-spacing: 0.6vw;
   line-height: min(18.5rem, 28vw);
@@ -110,7 +110,7 @@ a {
 .heading-l {
   font-size: clamp(6rem, 6.65vw, 20rem);
   font-weight: 600;
-  letter-spacing: 0.4vw;
+  letter-spacing: max(0.3rem, 0.4vw);
 }
 
 /* quote / project names */
@@ -124,13 +124,13 @@ a {
   font-size: clamp(2rem, 3.5vw, 15rem);
   font-weight: 300;
   letter-spacing: 0.15vw;
-  line-height: 4.35vw;
+  line-height: max(2rem, 4.35vw);
 }
 .heading-m-bold {
   font-size: clamp(2rem, 3.5vw, 15rem);
   font-weight: 600;
   letter-spacing: 0.15vw;
-  line-height: 4.35vw;
+  line-height: max(2rem, 4.35vw);
 }
 
 /* sub headings */
@@ -140,7 +140,7 @@ a {
   letter-spacing: 0.47vw;
 }
 .heading-s-tech {
-  font-size: clamp(1.6rem, 1.55vw, 4rem);
+  font-size: clamp(1.4rem, 1.55vw, 4rem);
   font-weight: 500;
   letter-spacing: 0.47vw;
 }
@@ -152,17 +152,16 @@ a {
 }
 
 .running-text {
-  font-size: clamp(1.3rem, 1.41vw, 10rem);
+  font-size: clamp(1.4rem, 1.41vw, 10rem);
   letter-spacing: 0.03vw;
   font-weight: 300;
-  line-height: max(2rem, 2.2vw);
+  line-height: max(1.8rem, 2.2vw);
 }
 .running-text-small {
   font-size: clamp(0.5rem, 1.2vw, 10rem);
   letter-spacing: 0.03vw;
   font-weight: 300;
   line-height: max(2rem, 2.2vw);
-  /* font-style: italic; */
 }
 
 /* @media only screen and (max-width: 480px) {
