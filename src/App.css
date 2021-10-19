@@ -85,9 +85,9 @@ a {
 }
 
 .start-mobile-heading {
-  font-size: clamp(1rem, 29.4vw, 23rem);
+  font-size: clamp(1rem, 29vw, 23rem);
   font-weight: 600;
-  letter-spacing: 0.6vw;
+  letter-spacing: 1vw;
   line-height: min(18.5rem, 28vw);
 }
 .heading-nav {

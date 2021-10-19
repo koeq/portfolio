@@ -83,8 +83,8 @@ export default function Nav({
             // change progressbar for mobile
             style={
               window.innerWidth <= 768
-                ? { width: scrollProgress, height: "1px" }
-                : { height: scrollProgress, width: "1px" }
+                ? { width: scrollProgress, height: "0.5px" }
+                : { height: scrollProgress, width: "0.5px" }
             }
             className="scroll-progression-bar"
           ></motion.div>
