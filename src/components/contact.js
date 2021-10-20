@@ -37,7 +37,7 @@ export default function Contact({ isActive, screenWidth }) {
             initial={{ x: 0 }}
             animate={{ x: "-50%" }}
             transition={{
-              duration: 20,
+              duration: 25,
               ease: "linear",
               loop: Infinity
             }}

@@ -55,9 +55,7 @@
 .scroll-progression-bar {
   background: #ebe9eb;
 
-  transform: scaleX(0.5) !important;
-
-  transform: translateX(-1.6px) !important;
+  transform: translateX(-1.5px) scaleX(0.5) !important;
 }
 
 .nav-list {
@@ -68,7 +66,7 @@
   justify-content: space-around;
   align-items: center;
   list-style: none;
-  z-index: 200;
+  z-index: 5000 !important;
   transition: 1s ease;
 }
 
@@ -82,7 +80,7 @@
   background: #0f1111;
   transition: 2s ease-in-out;
   transform: translateX(-300vw);
-  z-index: 100 !important;
+  z-index: 99 !important;
 }
 .slide-menu-item-container {
   display: flex;
@@ -95,7 +93,7 @@
 .slide-menu-active {
   transform: translateX(0px);
   transition: 0.8s ease-in-out;
-  z-index: 100 !important;
+  z-index: 99 !important;
 }
 
 .slide-menu-item {
@@ -170,13 +168,14 @@
 
   .slide-menu {
     width: 100%;
+    padding-bottom: 8rem;
   }
 
   .scroll-progression-bar {
     background: #ebe9eb;
     height: 2px !important;
-    /* bottom: 1px; */
+    bottom: 1px;
     z-index: 1000;
-    transform: scaleY(0.5) !important;
+    transform: scaleY(0.3) !important;
   }
 }

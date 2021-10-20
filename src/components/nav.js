@@ -78,8 +78,14 @@ export default function Nav({ handleNavToggle, isActive, setActive }) {
             // change progressbar for mobile
             style={
               window.innerWidth <= 768
-                ? { width: scrollProgress, height: "0.5px" }
-                : { height: scrollProgress, width: "0.5px" }
+                ? {
+                    width: scrollProgress,
+                    height: "1px"
+                  }
+                : {
+                    height: scrollProgress,
+                    width: "1px"
+                  }
             }
             className="scroll-progression-bar"
           ></motion.div>
