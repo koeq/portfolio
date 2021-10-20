@@ -1,4 +1,5 @@
 import React from "react";
+import { ParallaxOne } from "./parallax";
 
 export default function StartMobile() {
   return (
@@ -18,18 +19,20 @@ export default function StartMobile() {
         </div>
       </div>
 
-      <div className="start-mobile-name">
-        <span
-          style={{
-            fontSize: "clamp(0.5rem, 7vw, 20rem)",
-            fontWeight: "400",
-            letterSpacing: "1.6vw",
-            marginBottom: "10vh"
-          }}
-        >
-          Benedikt König
-        </span>
-      </div>
+      <ParallaxOne offset={50}>
+        <div className="start-mobile-name">
+          <span
+            style={{
+              fontSize: "clamp(0.6rem, 7vw, 20rem)",
+              fontWeight: "400",
+              letterSpacing: "1.6vw",
+              marginBottom: "16vh"
+            }}
+          >
+            Benedikt König
+          </span>
+        </div>
+      </ParallaxOne>
     </div>
   );
 }
