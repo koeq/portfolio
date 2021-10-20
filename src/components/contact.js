@@ -2,13 +2,14 @@ import React from "react";
 import { motion } from "framer-motion";
 import { ParallaxTwo } from "./parallax";
 
-export default function Contact({ isActive, screenWidth }) {
+export default function Contact({ isActive }) {
+console.log("contact rendered!")
   return (
     <div
       id="contact"
       className="contact-container"
       // padding top for mobile version
-      style={screenWidth <= 480 ? { paddingTop: "2rem" } : null}
+      style={window.innerWidth <= 480 ? { paddingTop: "2rem" } : null}
     >
       <ParallaxTwo offset={120}>
         <div className="get-in-contact-container">

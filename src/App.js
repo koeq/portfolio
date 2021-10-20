@@ -5,12 +5,10 @@ import Nav from "./components/nav";
 import StartMobile from "./components/startMobile";
 import Start from "./components/start";
 import About from "./components/about";
-// import Projects from "./components/projects";
 // lazy load component with the videos
 import Contact from "./components/contact";
 const Projects = lazy(() => import("./components/projects"));
 const ProjectsMobile = lazy(() => import("./components/projectsMobile"));
-// import Projects from "./components/projects";
 
 function App() {
   const [screenWidth, setScreenWidth] = useState(0);
@@ -25,7 +23,6 @@ function App() {
   };
 
   useEffect(() => {
-    setScreenWidth(window.innerWidth);
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
@@ -40,21 +37,21 @@ function App() {
           screenWidth={screenWidth}
         />
 
-        {screenWidth <= 480 ? (
+        {window.innerWidth <= 480 ? (
           <StartMobile />
         ) : (
           <Start screenWidth={screenWidth} />
         )}
 
-        <About screenWidth={screenWidth} />
+        <About />
         <Suspense fallback={<div>loading...</div>}>
-          {screenWidth <= 480 ? (
+          {window.innerWidth <= 480 ? (
             <ProjectsMobile isActive={isActive} screenWidth={screenWidth} />
           ) : (
-            <Projects isActive={isActive} screenWidth={screenWidth} />
+            <Projects isActive={isActive} />
           )}
         </Suspense>
-        <Contact screenWidth={screenWidth} isActive={isActive} />
+        <Contact isActive={isActive} />
       </Grain>
     </div>
   );

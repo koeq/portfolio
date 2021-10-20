@@ -19,14 +19,14 @@ export default function StartMobile() {
         </div>
       </div>
 
-      <ParallaxOne offset={50}>
+      <ParallaxOne offset={40}>
         <div className="start-mobile-name">
           <span
             style={{
               fontSize: "clamp(0.6rem, 7vw, 20rem)",
               fontWeight: "400",
               letterSpacing: "1.6vw",
-              marginBottom: "16vh"
+              marginBottom: "13vh"
             }}
           >
             Benedikt König

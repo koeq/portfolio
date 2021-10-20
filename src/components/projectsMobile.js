@@ -50,8 +50,8 @@ export default function ProjectsMobile({ isActive }) {
                   width="100%"
                   autoPlay
                   playsInline
-                  muted
                   loop
+                  muted
                   src={studioMkHome}
                   alt="studio MK website video desktop"
                 ></video>

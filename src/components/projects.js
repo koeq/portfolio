@@ -13,7 +13,7 @@ import { FaTerminal } from "react-icons/fa";
 import { SiSelenium } from "react-icons/si";
 import { FaDocker } from "react-icons/fa";
 
-function Project({ children, screenWidth, side, num, projectName }) {
+function Project({ children, side, num, projectName }) {
   return (
     <div className="project">
       <ParallaxTwo offset={window.innerWidth > 768 ? 50 : 30}>
