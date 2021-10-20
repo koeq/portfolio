@@ -92,9 +92,9 @@ a {
   line-height: min(18.5rem, 28vw);
 }
 .heading-nav {
-  font-size: clamp(1rem, 20vh, 15vw);
+  font-size: clamp(1rem, 20vh, 16vw);
   font-weight: 600;
-  letter-spacing: min(1.5vh, 1vw);
+  letter-spacing: min(1.5vh, 0.6vw);
 }
 .heading-xxl {
   font-size: clamp(3rem, 23vw, 60rem);

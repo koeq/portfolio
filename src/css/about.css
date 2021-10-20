@@ -90,7 +90,7 @@
 
 .quotation-mark {
   position: relative;
-  top: 1.5vw;
+
   left: 5.5vw;
   line-height: 0vw;
 }
@@ -154,7 +154,7 @@
   }
   .about-quote-text {
     margin-left: 0vw;
-    margin-bottom: 2vw;
+    margin-bottom: 4vw;
     width: 82vw;
   }
 

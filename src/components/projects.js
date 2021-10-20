@@ -32,7 +32,11 @@ function Project({ children, screenWidth, side, num, projectName }) {
 
 export default function Projects({ isActive }) {
   return (
-    <div id="projects" className="projects-container">
+    <div
+      id="projects"
+      className="projects-container" // padding top for mobile/tablet version
+      style={window.innerWidth < 768 ? { paddingTop: "8rem" } : null}
+    >
       <div className="projects-heading-container">
         <h1 className={"heading-l"}>PROJECTS</h1>
       </div>
@@ -43,7 +47,7 @@ export default function Projects({ isActive }) {
             <div className="project-card-sidebar">
               <span
                 style={{ letterSpacing: "0", lineHeight: "1.2vw" }}
-                className="heading-s-tech flex-center "
+                className="heading-s-tech flex-center oe"
               >
                 œ
               </span>
@@ -130,7 +134,6 @@ export default function Projects({ isActive }) {
           </div>
         </div>
       </Project>
-
       {/* 02 */}
       <Project side={"left"} num={"02"} projectName={"Hacker News Clone"}>
         <div className="project-container">
@@ -141,7 +144,7 @@ export default function Projects({ isActive }) {
             <div className="project-card-sidebar">
               <span
                 style={{ letterSpacing: "0", lineHeight: "1.2vw" }}
-                className="heading-s-tech flex-center"
+                className="heading-s-tech flex-center oe"
               >
                 œ
               </span>
@@ -224,7 +227,6 @@ export default function Projects({ isActive }) {
           </div>
         </div>
       </Project>
-
       {/* 03 */}
       <Project side={"right"} num={"03"} projectName={"Github Battle"}>
         <div className="project-container">
@@ -232,7 +234,7 @@ export default function Projects({ isActive }) {
             <div className="project-card-sidebar">
               <span
                 style={{ letterSpacing: "0", lineHeight: "1.2vw" }}
-                className="heading-s-tech flex-center"
+                className="heading-s-tech flex-center oe"
               >
                 œ
               </span>
@@ -315,7 +317,6 @@ export default function Projects({ isActive }) {
           </div>
         </div>
       </Project>
-
       <Project
         side={"left"}
         num={"04"}
@@ -329,7 +330,7 @@ export default function Projects({ isActive }) {
             <div className="project-card-sidebar">
               <span
                 style={{ letterSpacing: "0", lineHeight: "1.2vw" }}
-                className="heading-s-tech flex-center"
+                className="heading-s-tech flex-center oe"
               >
                 œ
               </span>

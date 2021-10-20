@@ -8,8 +8,8 @@ export default function About({ screenWidth }) {
     <div
       id="about"
       className="about-container"
-      // padding top for mobile version
-      style={screenWidth <= 480 ? { paddingTop: "8rem" } : null}
+      // padding top for mobile/tablet version
+      style={window.innerWidth < 768 ? { paddingTop: "8rem" } : null}
     >
       <div className="about-heading-container">
         <h1 className={"heading-l"}>ABOUT</h1>
@@ -18,7 +18,7 @@ export default function About({ screenWidth }) {
       <div className="about-content-path">
         <div className="about-content">
           <div className="about-content-sub-container">
-            <ParallaxTwo offset={screenWidth > 768 ? 40 : 20}>
+            <ParallaxTwo offset={40}>
               <span className="heading-s-tech about-content-subheading">
                 WHO AM I
               </span>
@@ -64,9 +64,11 @@ export default function About({ screenWidth }) {
           </div>
         </div>
 
-        <ParallaxTwo offset={screenWidth > 768 ? 60 : 40}>
+        <ParallaxTwo offset={screenWidth > 768 ? 60 : 0}>
           <div className="about-path">
-            <span className="heading-s">MY PATH</span>
+            <ParallaxTwo offset={screenWidth > 768 ? 0 : 10}>
+              <span className="heading-s">MY PATH</span>
+            </ParallaxTwo>
 
             <div className="about-path-text">
               <p className="running-text">
@@ -99,7 +101,7 @@ export default function About({ screenWidth }) {
       </div>
 
       <div className="about-quote">
-        <ParallaxOne offset={screenWidth > 768 ? 50 : 20}>
+        <ParallaxOne offset={screenWidth > 768 ? 60 : 30}>
           <div className="about-quote-text">
             <p className="heading-m-regular">
               My affinity with software engineering roots in an{" "}

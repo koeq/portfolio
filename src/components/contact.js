@@ -10,12 +10,12 @@ export default function Contact({ isActive, screenWidth }) {
       // padding top for mobile version
       style={screenWidth <= 480 ? { paddingTop: "2rem" } : null}
     >
-      <ParallaxTwo offset={screenWidth > 768 ? 100 : 50}>
+      <ParallaxTwo offset={100}>
         <div className="get-in-contact-container">
           <span style={{ marginBottom: "10vh" }} className="heading-s-vh">
             GET IN CONTACT
           </span>
-          <span className="heading-s-tech">œ</span>
+          <span className="heading-s-tech oe">œ</span>
         </div>
       </ParallaxTwo>
       <div className="contact-animation-container">
