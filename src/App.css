@@ -5,6 +5,7 @@
 @import url("./css/start.css");
 @import url("./css/about.css");
 @import url("./css/projects.css");
+@import url("./css/projectsMobile.css");
 @import url("./css/contact.css");
 
 * {
@@ -118,7 +119,7 @@ a {
   font-size: clamp(2rem, 3.5vw, 15rem);
   font-weight: 200;
   letter-spacing: 0.15vw;
-  line-height: 4.35vw;
+  line-height: max(2.2rem, 4.35vw);
 }
 .heading-m-regular {
   font-size: clamp(2rem, 3.5vw, 15rem);
@@ -142,6 +143,11 @@ a {
 .heading-s-tech {
   font-size: clamp(1.4rem, 1.55vw, 4rem);
   font-weight: 500;
+  letter-spacing: 0.47vw;
+}
+.heading-s-bold {
+  font-size: clamp(1.4rem, 1.55vw, 4rem);
+  font-weight: 600;
   letter-spacing: 0.47vw;
 }
 /* sub headings */

@@ -9,6 +9,7 @@ import About from "./components/about";
 // lazy load component with the videos
 import Contact from "./components/contact";
 const Projects = lazy(() => import("./components/projects"));
+const ProjectsMobile = lazy(() => import("./components/projectsMobile"));
 // import Projects from "./components/projects";
 
 function App() {
@@ -47,7 +48,11 @@ function App() {
 
         <About screenWidth={screenWidth} />
         <Suspense fallback={<div>loading...</div>}>
-          <Projects isActive={isActive} screenWidth={screenWidth} />
+          {screenWidth <= 480 ? (
+            <ProjectsMobile isActive={isActive} screenWidth={screenWidth} />
+          ) : (
+            <Projects isActive={isActive} screenWidth={screenWidth} />
+          )}
         </Suspense>
         <Contact screenWidth={screenWidth} isActive={isActive} />
       </Grain>

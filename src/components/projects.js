@@ -131,6 +131,7 @@ export default function Projects({ isActive }) {
         </div>
       </Project>
 
+      {/* 02 */}
       <Project side={"left"} num={"02"} projectName={"Hacker News Clone"}>
         <div className="project-container">
           <div
@@ -224,6 +225,7 @@ export default function Projects({ isActive }) {
         </div>
       </Project>
 
+      {/* 03 */}
       <Project side={"right"} num={"03"} projectName={"Github Battle"}>
         <div className="project-container">
           <div className="project-card-container">
