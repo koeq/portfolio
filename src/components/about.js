@@ -5,7 +5,12 @@ import { ParallaxOne } from "./parallax";
 
 export default function About({ screenWidth }) {
   return (
-    <div id="about" className="about-container">
+    <div
+      id="about"
+      className="about-container"
+      // padding top for mobile version
+      style={screenWidth <= 480 ? { paddingTop: "8rem" } : null}
+    >
       <div className="about-heading-container">
         <h1 className={"heading-l"}>ABOUT</h1>
       </div>

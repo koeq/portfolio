@@ -148,12 +148,17 @@
 
   .about-quote {
     margin-left: 0;
-    margin-top: 28vw;
+    margin-top: 30vw;
     /* border: 1px solid yellow; */
     width: 90%;
   }
   .about-quote-text {
     margin-left: 0vw;
+    margin-bottom: 2vw;
     width: 82vw;
+  }
+
+  .quotation-mark {
+    margin-right: 0.9vw;
   }
 }

@@ -160,26 +160,10 @@
 }
 
 @media only screen and (max-width: 480px) {
-  /* .projects-heading-container {
-    margin-bottom: 12vw;
-  }
-
   .projects-container {
-    margin-top: 40vw;
+    margin-top: 12vw;
   }
-
-  .project-card-container {
-    flex-direction: column-reverse;
-    align-items: flex-end;
-
-    border: 1px solid red;
+  .project {
+    margin-top: 5vw;
   }
-
-  .project-card-sidebar-horizontal {
-    writing-mode: horizontal-tb;
-    transform: rotate(0) !important;
-  }
-  .mobile-hide {
-    display: none !important;
-  } */
 }

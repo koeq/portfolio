@@ -16,7 +16,7 @@ import { FaDocker } from "react-icons/fa";
 function Project({ children, screenWidth, side, num, projectName }) {
   return (
     <div className="project">
-      <ParallaxTwo offset={screenWidth > 768 ? 50 : 10}>
+      <ParallaxTwo offset={window.innerWidth > 768 ? 50 : 30}>
         <div className={`project-name-${side}`}>
           <span style={{ marginRight: "1.5vw" }} className="heading-m-thin">
             {num}
