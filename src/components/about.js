@@ -29,8 +29,8 @@ export default function About() {
                 I'm Benedikt König a 27 year old developer and sport fanatic
                 from Hamburg, Germany. When I'm not sharpening my coding skills
                 I love to move. Mountain biking, strength and conditioning,
-                running or <br /> surfing when on vacation. You name it! It's
-                all about the balance between mental and physical work.
+                running or surfing when on vacation. You name it! It's all about
+                the balance between mental and physical work.
               </span>
             </div>
           </div>

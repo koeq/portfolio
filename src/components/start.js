@@ -20,8 +20,8 @@ export default function Start() {
     [0, 0.7],
     [0, -window.innerWidth * 5]
   );
-  const xOne = useSpring(xAnimOne, { stiffness: 600, damping: 120 });
-  const xTwo = useSpring(xAnimTwo, { stiffness: 600, damping: 120 });
+  const xOne = useSpring(xAnimOne, { stiffness: 1000, damping: 120 });
+  const xTwo = useSpring(xAnimTwo, { stiffness: 1000, damping: 120 });
   //
 
   //   TYPING ANIMATION
