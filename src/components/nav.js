@@ -1,6 +1,7 @@
 import { Pivot as Hamburger } from "hamburger-react";
 import React, { useEffect } from "react";
 import { motion, useViewportScroll, useTransform } from "framer-motion";
+import { easeIn } from "popmotion";
 
 export default function Nav({ handleNavToggle, isActive, setActive }) {
   // deactivate scrolling in nav-slide-menu
@@ -92,71 +93,108 @@ export default function Nav({ handleNavToggle, isActive, setActive }) {
         </div>
       </div>
 
-      <div className={isActive ? "slide-menu-active slide-menu" : "slide-menu"}>
+      <motion.div
+        className={isActive ? "slide-menu-active slide-menu" : "slide-menu"}
+        style={
+          isActive
+            ? { transform: "translate3d(0,0,0)" }
+            : { transform: "translate3d(-200vw, 0, 0)" }
+        }
+      >
         <div className="slide-menu-item-container">
-          <div
+          <motion.div
             className={
               isActive
                 ? "slide-menu-item slide-menu-item-active heading-nav"
                 : "slide-menu-item"
             }
+            style={
+              isActive
+                ? { transform: "translate3d(0,0,0)" }
+                : { transform: "translate3d(-200vw, 0, 0)" }
+            }
           >
             <a onClick={() => setActive(false)} href="#about">
               ABOUT
             </a>
-            <span
+            <motion.span
               className={
                 isActive
                   ? "slide-menu-item-sub1 slide-menu-item-sub-active"
                   : "slide-menu-item-sub1"
               }
+              style={
+                isActive
+                  ? { transform: "translate3d(0,0,0)" }
+                  : { transform: "translate3d(-200vw, 0, 0)" }
+              }
             >
               Benedikt König
-            </span>
-          </div>
-          <div
+            </motion.span>
+          </motion.div>
+          <motion.div
             className={
               isActive
                 ? "slide-menu-item slide-menu-item-active heading-nav"
                 : "slide-menu-item"
+            }
+            style={
+              isActive
+                ? { transform: "translate3d(0,0,0)" }
+                : { transform: "translate3d(-200vw, 0, 0)" }
             }
           >
             <a onClick={() => setActive(false)} href="#projects">
               PROJECTS
             </a>
 
-            <span
+            <motion.span
               className={
                 isActive
                   ? "slide-menu-item-sub2 slide-menu-item-sub-active"
                   : "slide-menu-item-sub2"
               }
+              style={
+                isActive
+                  ? { transform: "translate3d(0,0,0)" }
+                  : { transform: "translate3d(-200vw, 0, 0)" }
+              }
             >
               Have a look
-            </span>
-          </div>
-          <div
+            </motion.span>
+          </motion.div>
+          <motion.div
             className={
               isActive
                 ? "slide-menu-item slide-menu-item-active heading-nav"
                 : "slide-menu-item"
             }
+            style={
+              isActive
+                ? { transform: "translate3d(0,0,0)" }
+                : { transform: "translate3d(-200vw, 0, 0)" }
+            }
           >
             <a onClick={() => setActive(false)} href="#contact">
               CONTACT
             </a>
-            <span
+            <motion.span
               className={
                 isActive
                   ? "slide-menu-item-sub3 slide-menu-item-sub-active"
                   : "slide-menu-item-sub3"
               }
+              style={
+                isActive
+                  ? { transform: "translate3d(0,0,0)" }
+                  : { transform: "translate3d(-200vw, 0, 0)" }
+              }
             >
               Send me a message
-            </span>
-          </div>
+            </motion.span>
+          </motion.div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

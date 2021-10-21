@@ -4,7 +4,6 @@ import { ParallaxTwo } from "./parallax";
 import { ParallaxOne } from "./parallax";
 
 export default function About() {
-  console.log("rendered!");
   return (
     <div
       id="about"

@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import { ParallaxTwo } from "./parallax";
 
 export default function Contact({ isActive }) {
-console.log("contact rendered!")
   return (
     <div
       id="contact"
