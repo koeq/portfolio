@@ -47,7 +47,7 @@ export default function Projects({ isActive }) {
             <div className="project-card-sidebar">
               <span
                 style={{ letterSpacing: "0", lineHeight: "1.2vw" }}
-                className="heading-s-tech flex-center oe"
+                className="heading-s-tech  oe"
               >
                 œ
               </span>
