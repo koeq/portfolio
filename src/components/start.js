@@ -6,19 +6,19 @@ import {
   useViewportScroll
 } from "framer-motion";
 
-export default function Start({ screenWidth }) {
+export default function Start() {
   // SLIDE ANIMATION
   const { scrollYProgress } = useViewportScroll();
   const xAnimOne = useTransform(
     scrollYProgress,
     [0, 0.7],
-    [0, -screenWidth * 3]
+    [0, -window.innerWidth * 3]
   );
 
   const xAnimTwo = useTransform(
     scrollYProgress,
     [0, 0.7],
-    [0, -screenWidth * 5]
+    [0, -window.innerWidth * 5]
   );
   const xOne = useSpring(xAnimOne, { stiffness: 600, damping: 120 });
   const xTwo = useSpring(xAnimTwo, { stiffness: 600, damping: 120 });

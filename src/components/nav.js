@@ -1,7 +1,6 @@
 import { Pivot as Hamburger } from "hamburger-react";
 import React, { useEffect } from "react";
 import { motion, useViewportScroll, useTransform } from "framer-motion";
-import { easeIn } from "popmotion";
 
 export default function Nav({ handleNavToggle, isActive, setActive }) {
   // deactivate scrolling in nav-slide-menu
