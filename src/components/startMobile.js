@@ -6,7 +6,7 @@ export default function StartMobile() {
     <div className="start-mobile-container">
       <div className="start-mobile-heading-container">
         <div className="heading-row">
-          <span className="start-mobile-heading">FRONT</span>
+          <span className="start-mobile-heading">FRONT-</span>
         </div>
         <div className="heading-row">
           <span className="start-mobile-heading">END</span>

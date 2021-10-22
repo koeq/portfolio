@@ -177,9 +177,9 @@ export default function Start() {
               className="slider-marquee slider-marquee-long"
             >
               <p className="heading-slide-scroll">
-                FRONT END FRONT END FRONT END FRONT END FRONT END FRONT END
-                FRONT END FRONT END FRONT END FRONT END FRONT END FRONT END
-                FRONT END
+                FRONT-END FRONT-END FRONT-END FRONT-END FRONT-END FRONT-END
+                FRONT-END FRONT-END FRONT-END FRONT-END FRONT-END FRONT-END
+                FRONT-END
               </p>
             </motion.div>
           </div>
