@@ -22,6 +22,7 @@ function App() {
     setScreenWidth(window.innerWidth);
   };
 
+  // rerender app on window resize
   useEffect(() => {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
