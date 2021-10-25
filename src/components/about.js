@@ -74,16 +74,16 @@ export default function About() {
               Like many people I began my developer journey as a lost business
               student not satisfied with the content of my studies. When you
               leave school to go to university you imagine studying business
-              administration as learning how to build the next succesfull start
+              administration as learning how to build the next successfull start
               up. But reality hits you hard when you realize that there is one
               interesting course for ten boring ones. <br /> <br />
               So what now?
               <br /> <br /> A spark of hope! Business Informatics. Seems like
               not all courses are boring afterall. It turnes out you can even
               put your main emphasis on that. Nice! Finally i chose to take a
-              more technical masters programm (Management Information Systems).
+              more technical masters program (Management Information Systems).
               As luck would have it my working student job required my colleague
-              and me to develop a small web application. Since we did'nt have
+              and me to develop a small web application. Since we didn't have
               too much programming experience a lot of learning had to take
               place.
               <br />
