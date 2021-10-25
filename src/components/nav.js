@@ -44,12 +44,10 @@ export default function Nav({ handleNavToggle, isActive, setActive }) {
 
   return (
     <div className="nav-container">
-      <div
-        className={
-          isActive
-            ? "nav-list-container nav-list-container-active"
-            : "nav-list-container"
-        }
+      <motion.div
+        transition={{ duration: 0.5, ease: "easeInOut" }}
+        className="nav-list-container"
+        style={isActive ? { background: "#0f1111" } : null}
       >
         <ul className="nav-list">
           {navElements.map((element, index) => {
@@ -69,10 +67,7 @@ export default function Nav({ handleNavToggle, isActive, setActive }) {
             );
           })}
         </ul>
-        <div
-          className="nav-border-container"
-          // style={{ height: "100%", display: "flex", alignItems: "center" }}
-        >
+        <div className="nav-border-container">
           <hr className="nav-border-dark" />
           <motion.div
             // change progressbar for mobile
@@ -90,23 +85,22 @@ export default function Nav({ handleNavToggle, isActive, setActive }) {
             className="scroll-progression-bar"
           ></motion.div>
         </div>
-      </div>
+      </motion.div>
 
       <motion.div
-        className={isActive ? "slide-menu-active slide-menu" : "slide-menu"}
+        className="slide-menu"
         style={
           isActive
-            ? { transform: "translate3d(0,0,0)" }
-            : { transform: "translate3d(-200vw, 0, 0)" }
+            ? { transform: "translate3d(0,0,0)", height: "100% !important" }
+            : {
+                transform: "translate3d(-200vw, 0, 0)",
+                height: "100% !important"
+              }
         }
       >
         <div className="slide-menu-item-container">
           <motion.div
-            className={
-              isActive
-                ? "slide-menu-item slide-menu-item-active heading-nav"
-                : "slide-menu-item"
-            }
+            className="slide-menu-item heading-nav"
             style={
               isActive
                 ? { transform: "translate3d(0,0,0)" }
