@@ -30,6 +30,8 @@ function Project({ children, side, num, projectName }) {
   );
 }
 
+
+
 export default function ProjectsMobile({ isActive }) {
   return (
     <div

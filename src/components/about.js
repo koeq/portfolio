@@ -45,7 +45,7 @@ export default function About() {
             <div className="sub-text">
               <p className="running-text">
                 » BSc. Business Administration
-                <br />» MSc. Management Information Systems <br />» To many
+                <br />» MSc. Management Information Systems <br />» Too many
                 coding tutorials
               </p>
             </div>
