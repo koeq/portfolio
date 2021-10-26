@@ -44,8 +44,8 @@ export default function About() {
 
             <div className="sub-text">
               <p className="running-text">
-                » BSc. Business Administration
-                <br />» MSc. Management Information Systems <br />» Too many
+                » B.Sc. Business Administration
+                <br />» M.Sc. Management Information Systems <br />» Too many
                 coding tutorials
               </p>
             </div>
@@ -74,7 +74,7 @@ export default function About() {
               Like many people I began my developer journey as a lost business
               student not satisfied with the content of my studies. When you
               leave school to go to university you imagine studying business
-              administration as learning how to build the next successfull start
+              administration as learning how to build the next successful start
               up. But reality hits you hard when you realize that there is one
               interesting course for ten boring ones. <br /> <br />
               So what now?
