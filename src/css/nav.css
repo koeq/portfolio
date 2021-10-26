@@ -67,8 +67,10 @@
 
 .slide-menu {
   width: calc(100% - var(--nav-width));
-  height: 100% !important;
+  /* height: 100%;  */
   display: flex;
+  position: fixed;
+  margin-left: var(--nav-width);
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -153,7 +155,10 @@
 
   .slide-menu {
     width: 100%;
-    padding-bottom: 8rem;
+    height: calc(100% - var(--nav-width));
+    padding-bottom: 8rem !important;
+    margin-left: 0;
+    margin-top: var(--nav-width);
   }
 
   .scroll-progression-bar {

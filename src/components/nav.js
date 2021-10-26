@@ -89,14 +89,11 @@ export default function Nav({ handleNavToggle, isActive, setActive }) {
 
       <motion.div
         className="slide-menu"
-        style={
-          isActive
-            ? { transform: "translate3d(0,0,0)", height: "100% !important" }
-            : {
-                transform: "translate3d(-200vw, 0, 0)",
-                height: "100% !important"
-              }
-        }
+        style={{
+          transform: isActive
+            ? "translate3d(0,0,0)"
+            : "translate3d(-200vw, 0, 0)"
+        }}
       >
         <div className="slide-menu-item-container">
           <motion.div

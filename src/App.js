@@ -5,8 +5,8 @@ import Nav from "./components/nav";
 import StartMobile from "./components/startMobile";
 import Start from "./components/start";
 import About from "./components/about";
-// lazy load component with the videos
 import Contact from "./components/contact";
+// lazy load component with the videos
 const Projects = lazy(() => import("./components/projects"));
 const ProjectsMobile = lazy(() => import("./components/projectsMobile"));
 
