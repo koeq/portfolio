@@ -12,6 +12,7 @@ import { FaPython } from "react-icons/fa";
 import { FaTerminal } from "react-icons/fa";
 import { SiSelenium } from "react-icons/si";
 import { FaDocker } from "react-icons/fa";
+import master_thesis from "../ressources/text_files/master_thesis.pdf";
 
 function Project({ children, side, num, projectName }) {
   return (
@@ -29,8 +30,6 @@ function Project({ children, side, num, projectName }) {
     </div>
   );
 }
-
-
 
 export default function ProjectsMobile({ isActive }) {
   return (
@@ -299,7 +298,7 @@ export default function ProjectsMobile({ isActive }) {
                 <ParallaxTwo offset={15}>
                   <span className="heading-s-bold">
                     <a
-                      href="https://github.com/koebe1/WTTC-Web_Tracking_Traffic_Collector"
+                      href={master_thesis}
                       target={"_blank"}
                       rel="noopener noreferrer"
                     >
