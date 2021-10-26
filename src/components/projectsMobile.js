@@ -93,7 +93,7 @@ export default function ProjectsMobile({ isActive }) {
               <div className="projectMobile-mobile-text running-text">
                 <p>
                   STUDIO MK is a creative design studio owned by Miriam König
-                  located Regensburg, Germany. To present her work as well as
+                  located in Regensburg, Germany. To present her work as well as
                   additional creative endeavors I got to build the new website
                   for STUDIO MK.
                 </p>
