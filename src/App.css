@@ -116,22 +116,41 @@ a {
 
 /* quote / project names */
 .heading-m-thin {
-  font-size: clamp(2rem, 3.5vw, 15rem);
+  font-size: clamp(2.5rem, 3.5vw, 15rem);
   font-weight: 200;
   letter-spacing: 0.15vw;
   line-height: max(2.2rem, 4.35vw);
 }
 .heading-m-regular {
-  font-size: clamp(3rem, 3.5vw, 15rem);
+  font-size: clamp(2.5rem, 3.5vw, 15rem);
   font-weight: 300;
-  letter-spacing: 0.3vw;
-  line-height: max(3.3rem, 4.35vw);
+  letter-spacing: 0.15vw;
+  line-height: max(2.2rem, 4.35vw);
 }
 .heading-m-bold {
-  font-size: clamp(3rem, 3.5vw, 15rem);
+  font-size: clamp(2.5rem, 3.5vw, 15rem);
   font-weight: 600;
-  letter-spacing: 0.3vw;
-  line-height: max(3.3rem, 4.35vw);
+  letter-spacing: 0.15vw;
+  line-height: max(2.2rem, 4.35vw);
+}
+
+.heading-quote-regular {
+  font-size: clamp(2.6rem, 4vw, 15rem);
+  font-weight: 300;
+  letter-spacing: 0.15vw;
+  line-height: max(3.3rem, 4.5vw);
+}
+.heading-quote-bold {
+  font-size: clamp(2.6rem, 4vw, 15rem);
+  font-weight: 600;
+  letter-spacing: 0.15vw;
+  line-height: max(3.3rem, 4.5vw);
+}
+.heading-quote-quotemark {
+  font-size: clamp(2.6rem,4vw, 15rem);
+  font-weight: 600;
+  letter-spacing: 0.15vw;
+  line-height: max(3.3rem, 4.5vw);
 }
 
 /* sub headings */

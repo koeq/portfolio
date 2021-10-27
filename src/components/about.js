@@ -101,20 +101,21 @@ export default function About() {
       <div className="about-quote">
         <ParallaxOne offset={window.innerWidth > 768 ? 60 : 30}>
           <div className="about-quote-text">
-            <p className="heading-m-regular">
-              My affinity with software engineering roots in an{" "}
-              <span className="heading-m-bold">
+            <p className="heading-quote-regular">
+              <span className="heading-quote-quotemark">„</span>My affinity with
+              software engineering roots in an{" "}
+              <span className="heading-quote-bold">
                 excitement for the hands-on building process,
               </span>{" "}
               the creative joy involved in the associated problem solving as
               well as a{" "}
-              <span className="heading-m-bold">
+              <span className="heading-quote-bold">
                 dedication towards continuous learning.
+                <span className="heading-quote-quotemark">”</span>
               </span>
             </p>
           </div>
         </ParallaxOne>
-        <span className="heading-l quotation-mark">„</span>
       </div>
     </div>
   );
