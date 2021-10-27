@@ -67,7 +67,7 @@
 
 .slide-menu {
   width: calc(100% - var(--nav-width));
-  /* height: 100%;  */
+  height: 100%;
   display: flex;
   position: fixed;
   margin-left: var(--nav-width);
@@ -80,9 +80,6 @@
 
   z-index: 100 !important;
 }
-/* .slide-menu-active {
-  transition: 1s ease-in-out;
-} */
 
 .slide-menu-item-container {
   display: flex;
