@@ -109,7 +109,7 @@ a {
 
 /* about / projects  */
 .heading-l {
-  font-size: clamp(6rem, 6.65vw, 20rem);
+  font-size: clamp(6rem, 7.5vw, 20rem);
   font-weight: 600;
   letter-spacing: max(0.3rem, 0.4vw);
 }
@@ -135,13 +135,13 @@ a {
 }
 
 .heading-quote-regular {
-  font-size: clamp(2.6rem, 4vw, 15rem);
+  font-size: clamp(2.6rem, 3.8vw, 15rem);
   font-weight: 300;
   letter-spacing: 0.15vw;
   line-height: max(3.3rem, 4.5vw);
 }
 .heading-quote-bold {
-  font-size: clamp(2.6rem, 4.5vw, 15rem);
+  font-size: clamp(2.6rem, 3.8vw, 15rem);
   font-weight: 600;
   letter-spacing: 0.15vw;
   line-height: max(3.3rem, 4.5vw);

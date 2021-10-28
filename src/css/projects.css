@@ -81,8 +81,7 @@
 .project {
   display: flex;
   flex-direction: column;
-  /* margin-top: 12vw; */
-  margin-bottom: 16.6vw;
+  margin-bottom: 18vw;
   /* border: 1px solid red; */
 }
 
@@ -147,6 +146,7 @@
     margin-top: 12vw;
   }
   .project {
-    margin-top: 5vw;
+    margin-top: 8vw;
+    /* margin-bottom: 20vw; */
   }
 }
