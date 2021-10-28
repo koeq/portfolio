@@ -69,7 +69,7 @@ export default function Contact({ isActive }) {
               </a>
               <a
                 style={{ marginRight: "5.5vh" }}
-                href="http://benediktkoenig.com"
+                href="https://www.linkedin.com/in/benedikt-k%C3%B6nig-967758224/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -93,7 +93,7 @@ export default function Contact({ isActive }) {
               </a>
               <a
                 style={{ marginRight: "5.5vh" }}
-                href="http://benediktkoenig.com"
+                href="https://www.linkedin.com/in/benedikt-k%C3%B6nig-967758224/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -123,7 +123,7 @@ export default function Contact({ isActive }) {
               </a>
               <a
                 style={{ marginRight: "5.5vh" }}
-                href="http://benediktkoenig.com"
+                href="https://www.linkedin.com/in/benedikt-k%C3%B6nig-967758224/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -147,7 +147,7 @@ export default function Contact({ isActive }) {
               </a>
               <a
                 style={{ marginRight: "5.5vh" }}
-                href="http://www.benediktkoenig.com"
+                href="https://www.linkedin.com/in/benedikt-k%C3%B6nig-967758224/"
                 target="_blank"
                 rel="noopener noreferrer"
               >

@@ -141,13 +141,13 @@ a {
   line-height: max(3.3rem, 4.5vw);
 }
 .heading-quote-bold {
-  font-size: clamp(2.6rem, 4vw, 15rem);
+  font-size: clamp(2.6rem, 4.5vw, 15rem);
   font-weight: 600;
   letter-spacing: 0.15vw;
   line-height: max(3.3rem, 4.5vw);
 }
 .heading-quote-quotemark {
-  font-size: clamp(2.6rem,4vw, 15rem);
+  font-size: clamp(2.6rem,4.5vw, 15rem);
   font-weight: 600;
   letter-spacing: 0.15vw;
   line-height: max(3.3rem, 4.5vw);
