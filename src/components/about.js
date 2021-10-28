@@ -99,7 +99,7 @@ export default function About() {
       </div>
 
       <div className="about-quote">
-        <ParallaxOne offset={window.innerWidth > 768 ? 60 : 30}>
+        <ParallaxOne offset={window.innerWidth > 768 ? 80 : 40}>
           <div className="about-quote-text">
             <p className="heading-quote-regular">
               <span className="heading-quote-quotemark">„</span>My affinity with
