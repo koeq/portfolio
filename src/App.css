@@ -119,19 +119,19 @@ a {
   font-size: clamp(2.5rem, 3.5vw, 15rem);
   font-weight: 200;
   letter-spacing: 0.15vw;
-  line-height: max(2.2rem, 4.35vw);
+  line-height: max(2.6rem, 4.35vw);
 }
 .heading-m-regular {
   font-size: clamp(2.5rem, 3.5vw, 15rem);
   font-weight: 300;
   letter-spacing: 0.15vw;
-  line-height: max(2.2rem, 4.35vw);
+  line-height: max(2.6rem, 4.35vw);
 }
 .heading-m-bold {
   font-size: clamp(2.5rem, 3.5vw, 15rem);
   font-weight: 600;
   letter-spacing: 0.15vw;
-  line-height: max(2.2rem, 4.35vw);
+  line-height: max(2.6rem, 4.35vw);
 }
 
 .heading-quote-regular {

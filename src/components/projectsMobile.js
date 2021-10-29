@@ -1,5 +1,5 @@
 import React from "react";
-import Technology from "./technology";
+import Technology, { TechnologyInline } from "./technology";
 import { ParallaxTwo } from "./parallax";
 import studioMkHome from "../ressources/videos/studioMK/studioMk.mp4";
 import studioMkMobile from "../ressources/videos/studioMK/studioMk_mobile_compressed2.mp4";
@@ -104,7 +104,6 @@ export default function ProjectsMobile({ isActive }) {
                 </p>
                 <br />
                 <br />
-                <Technology react={false} />
               </div>
 
               <video
@@ -113,11 +112,21 @@ export default function ProjectsMobile({ isActive }) {
                 playsInline
                 loop
                 muted
-                width="25.5%"
+                width="35%"
                 src={studioMkMobile}
                 alt="studio MK website video mobile"
               ></video>
             </div>
+          </div>
+          <div
+            style={{
+              width: "100%",
+              display: "flex",
+              justifyContent: "center",
+              marginTop: "8vw"
+            }}
+          >
+            <TechnologyInline react={false} />
           </div>
         </div>
       </Project>
@@ -169,7 +178,12 @@ export default function ProjectsMobile({ isActive }) {
             </div>
           </div>
           <div className="project-mobile-container">
-            <div className="projectMobile-mobile-content">
+            <div
+              className="projectMobile-mobile-content"
+              style={{
+                flexDirection: "row-reverse"
+              }}
+            >
               <div className="projectMobile-mobile-text running-text">
                 <p>
                   The name stands for it self! A simple project that tried to
@@ -185,7 +199,7 @@ export default function ProjectsMobile({ isActive }) {
               <img
                 className="mobile"
                 src={HackerNewsMobile}
-                width={"25.5%"}
+                width={"35%"}
                 alt="Hacker News Website Mobile"
               />
             </div>
@@ -262,7 +276,7 @@ export default function ProjectsMobile({ isActive }) {
               <img
                 className="mobile"
                 src={GithubBattleMobile}
-                width={"25.5%"}
+                width={"35%"}
                 alt=""
               />
             </div>
@@ -357,55 +371,56 @@ export default function ProjectsMobile({ isActive }) {
                 <br />
                 <br />
 
-                <div className="wttc-technology">
+                <div
+                  className="wttc-technology"
+                  style={{ display: "flex", justifyContent: "space-between", width: "100%"}}
+                >
                   {/* first row */}
-                  <div>
-                    <div
-                      style={{ marginBottom: "4vw" }}
-                      className="icon-container"
+
+                  <div
+                    style={{ marginBottom: "4vw" }}
+                    className="icon-container"
+                  >
+                    <FaPython size={"max(22px,2vw)"} />
+                    <span
+                      className="heading-s-tech"
+                      style={{ marginTop: "0.6vw" }}
                     >
-                      <FaPython size={"max(22px,2vw)"} />
-                      <span
-                        className="heading-s-tech"
-                        style={{ marginTop: "0.6vw" }}
-                      >
-                        Python
-                      </span>
-                    </div>
-                    <div className="icon-container">
-                      <SiSelenium size={"max(22px,2vw)"} />
-                      <span
-                        className="heading-s-tech"
-                        style={{ marginTop: "0.6vw" }}
-                      >
-                        Selenium
-                      </span>
-                    </div>
+                      Python
+                    </span>
                   </div>
 
                   {/* second row */}
-                  <div>
-                    <div
-                      style={{ marginBottom: "4vw" }}
-                      className="icon-container"
+
+                  <div
+                    style={{ marginBottom: "4vw" }}
+                    className="icon-container"
+                  >
+                    <FaTerminal size={"max(22px,2vw)"} />
+                    <span
+                      className="heading-s-tech"
+                      style={{ marginTop: "0.6vw" }}
                     >
-                      <FaTerminal size={"max(22px,2vw)"} />
-                      <span
-                        className="heading-s-tech"
-                        style={{ marginTop: "0.6vw" }}
-                      >
-                        Shell
-                      </span>
-                    </div>
-                    <div className="icon-container">
-                      <FaDocker size={"max(22px,2vw)"} />
-                      <span
-                        className="heading-s-tech"
-                        style={{ marginTop: "0.6vw" }}
-                      >
-                        Docker
-                      </span>
-                    </div>
+                      Shell
+                    </span>
+                  </div>
+                  <div className="icon-container">
+                    <FaDocker size={"max(22px,2vw)"} />
+                    <span
+                      className="heading-s-tech"
+                      style={{ marginTop: "0.6vw" }}
+                    >
+                      Docker
+                    </span>
+                  </div>
+                  <div className="icon-container" style={{ margin: "0" }}>
+                    <SiSelenium size={"max(22px,2vw)"} />
+                    <span
+                      className="heading-s-tech"
+                      style={{ marginTop: "0.6vw" }}
+                    >
+                      Selenium
+                    </span>
                   </div>
                 </div>
               </div>

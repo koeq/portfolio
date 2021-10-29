@@ -1,7 +1,7 @@
 .projectMobile-card-container {
   flex-direction: column;
-  
 }
+
 
 .projectMobile-card-sidebar-horizontal {
   display: flex;
@@ -19,5 +19,5 @@
 }
 
 .projectMobile-mobile-text {
-  width: 68%;
+  width: 55%;
 }

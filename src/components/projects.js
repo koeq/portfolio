@@ -1,5 +1,5 @@
 import React from "react";
-import Technology from "./technology";
+import Technology, {TechnologyInline} from "./technology";
 import { ParallaxTwo } from "./parallax";
 import studioMkHome from "../ressources/videos/studioMK/studioMk.mp4";
 import studioMkMobile from "../ressources/videos/studioMK/studioMk_mobile_compressed2.mp4";
@@ -118,7 +118,7 @@ export default function Projects({ isActive }) {
                 </p>
                 <br />
                 <br />
-                <Technology react={false} />
+                <TechnologyInline react={false} />
               </div>
 
               <video

@@ -7,19 +7,20 @@ import { FaReact } from "react-icons/fa";
 export default function Technology({ react = true }) {
   return (
     <>
-      <div style={{ display: "flex " }}>
+      <div style={{ display: "flex "}}>
         <div
           style={{
             display: "flex",
             flexDirection: "column",
             justifyContent: "space-between",
             marginRight: "9.5vw"
+            
           }}
         >
-          <div className={"flex-center-column"} style={{ marginBottom: "4vw" }}>
+          <div className={"flex-center-column"} style={{ marginBottom: "6w" }}>
             <FaHtml5 size={"max(22px,2vw)"} />
             <p className="heading-s-tech" style={{ marginTop: "0.6vw" }}>
-              HTML 5
+              HTML 
             </p>
           </div>
           <div className={"flex-center-column"}>
@@ -38,10 +39,10 @@ export default function Technology({ react = true }) {
             justifyContent: "space-between"
           }}
         >
-          <div className={"flex-center-column"} style={{ marginBottom: "4vw" }}>
+          <div className={"flex-center-column"} style={{ marginBottom: "6vw" }}>
             <FaCss3Alt size={"max(22px,2vw)"} />
             <p className="heading-s-tech" style={{ marginTop: "0.6vw" }}>
-              CSS 3
+              CSS 
             </p>
             {/* <p className="heading-s-tech">(FlexBox & Grid)</p> */}
           </div>
@@ -57,5 +58,43 @@ export default function Technology({ react = true }) {
         </div>
       </div>
     </>
+  );
+}
+
+export function TechnologyInline({ react = true }) {
+  return (
+    <div style={{ display: "flex " }}>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "space-between",
+          alignItems: "center",
+          width: "75vw",
+          marginTop: "3vw"
+        }}
+      >
+        <div className={"flex-center-column"}>
+          <FaHtml5 size={"max(22px,2vw)"} />
+          <p className="heading-s-tech" style={{ marginTop: "0.6vw" }}>
+            HTML 
+          </p>
+        </div>
+        <div className={"flex-center-column"} >
+          <FaCss3Alt size={"max(22px,2vw)"} />
+          <p className="heading-s-tech" style={{ marginTop: "0.6vw" }}>
+            CSS 
+          </p>
+          {/* <p className="heading-s-tech">(FlexBox & Grid)</p> */}
+        </div>
+        <div className={"flex-center-column"}>
+          <SiJavascript size={"max(22px,2vw)"} />
+          <p className="heading-s-tech" style={{ marginTop: "0.6vw" }}>
+            JS
+          </p>
+          {/* <p className="heading-s-tech">(ES6)</p> */}
+        </div>
+      </div>
+    </div>
   );
 }
