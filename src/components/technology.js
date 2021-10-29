@@ -70,8 +70,8 @@ export function TechnologyInline({ react = true }) {
           flexDirection: "row",
           justifyContent: "space-between",
           alignItems: "center",
-          width: "75vw",
-          marginTop: "3vw"
+          width: "85vw",
+          marginTop: "5vw"
         }}
       >
         <div className={"flex-center-column"}>
@@ -94,6 +94,16 @@ export function TechnologyInline({ react = true }) {
           </p>
           {/* <p className="heading-s-tech">(ES6)</p> */}
         </div>
+        {react ? (
+            <div className={"flex-center-column"}>
+              <FaReact size={"max(22px,2vw)"} />
+              <p className="heading-s-tech" style={{ marginTop: "0.6vw" }}>
+                React
+              </p>
+              {/* <p className="heading-s-tech">(incl. Hooks)</p> */}
+            </div>
+          ) : null}
+        
       </div>
     </div>
   );

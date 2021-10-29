@@ -16,7 +16,7 @@ import master_thesis from "../ressources/text_files/master_thesis.pdf";
 
 function Project({ children, side, num, projectName }) {
   return (
-    <div className="project">
+    <div className="project" style={{ marginTop: "10vw", marginBottom: "25vw" }}>
       <ParallaxTwo offset={20}>
         <div className={`project-name-${side}`}>
           <span style={{ marginRight: "1.5vw" }} className="heading-m-thin">
@@ -193,7 +193,6 @@ export default function ProjectsMobile({ isActive }) {
                 </p>
                 <br />
                 <br />
-                <Technology react={true} />
               </div>
 
               <img
@@ -203,6 +202,16 @@ export default function ProjectsMobile({ isActive }) {
                 alt="Hacker News Website Mobile"
               />
             </div>
+          </div>
+          <div
+            style={{
+              width: "100%",
+              display: "flex",
+              justifyContent: "center",
+              marginTop: "8vw"
+            }}
+          >
+            <TechnologyInline react={true} />
           </div>
         </div>
       </Project>
@@ -270,7 +279,6 @@ export default function ProjectsMobile({ isActive }) {
                 </p>
                 <br />
                 <br />
-                <Technology react={true} />
               </div>
 
               <img
@@ -280,6 +288,15 @@ export default function ProjectsMobile({ isActive }) {
                 alt=""
               />
             </div>
+          </div>
+          <div
+            style={{
+              width: "100%",
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
+            <TechnologyInline react={true} />
           </div>
         </div>
       </Project>
@@ -373,12 +390,17 @@ export default function ProjectsMobile({ isActive }) {
 
                 <div
                   className="wttc-technology"
-                  style={{ display: "flex", justifyContent: "space-between", width: "100%"}}
+                  style={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    width: "100%",
+                    marginTop: "3vw"
+                  }}
                 >
                   {/* first row */}
 
                   <div
-                    style={{ marginBottom: "4vw" }}
+                    
                     className="icon-container"
                   >
                     <FaPython size={"max(22px,2vw)"} />
@@ -393,7 +415,7 @@ export default function ProjectsMobile({ isActive }) {
                   {/* second row */}
 
                   <div
-                    style={{ marginBottom: "4vw" }}
+                    
                     className="icon-container"
                   >
                     <FaTerminal size={"max(22px,2vw)"} />
