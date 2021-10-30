@@ -37,7 +37,7 @@ export default function Contact({ isActive }) {
             initial={{ x: 0 }}
             animate={{ x: "-50%" }}
             transition={{
-              duration: 25,
+              duration: 30,
               ease: "linear",
               loop: Infinity
             }}
