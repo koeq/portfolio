@@ -165,7 +165,7 @@ a {
   letter-spacing: 0.47vw;
 }
 .heading-s-bold {
-  font-size: clamp(1.4rem, 1.55vw, 4rem);
+  font-size: clamp(1.5rem, 1.55vw, 4rem);
   font-weight: 600;
   letter-spacing: 0.47vw;
 }
@@ -177,7 +177,7 @@ a {
 }
 
 .running-text {
-  font-size: clamp(1.4rem, 1.41vw, 10rem);
+  font-size: clamp(1.5rem, 1.41vw, 10rem);
   letter-spacing: 0.03vw;
   font-weight: 300;
   line-height: max(1.8rem, 2.2vw);
@@ -189,8 +189,6 @@ a {
   line-height: max(2rem, 2.2vw);
 }
 
-/* @media only screen and (max-width: 480px) {
-} */
 
 @media only screen and (max-width: 768px) {
 }

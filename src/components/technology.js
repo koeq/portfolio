@@ -18,14 +18,14 @@ export default function Technology({ react = true }) {
           }}
         >
           <div className={"flex-center-column"} style={{ marginBottom: "6w" }}>
-            <FaHtml5 size={"max(22px,2vw)"} />
-            <p className="heading-s-tech" style={{ marginTop: "0.6vw" }}>
+            <FaHtml5 size={"max(30px,2vw)"} />
+            <p className="heading-s-tech" style={{ marginTop: "1vw" }}>
               HTML 
             </p>
           </div>
           <div className={"flex-center-column"}>
-            <SiJavascript size={"max(22px,2vw)"} />
-            <p className="heading-s-tech" style={{ marginTop: "0.6vw" }}>
+            <SiJavascript size={"max(30px,2vw)"} />
+            <p className="heading-s-tech" style={{ marginTop: "1vw" }}>
               JS
             </p>
             {/* <p className="heading-s-tech">(ES6)</p> */}
@@ -40,16 +40,16 @@ export default function Technology({ react = true }) {
           }}
         >
           <div className={"flex-center-column"} style={{ marginBottom: "6vw" }}>
-            <FaCss3Alt size={"max(22px,2vw)"} />
-            <p className="heading-s-tech" style={{ marginTop: "0.6vw" }}>
+            <FaCss3Alt size={"max(30px,2vw)"} />
+            <p className="heading-s-tech" style={{ marginTop: "1vw" }}>
               CSS 
             </p>
             {/* <p className="heading-s-tech">(FlexBox & Grid)</p> */}
           </div>
           {react ? (
             <div className={"flex-center-column"}>
-              <FaReact size={"max(22px,2vw)"} />
-              <p className="heading-s-tech" style={{ marginTop: "0.6vw" }}>
+              <FaReact size={"max(30px,2vw)"} />
+              <p className="heading-s-tech" style={{ marginTop: "1vw" }}>
                 React
               </p>
               {/* <p className="heading-s-tech">(incl. Hooks)</p> */}
@@ -75,29 +75,29 @@ export function TechnologyInline({ react = true }) {
         }}
       >
         <div className={"flex-center-column"}>
-          <FaHtml5 size={"max(22px,2vw)"} />
-          <p className="heading-s-tech" style={{ marginTop: "0.6vw" }}>
+          <FaHtml5 size={"max(30px,2vw)"} />
+          <p className="heading-s-tech" style={{ marginTop: "1vw" }}>
             HTML 
           </p>
         </div>
         <div className={"flex-center-column"} >
-          <FaCss3Alt size={"max(22px,2vw)"} />
-          <p className="heading-s-tech" style={{ marginTop: "0.6vw" }}>
+          <FaCss3Alt size={"max(30px,2vw)"} />
+          <p className="heading-s-tech" style={{ marginTop: "1vw" }}>
             CSS 
           </p>
           {/* <p className="heading-s-tech">(FlexBox & Grid)</p> */}
         </div>
         <div className={"flex-center-column"}>
-          <SiJavascript size={"max(22px,2vw)"} />
-          <p className="heading-s-tech" style={{ marginTop: "0.6vw" }}>
+          <SiJavascript size={"max(30px,2vw)"} />
+          <p className="heading-s-tech" style={{ marginTop: "1vw" }}>
             JS
           </p>
           {/* <p className="heading-s-tech">(ES6)</p> */}
         </div>
         {react ? (
             <div className={"flex-center-column"}>
-              <FaReact size={"max(22px,2vw)"} />
-              <p className="heading-s-tech" style={{ marginTop: "0.6vw" }}>
+              <FaReact size={"max(30px,2vw)"} />
+              <p className="heading-s-tech" style={{ marginTop: "1vw" }}>
                 React
               </p>
               {/* <p className="heading-s-tech">(incl. Hooks)</p> */}

@@ -4,12 +4,7 @@ import { ParallaxTwo } from "./parallax";
 
 export default function Contact({ isActive }) {
   return (
-    <div
-      id="contact"
-      className="contact-container"
-      // padding top for mobile version
-      style={window.innerWidth <= 480 ? { paddingTop: "2rem" } : null}
-    >
+    <div id="contact" className="contact-container">
       <ParallaxTwo offset={120}>
         <div className="get-in-contact-container">
           <span style={{ marginBottom: "10vh" }} className="heading-s-vh">

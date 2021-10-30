@@ -16,7 +16,10 @@ import master_thesis from "../ressources/text_files/master_thesis.pdf";
 
 function Project({ children, side, num, projectName }) {
   return (
-    <div className="project" style={{ marginTop: "10vw", marginBottom: "25vw" }}>
+    <div
+      className="project"
+      style={{ marginTop: "10vw", marginBottom: "25vw" }}
+    >
       <ParallaxTwo offset={20}>
         <div className={`project-name-${side}`}>
           <span style={{ marginRight: "1.5vw" }} className="heading-m-thin">
@@ -293,7 +296,7 @@ export default function ProjectsMobile({ isActive }) {
             style={{
               width: "100%",
               display: "flex",
-              justifyContent: "center",
+              justifyContent: "center"
             }}
           >
             <TechnologyInline react={true} />
@@ -306,6 +309,7 @@ export default function ProjectsMobile({ isActive }) {
         side={"left"}
         num={"04"}
         projectName={"WTTC - Web Tracking Traffic Collector"}
+        style={{marginBottom: "0"}}
       >
         <div className="project-container">
           <div className="projectMobile-card-container">
@@ -399,10 +403,7 @@ export default function ProjectsMobile({ isActive }) {
                 >
                   {/* first row */}
 
-                  <div
-                    
-                    className="icon-container"
-                  >
+                  <div className="icon-container">
                     <FaPython size={"max(22px,2vw)"} />
                     <span
                       className="heading-s-tech"
@@ -414,10 +415,7 @@ export default function ProjectsMobile({ isActive }) {
 
                   {/* second row */}
 
-                  <div
-                    
-                    className="icon-container"
-                  >
+                  <div className="icon-container">
                     <FaTerminal size={"max(22px,2vw)"} />
                     <span
                       className="heading-s-tech"

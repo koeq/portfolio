@@ -65,7 +65,7 @@ export default function About() {
         </div>
 
         <div className="about-path">
-          <ParallaxTwo offset={window.innerWidth > 768 ? 0 : 10}>
+          <ParallaxTwo offset={window.innerWidth > 768 ? 0 : 15}>
             <span className="heading-s">MY PATH</span>
           </ParallaxTwo>
 
